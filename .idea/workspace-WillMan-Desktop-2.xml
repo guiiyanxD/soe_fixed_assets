@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="de73aea3-9c39-4aba-a895-73327a03b168" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2wjtQWIcm8IXG4f8Kq3Gli2XnEI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/OneDrive/Documentos/1-2025/tecnoWeb/proyectoPostgrado/dev&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.16888888&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.122" />
+        <option value="bundled-python-sdk-880ecab49056-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.122" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de73aea3-9c39-4aba-a895-73327a03b168" name="Changes" comment="" />
+      <created>1746566794993</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746566794993</updated>
+      <workItem from="1746566796042" duration="3046000" />
+      <workItem from="1746571363849" duration="2078000" />
+      <workItem from="1746579676226" duration="159000" />
+      <workItem from="1746580052106" duration="1766000" />
+      <workItem from="1746582041836" duration="191000" />
+      <workItem from="1746582455697" duration="12171000" />
+      <workItem from="1746631039632" duration="596000" />
+      <workItem from="1746757275457" duration="10392000" />
+      <workItem from="1746847549848" duration="616000" />
+      <workItem from="1746907152486" duration="1472000" />
+      <workItem from="1746909864874" duration="137000" />
+      <workItem from="1746910022259" duration="742000" />
+      <workItem from="1746910791881" duration="157000" />
+      <workItem from="1746911038924" duration="216000" />
+      <workItem from="1747063488870" duration="1287000" />
+      <workItem from="1747064831286" duration="1488000" />
+      <workItem from="1747066371686" duration="1211000" />
+      <workItem from="1747067618257" duration="937000" />
+      <workItem from="1747146650531" duration="2781000" />
+      <workItem from="1747154253539" duration="1167000" />
+      <workItem from="1747318257997" duration="655000" />
+      <workItem from="1747319406394" duration="3463000" />
+      <workItem from="1747365239032" duration="9261000" />
+      <workItem from="1747449235066" duration="1078000" />
+      <workItem from="1747489904859" duration="1307000" />
+      <workItem from="1747582463057" duration="20312000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

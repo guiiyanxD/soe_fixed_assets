@@ -1,0 +1,456 @@
+<odoo>
+  <data>
+    <!-- QUALITY -->
+    <record model="ir.ui.view" id="soe_fixed_assets.quality_list"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+      <field name="name">fixed assets quality list</field>
+      <field name="model">soe_fixed_assets.quality</field> <!--El modelo al que pertenece esta vista -->
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="created_by"/>
+
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.quality_form"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+      <field name="name">fixed assets quality form</field>
+      <field name="model">soe_fixed_assets.quality</field> <!--El modelo al que pertenece esta vista -->
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="created_by"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+     <!-- CATEGORY -->
+    <record model="ir.ui.view" id="soe_fixed_assets.category_list"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+      <field name="name">fixed assets category list</field>
+      <field name="model">soe_fixed_assets.category</field> <!--El modelo al que pertenece esta vista -->
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="lifespan"/>
+          <field name="coefficient"/>
+          <field name="group_id"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.category_form">
+      <field name="name">fixed assets category form</field>
+      <field name="model">soe_fixed_assets.category</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="lifespan"/>
+            <field name="coefficient"/>
+            <field name="group_id"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- GROUP -->
+    <record model="ir.ui.view" id="soe_fixed_assets.group_list"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+      <field name="name">fixed assets group list</field>
+      <field name="model">soe_fixed_assets.group</field> <!--El modelo al que pertenece esta vista -->
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="category_id"/>
+          <field name="asset_id" string="Activo Fijo"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.group_form">
+      <field name="name">fixed assets group form</field>
+      <field name="model">soe_fixed_assets.group</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="category_id"/>
+            <field name="asset_id" string="Activo Fijo"/>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    <!-- MEASURE -->
+    <record model="ir.ui.view" id="soe_fixed_assets.measure_list">
+      <field name="name">fixed assets measure list</field>
+      <field name="model">soe_fixed_assets.measure</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="abbreviation"/>
+          <field name="asset_id" string="Activo Fijo"/>
+
+        </list>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="soe_fixed_assets.measure_form">
+      <field name="name">fixed assets measure form</field>
+      <field name="model">soe_fixed_assets.measure</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="abbreviation"/>
+            <field name="asset_id" string="Activo Fijo"/>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    <!-- SUBSIDIARY -->
+    <record model="ir.ui.view" id="soe_fixed_assets.subsidiary_list">
+      <field name="name">fixed assets subsidiary list</field>
+      <field name="model">soe_fixed_assets.subsidiary</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="address"/>
+          <field name="id_manager"/>
+          <field name="area_id" string="Areas"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.subsidiary_form">
+      <field name="name">fixed assets subsidiary form</field>
+      <field name="model">soe_fixed_assets.subsidiary</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="address"/>
+            <field name="id_manager"/>
+            <field name="area_id" string="Areas"/>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- AREA -->
+    <record model="ir.ui.view" id="soe_fixed_assets.area_list">
+      <field name="name">fixed assets area list</field>
+      <field name="model">soe_fixed_assets.area</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="example"/>
+          <field name="subsidiary_id"/>
+          <field name="manager_id"/>
+          <field name="description"/>
+          <field name="asset_id" string="Activo Fijo"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.area_form">
+      <field name="name">fixed assets area form</field>
+      <field name="model">soe_fixed_assets.area</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+          <field name="name"/>
+          <field name="subsidiary_id"/>
+          <field name="manager_id"/>
+          <field name="description"/>
+          <field name="asset_id" string="Activo Fijo"/>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+     <!-- ALTA -->
+    <record model="ir.ui.view" id="soe_fixed_assets.acquisition_list">
+      <field name="name">fixed assets acquisition list</field>
+      <field name="model">soe_fixed_assets.acquisition</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="id"/>
+          <field name="nro_cite"/>
+          <field name="pdf_name"/>
+          <field name="asset_id"/>
+          <field name="created_at"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.acquisition_form">
+      <field name="name">fixed assets acquisition form</field>
+      <field name="model">soe_fixed_assets.acquisition</field>
+      <field name="arch" type="xml">
+        <form>
+          <header>
+              <button name="action_registrar_activo_fijo" class="oe_highlight" type="object" string="Registrar Activo Fijo"
+                  invisible="asset_id"/>
+            </header>
+          <sheet>
+            <group>
+              <group>
+              <field name="nro_cite"/>
+            </group>
+            <group>
+                <field name="pdf_file" widget="pdf_viewer" filename="pdf_name"/>
+            </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- ACTIVO FIJO -->
+    <record model="ir.ui.view" id="soe_fixed_assets.asset_list">
+      <field name="name">fixed assets asset list</field>
+      <field name="model">soe_fixed_assets.asset</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="cost"/>
+          <field name="acquisition_id" string="Acta de recepcion"/>
+          <header>
+            <button name="action_ver_acta" type="object" string="Ver Acta de Recepción" class="oe_highlight"/>
+        </header>
+        </list>
+
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.asset_form">
+      <field name="name">fixed assets asset form</field>
+      <field name="model">soe_fixed_assets.asset</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+          <field name="name"/>
+          <field name="brand"/>
+          <field name="description"/>
+          <field name="cost"/>
+          <field name="acquisition_id"/>
+          <field name="area_id"/>
+          <field name="group_id"/>
+          <field name="measure_id"/>
+          <field name="quality_id"/>
+          <field name="manager_id"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- PRESTAMOS DE ACTIVOS FIJOS -->
+
+    <record model="ir.ui.view" id="soe_fixed_assets.asset_loans_list">
+      <field name="name">fixed assets asset loans list</field>
+      <field name="model">soe_fixed_assets.asset_loans</field>
+      <field name="arch" type="xml">
+        <list>
+
+          <field name="nro_cite"/>
+          <field name="loan_date_ini"/>
+          <field name="loan_date_end"/>
+          <field name="destiny"/>
+          <field name="asset_loans_detail_ids" string="Activos fijos a crear"/>
+        </list>
+
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="action_report_asset_loan">
+      <field name="name">fixed assets asset loans form</field>
+      <field name="model">soe_fixed_assets.asset_loans</field>
+      <field name="arch" type="xml">
+        <form string="Préstamo de Activos Fijos">
+          <header>
+            <button name="%(action_report_asset_loan)d" type="action" string="Imprimir Préstamo" class="oe_highlight"/>
+          </header>
+          <sheet>
+            <div class="oe_title">
+              <h1>H1 Nombre del documento</h1>
+            </div>
+            <group>
+              <group>
+                <div>
+                  <h3>Datos del prestamo</h3>
+                </div>
+                <field name="nro_cite"/>
+                <field name="destiny"/>
+                <field name="manager"/>
+              </group>
+              <group>
+                <field name="loan_date_ini"/>
+                <field name="loan_date_end"/>
+              </group>
+            </group>
+
+            <notebook>
+              <page  string="Detalle del Préstamo">
+                <field name="asset_loans_detail_ids">
+                  <list editable="bottom">
+                    <field name="id" string="Item"/>
+                    <field name="asset_id"/>
+                    <field name="comments"/>
+                  </list>
+                  <form>
+                    <group>
+                      <field name="id" string="Item"/>
+                      <field name="asset_id"/>
+                      <field name="comments"/>
+                    </group>
+                  </form>
+
+                </field>
+
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_quality_window">
+      <field name="name">Lista de los estados de calidad de los activos fijos</field> <!--Este  valor sera mostrado en la cabecera de la vista. Valor anterior: soe_fixed_assets quality window -->
+      <field name="res_model">soe_fixed_assets.quality</field> <!--El modelo al que pertenece este menu -->
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_category_window">
+      <field name="name">Lista de las categorias de los activos fijos</field>
+      <field name="res_model">soe_fixed_assets.category</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_group_window">
+      <field name="name">Lista de los grupos de categorias los activos fijos</field>
+      <field name="res_model">soe_fixed_assets.group</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_measure_window">
+      <field name="name">Lista de las medidas de los activos fijos</field>
+      <field name="res_model">soe_fixed_assets.measure</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_subsidiary_window">
+      <field name="name">Lista de las sucursales</field>
+      <field name="res_model">soe_fixed_assets.subsidiary</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_area_window">
+      <field name="name">Lista de Areas de las Sucursales</field>
+      <field name="res_model">soe_fixed_assets.area</field>
+      <field name="view_mode">list,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_acquisition_window">
+      <field name="name">Lista de altas de los activos fijos</field>
+      <field name="res_model">soe_fixed_assets.acquisition</field>
+      <field name="view_mode">list,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            ¡Crea tu primer registro de alta de activos fijos!
+        </p>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_asset_window">
+      <field name="name">Lista de activos fijos</field>
+      <field name="res_model">soe_fixed_assets.asset</field>
+      <field name="view_mode">list,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            ¡Crea tu primer registro de activos fijos!
+        </p>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_asset_loans_window">
+      <field name="name">Prestamos de activos fijos</field>
+      <field name="res_model">soe_fixed_assets.asset_loans</field>
+      <field name="view_mode">list,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            ¡Crea tu primer registro de préstamo de activos fijos!
+        </p>
+      </field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="soe_fixed_assets.action_server">
+      <field name="name">soe_fixed_assets server</field>
+      <field name="model_id" ref="model_soe_fixed_assets_soe_fixed_assets"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+    <menuitem name="SOE Activos Fijos" id="soe_fixed_assets.menu_root"/>
+    <!-- menu categories -->
+
+    <menuitem name="Activos Fijos" id="soe_fixed_assets.menu_1" parent="soe_fixed_assets.menu_root"/>
+    <menuitem name="Altas" id="soe_fixed_assets.menu_2" parent="soe_fixed_assets.menu_root"/>
+    <menuitem name="Bajas" id="soe_fixed_assets.menu_3" parent="soe_fixed_assets.menu_root"/>
+
+    <!-- actions -->
+
+    <menuitem name="Lista Estados de Calidad" id="soe_fixed_assets.menu_1_quality_list" parent="soe_fixed_assets.menu_1"
+              action="soe_fixed_assets.action_quality_window"/>
+
+    <menuitem name="Lista Categorias" id="soe_fixed_assets.menu_2_category_list" parent="soe_fixed_assets.menu_1"
+              action="soe_fixed_assets.action_category_window"/>
+
+    <menuitem name="Lista Medidas" id="soe_fixed_assets.menu_4_group_list" parent="soe_fixed_assets.menu_1"
+              action="soe_fixed_assets.action_measure_window"/>
+
+    <menuitem name="Lista Grupos" id="soe_fixed_assets.menu_3_group_list" parent="soe_fixed_assets.menu_1"
+              action="soe_fixed_assets.action_group_window"/>
+
+    <menuitem name="Lista Sucursales" id="soe_fixed_assets.menu_5_group_list" parent="soe_fixed_assets.menu_1"
+              action="soe_fixed_assets.action_subsidiary_window"/>
+x
+    <menuitem name="Lista Areas" id="soe_fixed_assets.menu_6_group_list" parent="soe_fixed_assets.menu_1"
+              action="soe_fixed_assets.action_area_window"/>
+
+    <menuitem name="Lista Altas de activos fijos" id="soe_fixed_assets.menu_7_group_list" parent="soe_fixed_assets.menu_2"
+              action="soe_fixed_assets.action_acquisition_window"/>
+
+    <menuitem name="Lista de activos fijos" id="soe_fixed_assets.menu_8_group_list" parent="soe_fixed_assets.menu_2"
+              action="soe_fixed_assets.action_asset_window"/>
+
+    <menuitem name="Prestamos" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_3"
+              action="soe_fixed_assets.action_asset_loans_window"/>
+  </data>
+</odoo>

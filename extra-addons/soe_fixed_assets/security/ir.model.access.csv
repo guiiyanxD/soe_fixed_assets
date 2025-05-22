@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_soe_fixed_assets_quality,soe_fixed_assets.quality,model_soe_fixed_assets_quality,base.group_user,1,1,1,1
+access_soe_fixed_assets_category,soe_fixed_assets.category,model_soe_fixed_assets_category,base.group_user,1,1,1,1
+access_soe_fixed_assets_group,soe_fixed_assets.group,model_soe_fixed_assets_group,base.group_user,1,1,1,1
+access_soe_fixed_assets_measure,soe_fixed_assets.measure,model_soe_fixed_assets_measure,base.group_user,1,1,1,1
+access_soe_fixed_assets_subsidiary,soe_fixed_assets.subsidiary,model_soe_fixed_assets_subsidiary,base.group_user,1,1,1,1
+access_soe_fixed_assets_area,soe_fixed_assets.area,model_soe_fixed_assets_area,base.group_user,1,1,1,1
+access_soe_fixed_assets_acquisition,soe_fixed_assets.acquisition,model_soe_fixed_assets_acquisition,base.group_user,1,1,1,1
+access_soe_fixed_assets_asset,soe_fixed_assets.asset,model_soe_fixed_assets_asset,base.group_user,1,1,1,1
+access_soe_fixed_assets_asset_loans,soe_fixed_assets.asset_loans,model_soe_fixed_assets_asset_loans,base.group_user,1,1,1,1
+access_soe_fixed_assets_asset_loans_detail,soe_fixed_assets.asset_loans_detail,model_soe_fixed_assets_asset_loans_detail,base.group_user,1,1,1,1
