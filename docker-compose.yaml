@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
 
   odoo:
@@ -10,19 +12,17 @@ services:
       - "8069:8069"
     volumes:
       - odoo-data:/var/lib/odoo
-      - ./config:/etc/odoo
-      - ./addons:/mnt/extra-addons
+      - ./config:/etc/odoo  # Contiene odoo.conf
+      - ./extra-addons:/mnt/extra-addons
       - ./log:/var/log/odoo
     environment:
-      - HOST=db
-      - USER=odoo
-      - PASSWORD=odoo
+      - LANG=C.UTF-8
     networks:
       - general-net
-    command: odoo -d odoo --db_user=odoo --db_password=odoo -i base
+    command: odoo -c /etc/odoo/odoo.conf
 
   db:
-    image: postgres:15.0
+    image: postgres:16
     container_name: db-container
     restart: unless-stopped
     environment:
@@ -41,4 +41,4 @@ volumes:
 
 networks:
   general-net:
-    external: true  # Usa la red ya creada
+    driver: bridge

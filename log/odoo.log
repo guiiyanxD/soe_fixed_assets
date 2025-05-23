@@ -1,0 +1,563 @@
+2025-05-23 15:11:55,653 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-23 15:11:55,654 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-23 15:11:55,655 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-23 15:11:55,655 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-23 15:11:55,837 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-23 15:11:55,844 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-23 15:11:55,989 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 3df6decdb082:8069 
+2025-05-23 15:12:02,028 1 ERROR ? odoo.modules.loading: Database odoo not initialized, you can force it with `-i base` 
+2025-05-23 15:12:02,029 1 INFO ? odoo.modules.registry: Registry loaded in 0.023s 
+2025-05-23 15:12:02,030 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:12:02,032 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:12:02] "GET / HTTP/1.1" 500 - 20 0.011 0.027
+2025-05-23 15:12:02,073 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:12:02,074 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:12:02] "GET /favicon.ico HTTP/1.1" 500 - 2 0.002 0.010
+2025-05-23 15:12:56,111 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:12:56,112 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:12:57,128 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:12:57,129 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:13:35,452 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:13:35,454 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:13:35] "GET / HTTP/1.1" 500 - 2 0.002 0.010
+2025-05-23 15:13:35,487 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:13:35,488 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:13:35] "GET /favicon.ico HTTP/1.1" 500 - 2 0.002 0.009
+2025-05-23 15:13:56,230 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:13:56,231 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:13:58,257 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:13:58,258 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:14:38,458 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:14:38,459 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:14:38] "GET / HTTP/1.1" 500 - 2 0.002 0.010
+2025-05-23 15:14:38,495 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:14:38,496 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:14:38] "GET /favicon.ico HTTP/1.1" 500 - 2 0.002 0.009
+2025-05-23 15:14:56,336 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:14:56,337 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:14:59,374 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:14:59,376 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:15:56,437 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:15:56,438 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:16:00,486 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:16:00,487 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:16:56,533 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:16:56,534 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:17:01,593 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:17:01,594 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:17:56,581 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:17:56,582 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:18:02,705 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:18:02,706 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:18:56,687 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:18:56,688 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:19:03,821 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:19:03,822 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:19:56,783 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:19:56,784 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:20:04,928 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:20:04,929 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:20:12,872 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-23 15:20:12,872 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-23 15:20:12,957 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2025-05-23 15:20:40,989 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-23 15:20:40,990 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-23 15:20:40,990 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-23 15:20:40,991 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-23 15:20:41,224 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-23 15:20:41,257 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-23 15:20:41,476 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 47a662a7f6fb:8069 
+2025-05-23 15:21:30,915 1 ERROR ? odoo.modules.loading: Database odoo not initialized, you can force it with `-i base` 
+2025-05-23 15:21:30,916 1 INFO ? odoo.modules.registry: Registry loaded in 0.021s 
+2025-05-23 15:21:30,917 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:21:30,920 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:21:30] "GET / HTTP/1.1" 500 - 20 0.011 0.028
+2025-05-23 15:21:30,964 1 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1894, in _serve_db
+    rule, args = self.registry['ir.http']._match(self.httprequest.path)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 240, in __getitem__
+    return self.models[model_name]
+           ~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'ir.http'
+2025-05-23 15:21:30,965 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:21:30] "GET /favicon.ico HTTP/1.1" 500 - 2 0.002 0.010
+2025-05-23 15:21:41,559 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:21:41,560 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:21:42,582 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:21:42,583 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:22:41,575 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:22:41,575 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:22:43,663 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:22:43,664 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:23:41,640 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:23:41,641 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:23:44,739 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:23:44,741 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:24:41,704 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:24:41,705 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:24:45,803 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:24:45,804 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:25:41,766 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:25:41,767 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:25:46,876 1 ERROR odoo odoo.sql_db: bad query: b"\n            SELECT latest_version\n            FROM ir_module_module\n             WHERE name='base'\n        "
+ERROR: relation "ir_module_module" does not exist
+LINE 3:             FROM ir_module_module
+                         ^
+ 
+2025-05-23 15:25:46,877 1 WARNING odoo odoo.addons.base.models.ir_cron: Tried to poll an undefined table on database odoo. 
+2025-05-23 15:26:26,189 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-23 15:26:26,190 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-23 15:26:26,241 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2025-05-23 15:27:26,502 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-23 15:27:26,503 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-23 15:27:26,504 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-23 15:27:26,504 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-23 15:27:26,700 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-23 15:27:26,707 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-23 15:27:26,844 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on ed680091b5df:8069 
+2025-05-23 15:27:26,864 1 INFO odoo odoo.modules.loading: init db 
+2025-05-23 15:27:27,851 1 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-23 15:27:27,927 1 WARNING odoo odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-23 15:27:28,278 1 INFO odoo odoo.modules.loading: loading 1 modules... 
+2025-05-23 15:27:28,278 1 INFO odoo odoo.modules.loading: Loading module base (1/1) 
+2025-05-23 15:27:28,299 1 INFO odoo odoo.modules.registry: module base: creating or updating database tables 
+2025-05-23 15:27:28,744 1 INFO odoo odoo.models: Prepare computation of ir.module.module.menus_by_module 
+2025-05-23 15:27:28,745 1 INFO odoo odoo.models: Prepare computation of ir.module.module.reports_by_module 
+2025-05-23 15:27:28,745 1 INFO odoo odoo.models: Prepare computation of ir.module.module.views_by_module 
+2025-05-23 15:27:28,904 1 INFO odoo odoo.models: Prepare computation of res.partner.user_id 
+2025-05-23 15:27:28,905 1 INFO odoo odoo.models: Prepare computation of res.partner.commercial_partner_id 
+2025-05-23 15:27:28,905 1 INFO odoo odoo.models: Prepare computation of res.partner.complete_name 
+2025-05-23 15:27:28,905 1 INFO odoo odoo.models: Prepare computation of res.partner.company_registry 
+2025-05-23 15:27:28,906 1 INFO odoo odoo.models: Prepare computation of res.partner.commercial_company_name 
+2025-05-23 15:27:28,906 1 INFO odoo odoo.models: Prepare computation of res.partner.partner_share 
+2025-05-23 15:27:28,950 1 INFO odoo odoo.models: Prepare computation of res.currency.decimal_places 
+2025-05-23 15:27:28,980 1 INFO odoo odoo.models: Prepare computation of res.company.uses_default_logo 
+2025-05-23 15:27:28,981 1 INFO odoo odoo.models: Prepare computation of res.company.logo_web 
+2025-05-23 15:27:28,984 1 INFO odoo odoo.models: Computing parent_path for table res_company... 
+2025-05-23 15:27:29,015 1 INFO odoo odoo.models: Prepare computation of res.users.signature 
+2025-05-23 15:27:29,015 1 INFO odoo odoo.models: Prepare computation of res.users.share 
+2025-05-23 15:27:30,426 1 INFO odoo odoo.modules.loading: loading base/data/res_bank.xml 
+2025-05-23 15:27:30,432 1 INFO odoo odoo.modules.loading: loading base/data/res.lang.csv 
+2025-05-23 15:27:30,467 1 INFO odoo odoo.modules.loading: loading base/data/res_lang_data.xml 
+2025-05-23 15:27:30,500 1 INFO odoo odoo.modules.loading: loading base/data/res_partner_data.xml 
+2025-05-23 15:27:30,545 1 INFO odoo odoo.modules.loading: loading base/data/res_currency_data.xml 
+2025-05-23 15:27:30,944 1 INFO odoo odoo.modules.loading: loading base/data/res_company_data.xml 
+2025-05-23 15:27:30,951 1 INFO odoo odoo.modules.loading: loading base/data/res_users_data.xml 
+2025-05-23 15:27:31,641 1 INFO odoo odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2025-05-23 15:27:31,649 1 INFO odoo odoo.modules.loading: loading base/data/res_country_data.xml 
+2025-05-23 15:27:31,955 1 INFO odoo odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2025-05-23 15:27:31,965 1 INFO odoo odoo.modules.loading: loading base/security/base_groups.xml 
+2025-05-23 15:27:32,396 1 INFO odoo odoo.modules.loading: loading base/security/base_security.xml 
+2025-05-23 15:27:32,508 1 INFO odoo odoo.modules.loading: loading base/views/base_menus.xml 
+2025-05-23 15:27:32,558 1 INFO odoo odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2025-05-23 15:27:32,572 1 INFO odoo odoo.modules.loading: loading base/views/res_config_views.xml 
+2025-05-23 15:27:32,577 1 INFO odoo odoo.modules.loading: loading base/data/res.country.state.csv 
+2025-05-23 15:27:33,150 1 INFO odoo odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2025-05-23 15:27:33,255 1 INFO odoo odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2025-05-23 15:27:33,268 1 INFO odoo odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2025-05-23 15:27:33,283 1 INFO odoo odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2025-05-23 15:27:33,304 1 INFO odoo odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2025-05-23 15:27:33,318 1 INFO odoo odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2025-05-23 15:27:33,333 1 INFO odoo odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2025-05-23 15:27:33,348 1 INFO odoo odoo.modules.loading: loading base/views/ir_model_views.xml 
+2025-05-23 15:27:33,462 1 INFO odoo odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2025-05-23 15:27:33,478 1 INFO odoo odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2025-05-23 15:27:33,494 1 INFO odoo odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2025-05-23 15:27:33,510 1 INFO odoo odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2025-05-23 15:27:33,525 1 INFO odoo odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2025-05-23 15:27:33,563 1 INFO odoo odoo.modules.loading: loading base/views/ir_default_views.xml 
+2025-05-23 15:27:33,579 1 INFO odoo odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2025-05-23 15:27:33,582 1 INFO odoo odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2025-05-23 15:27:33,591 1 INFO odoo odoo.modules.loading: loading base/report/ir_model_report.xml 
+2025-05-23 15:27:33,596 1 INFO odoo odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2025-05-23 15:27:33,603 1 INFO odoo odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2025-05-23 15:27:33,618 1 INFO odoo odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2025-05-23 15:27:33,628 1 INFO odoo odoo.modules.loading: loading base/views/ir_module_views.xml 
+2025-05-23 15:27:33,671 1 INFO odoo odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2025-05-23 15:27:33,727 1 INFO odoo odoo.modules.loading: loading base/data/ir_module_module.xml 
+2025-05-23 15:27:33,776 1 INFO odoo odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2025-05-23 15:27:33,780 1 INFO odoo odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2025-05-23 15:27:33,785 1 INFO odoo odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2025-05-23 15:27:33,799 1 INFO odoo odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2025-05-23 15:27:33,810 1 INFO odoo odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2025-05-23 15:27:33,821 1 INFO odoo odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2025-05-23 15:27:33,838 1 INFO odoo odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2025-05-23 15:27:33,847 1 INFO odoo odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2025-05-23 15:27:33,859 1 INFO odoo odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2025-05-23 15:27:33,873 1 INFO odoo odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2025-05-23 15:27:33,886 1 INFO odoo odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2025-05-23 15:27:33,906 1 INFO odoo odoo.modules.loading: loading base/views/res_company_views.xml 
+2025-05-23 15:27:33,927 1 INFO odoo odoo.modules.loading: loading base/views/res_lang_views.xml 
+2025-05-23 15:27:33,946 1 INFO odoo odoo.modules.loading: loading base/views/res_partner_views.xml 
+2025-05-23 15:27:34,029 1 INFO odoo odoo.modules.loading: loading base/views/res_bank_views.xml 
+2025-05-23 15:27:34,054 1 INFO odoo odoo.modules.loading: loading base/views/res_country_views.xml 
+2025-05-23 15:27:34,089 1 INFO odoo odoo.modules.loading: loading base/views/res_currency_views.xml 
+2025-05-23 15:27:34,119 1 INFO odoo odoo.modules.loading: loading base/views/res_users_views.xml 
+2025-05-23 15:27:34,214 1 INFO odoo odoo.modules.loading: loading base/views/res_device_views.xml 
+2025-05-23 15:27:34,231 1 INFO odoo odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2025-05-23 15:27:34,237 1 INFO odoo odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2025-05-23 15:27:34,245 1 INFO odoo odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2025-05-23 15:27:34,268 1 INFO odoo odoo.modules.loading: loading base/security/ir.model.access.csv 
+2025-05-23 15:27:34,375 1 INFO odoo odoo.modules.loading: Module base: loading demo 
+2025-05-23 15:27:34,375 1 INFO odoo odoo.modules.loading: loading base/data/res_users_demo.xml 
+2025-05-23 15:27:35,474 1 INFO odoo odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2025-05-23 15:27:35,480 1 INFO odoo odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2025-05-23 15:27:35,485 1 INFO odoo odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2025-05-23 15:27:35,671 1 INFO odoo odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2025-05-23 15:27:35,675 1 INFO odoo odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2025-05-23 15:27:35,811 1 INFO odoo odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2025-05-23 15:27:36,176 1 INFO odoo odoo.modules.loading: Module base loaded in 7.90s, 9251 queries (+9251 other) 
+2025-05-23 15:27:36,177 1 INFO odoo odoo.modules.loading: 1 modules loaded in 7.90s, 9251 queries (+9251 extra) 
+2025-05-23 15:27:36,192 1 INFO odoo odoo.modules.loading: updating modules list 
+2025-05-23 15:27:36,194 1 INFO odoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2025-05-23 15:27:36,806 1 INFO odoo odoo.modules.loading: loading 12 modules... 
+2025-05-23 15:27:36,806 1 INFO odoo odoo.modules.loading: Loading module web (2/12) 
+2025-05-23 15:27:36,827 1 INFO odoo odoo.modules.registry: module web: creating or updating database tables 
+2025-05-23 15:27:37,353 1 INFO odoo odoo.modules.loading: loading web/security/ir.model.access.csv 
+2025-05-23 15:27:37,363 1 INFO odoo odoo.modules.loading: loading web/views/webclient_templates.xml 
+2025-05-23 15:27:37,407 1 INFO odoo odoo.modules.loading: loading web/views/report_templates.xml 
+2025-05-23 15:27:37,483 1 INFO odoo odoo.modules.loading: loading web/views/base_document_layout_views.xml 
+2025-05-23 15:27:37,498 1 INFO odoo odoo.modules.loading: loading web/views/partner_view.xml 
+2025-05-23 15:27:37,503 1 INFO odoo odoo.modules.loading: loading web/views/speedscope_template.xml 
+2025-05-23 15:27:37,508 1 INFO odoo odoo.modules.loading: loading web/views/neutralize_views.xml 
+2025-05-23 15:27:37,515 1 INFO odoo odoo.modules.loading: loading web/data/ir_attachment.xml 
+2025-05-23 15:27:37,520 1 INFO odoo odoo.modules.loading: loading web/data/report_layout.xml 
+2025-05-23 15:27:37,559 1 INFO odoo odoo.modules.loading: Module web loaded in 0.75s, 1097 queries (+1097 other) 
+2025-05-23 15:27:37,560 1 INFO odoo odoo.modules.loading: Loading module auth_totp (3/12) 
+2025-05-23 15:27:37,596 1 INFO odoo odoo.modules.registry: module auth_totp: creating or updating database tables 
+2025-05-23 15:27:37,656 1 INFO odoo odoo.modules.loading: loading auth_totp/security/security.xml 
+2025-05-23 15:27:37,675 1 INFO odoo odoo.modules.loading: loading auth_totp/security/ir.model.access.csv 
+2025-05-23 15:27:37,683 1 INFO odoo odoo.modules.loading: loading auth_totp/data/ir_action_data.xml 
+2025-05-23 15:27:37,688 1 INFO odoo odoo.modules.loading: loading auth_totp/views/res_users_views.xml 
+2025-05-23 15:27:37,713 1 INFO odoo odoo.modules.loading: loading auth_totp/views/templates.xml 
+2025-05-23 15:27:37,718 1 INFO odoo odoo.modules.loading: loading auth_totp/wizard/auth_totp_wizard_views.xml 
+2025-05-23 15:27:37,736 1 INFO odoo odoo.modules.loading: Module auth_totp loaded in 0.18s, 188 queries (+188 other) 
+2025-05-23 15:27:37,736 1 INFO odoo odoo.modules.loading: Loading module base_import (4/12) 
+2025-05-23 15:27:37,949 1 INFO odoo odoo.modules.registry: module base_import: creating or updating database tables 
+2025-05-23 15:27:38,527 1 INFO odoo odoo.modules.loading: loading base_import/security/ir.model.access.csv 
+2025-05-23 15:27:38,545 1 INFO odoo odoo.modules.loading: Module base_import loaded in 0.81s, 874 queries (+874 other) 
+2025-05-23 15:27:38,546 1 INFO odoo odoo.modules.loading: Loading module base_import_module (5/12) 
+2025-05-23 15:27:38,568 1 INFO odoo odoo.modules.registry: module base_import_module: creating or updating database tables 
+2025-05-23 15:27:38,632 1 INFO odoo odoo.modules.loading: loading base_import_module/security/ir.model.access.csv 
+2025-05-23 15:27:38,640 1 INFO odoo odoo.modules.loading: loading base_import_module/views/base_import_module_view.xml 
+2025-05-23 15:27:38,656 1 INFO odoo odoo.modules.loading: loading base_import_module/views/ir_module_views.xml 
+2025-05-23 15:27:38,694 1 INFO odoo odoo.modules.loading: Module base_import_module loaded in 0.15s, 164 queries (+164 other) 
+2025-05-23 15:27:38,694 1 INFO odoo odoo.modules.loading: Loading module base_setup (6/12) 
+2025-05-23 15:27:38,715 1 INFO odoo odoo.modules.registry: module base_setup: creating or updating database tables 
+2025-05-23 15:27:38,763 1 INFO odoo odoo.modules.loading: loading base_setup/data/base_setup_data.xml 
+2025-05-23 15:27:38,769 1 INFO odoo odoo.modules.loading: loading base_setup/views/res_config_settings_views.xml 
+2025-05-23 15:27:38,797 1 INFO odoo odoo.modules.loading: loading base_setup/views/res_partner_views.xml 
+2025-05-23 15:27:38,815 1 INFO odoo odoo.modules.loading: Module base_setup loaded in 0.12s, 150 queries (+150 other) 
+2025-05-23 15:27:38,815 1 INFO odoo odoo.modules.loading: Loading module bus (7/12) 
+2025-05-23 15:27:38,846 1 INFO odoo odoo.modules.registry: module bus: creating or updating database tables 
+2025-05-23 15:27:38,961 1 INFO odoo odoo.modules.loading: loading bus/security/ir.model.access.csv 
+2025-05-23 15:27:38,978 1 INFO odoo odoo.modules.loading: Module bus loaded in 0.16s, 165 queries (+165 other) 
+2025-05-23 15:27:38,978 1 INFO odoo odoo.modules.loading: Loading module web_tour (8/12) 
+2025-05-23 15:27:38,999 1 INFO odoo odoo.modules.registry: module web_tour: creating or updating database tables 
+2025-05-23 15:27:39,004 1 INFO odoo odoo.models: Prepare computation of res.users.tour_enabled 
+2025-05-23 15:27:39,084 1 INFO odoo odoo.modules.loading: loading web_tour/security/ir.model.access.csv 
+2025-05-23 15:27:39,094 1 INFO odoo odoo.modules.loading: loading web_tour/views/tour_views.xml 
+2025-05-23 15:27:39,116 1 INFO odoo odoo.modules.loading: loading web_tour/views/res_users_views.xml 
+2025-05-23 15:27:39,138 1 INFO odoo odoo.modules.loading: Module web_tour loaded in 0.16s, 188 queries (+188 other) 
+2025-05-23 15:27:39,138 1 INFO odoo odoo.modules.loading: Loading module html_editor (9/12) 
+2025-05-23 15:27:39,248 1 INFO odoo odoo.modules.registry: module html_editor: creating or updating database tables 
+2025-05-23 15:27:39,283 1 INFO odoo odoo.modules.loading: Module html_editor loaded in 0.14s, 42 queries (+42 other) 
+2025-05-23 15:27:39,284 1 INFO odoo odoo.modules.loading: Loading module iap (10/12) 
+2025-05-23 15:27:39,301 1 INFO odoo odoo.modules.registry: module iap: creating or updating database tables 
+2025-05-23 15:27:39,380 1 INFO odoo odoo.modules.loading: loading iap/data/services.xml 
+2025-05-23 15:27:39,386 1 INFO odoo odoo.modules.loading: loading iap/security/ir.model.access.csv 
+2025-05-23 15:27:39,395 1 INFO odoo odoo.modules.loading: loading iap/security/ir_rule.xml 
+2025-05-23 15:27:39,403 1 INFO odoo odoo.modules.loading: loading iap/views/iap_views.xml 
+2025-05-23 15:27:39,423 1 INFO odoo odoo.modules.loading: loading iap/views/res_config_settings.xml 
+2025-05-23 15:27:39,443 1 INFO odoo odoo.modules.loading: Module iap loaded in 0.16s, 183 queries (+183 other) 
+2025-05-23 15:27:39,443 1 INFO odoo odoo.modules.loading: Loading module web_editor (11/12) 
+2025-05-23 15:27:39,489 1 INFO odoo odoo.modules.registry: module web_editor: creating or updating database tables 
+2025-05-23 15:27:40,147 1 INFO odoo odoo.modules.loading: loading web_editor/security/ir.model.access.csv 
+2025-05-23 15:27:40,156 1 INFO odoo odoo.modules.loading: loading web_editor/data/editor_assets.xml 
+2025-05-23 15:27:40,160 1 INFO odoo odoo.modules.loading: loading web_editor/views/editor.xml 
+2025-05-23 15:27:40,170 1 INFO odoo odoo.modules.loading: loading web_editor/views/snippets.xml 
+2025-05-23 15:27:40,209 1 INFO odoo odoo.modules.loading: Module web_editor loaded in 0.77s, 1004 queries (+1004 other) 
+2025-05-23 15:27:40,210 1 INFO odoo odoo.modules.loading: Loading module web_unsplash (12/12) 
+2025-05-23 15:27:40,231 1 INFO odoo odoo.modules.registry: module web_unsplash: creating or updating database tables 
+2025-05-23 15:27:40,278 1 INFO odoo odoo.modules.loading: loading web_unsplash/views/res_config_settings_view.xml 
+2025-05-23 15:27:40,303 1 INFO odoo odoo.modules.loading: Module web_unsplash loaded in 0.09s, 98 queries (+98 other) 
+2025-05-23 15:27:40,304 1 INFO odoo odoo.modules.loading: 12 modules loaded in 3.50s, 4153 queries (+4153 extra) 
+2025-05-23 15:27:40,522 1 INFO odoo odoo.modules.loading: Modules loaded. 
+2025-05-23 15:27:40,525 1 INFO odoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-05-23 15:27:40,527 1 INFO odoo odoo.modules.registry: Registry loaded in 13.681s 
+2025-05-23 15:27:53,176 1 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-23 15:27:53,246 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:53] "GET / HTTP/1.1" 303 - 5 0.002 0.070
+2025-05-23 15:27:53,255 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:53] "GET /odoo HTTP/1.1" 303 - 4 0.002 0.004
+2025-05-23 15:27:53,392 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:53] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 53 0.014 0.120
+2025-05-23 15:27:53,454 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:53] "GET /web/binary/company_logo HTTP/1.1" 200 - 5 0.002 0.042
+2025-05-23 15:27:53,510 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:53] "GET /web/webclient/translations/1748014073495 HTTP/1.1" 200 - 5 0.002 0.012
+2025-05-23 15:27:57,133 1 INFO odoo odoo.addons.base.models.res_users: Login failed for db:odoo login:odoo from 172.19.0.1 
+2025-05-23 15:27:57,136 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:57] "POST /web/login HTTP/1.1" 200 - 9 0.005 0.016
+2025-05-23 15:27:57,163 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:57] "GET /web/binary/company_logo HTTP/1.1" 304 - 5 0.002 0.005
+2025-05-23 15:27:57,188 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:27:57] "GET /web/webclient/translations/1748014077180 HTTP/1.1" 200 - 5 0.002 0.004
+2025-05-23 15:28:32,692 1 INFO odoo odoo.service.server: Initiating shutdown 
+2025-05-23 15:28:32,692 1 INFO odoo odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-23 15:28:32,726 1 INFO odoo odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  
+2025-05-23 15:28:44,155 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-23 15:28:44,156 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-23 15:28:44,156 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-23 15:28:44,157 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-23 15:28:44,394 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-23 15:28:44,429 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-23 15:28:44,647 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-23 15:28:45,896 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-23 15:28:45,901 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-23 15:28:45,911 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-23 15:28:46,214 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.30s, 0 queries (+0 extra) 
+2025-05-23 15:28:46,240 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-23 15:28:46,243 1 INFO ? odoo.modules.registry: Registry loaded in 0.379s 
+2025-05-23 15:28:46,244 1 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-23 15:28:46,263 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:46] "GET / HTTP/1.1" 303 - 22 0.043 0.375
+2025-05-23 15:28:46,279 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:46] "GET /odoo HTTP/1.1" 303 - 5 0.002 0.010
+2025-05-23 15:28:46,432 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:46] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 60 0.020 0.129
+2025-05-23 15:28:46,908 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-23 15:28:46,916 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-23 15:28:46,922 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:46] "GET /web/binary/company_logo HTTP/1.1" 304 - 6 0.003 0.473
+2025-05-23 15:28:46,987 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:46] "GET /web/webclient/translations/1748014126960 HTTP/1.1" 200 - 6 0.003 0.019
+2025-05-23 15:28:50,679 1 INFO odoo odoo.addons.base.models.res_users: Login failed for db:odoo login:odoo from 172.19.0.1 
+2025-05-23 15:28:50,682 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:50] "POST /web/login HTTP/1.1" 200 - 11 0.006 0.026
+2025-05-23 15:28:50,717 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:50] "GET /web/binary/company_logo HTTP/1.1" 304 - 6 0.003 0.011
+2025-05-23 15:28:50,749 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:28:50] "GET /web/webclient/translations/1748014130730 HTTP/1.1" 200 - 6 0.003 0.010
+2025-05-23 15:29:44,737 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-05-23 15:29:44,754 1 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 58 checked, 0 removed 
+2025-05-23 15:29:44,785 1 INFO odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-05-23 15:29:44,791 1 INFO odoo odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-05-23 15:29:44,796 1 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-23 15:29:44,797 1 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-23 15:29:44,808 1 INFO odoo odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-05-23 15:29:44,817 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.079s 
+2025-05-23 15:29:44,819 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-05-23 15:29:44,822 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-05-23 15:29:44,828 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-05-23 15:29:44,831 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.003s 
+2025-05-23 15:29:44,833 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-05-23 15:29:44,835 1 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-05-23 15:32:10,440 1 INFO odoo odoo.addons.base.models.res_users: Login failed for db:odoo login:odoo from 172.19.0.1 
+2025-05-23 15:32:10,443 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:32:10] "POST /web/login HTTP/1.1" 200 - 9 0.005 0.022
+2025-05-23 15:32:10,468 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:32:10] "GET /web/binary/company_logo HTTP/1.1" 304 - 6 0.003 0.011
+2025-05-23 15:32:10,512 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:32:10] "GET /web/webclient/translations/1748014330491 HTTP/1.1" 200 - 6 0.002 0.010
+2025-05-23 15:51:29,681 93 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-23 15:51:29,682 93 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-23 15:51:29,682 93 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-23 15:51:29,682 93 INFO ? odoo: database: odoo@db:5432 
+2025-05-23 15:51:29,872 93 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-23 15:51:29,879 93 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-23 15:51:41,646 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-23 15:51:41,647 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-23 15:51:41,835 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2025-05-23 15:52:04,495 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-23 15:52:04,496 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-23 15:52:04,497 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-23 15:52:04,497 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-23 15:52:04,679 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-23 15:52:04,685 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-23 15:52:04,821 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-23 15:52:06,985 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-23 15:52:06,990 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-23 15:52:06,997 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-23 15:52:07,193 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.20s, 0 queries (+0 extra) 
+2025-05-23 15:52:07,220 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-23 15:52:07,223 1 INFO ? odoo.modules.registry: Registry loaded in 0.254s 
+2025-05-23 15:52:07,224 1 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-23 15:52:07,242 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:07] "GET / HTTP/1.1" 303 - 22 0.016 0.269
+2025-05-23 15:52:07,258 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:07] "GET /odoo HTTP/1.1" 303 - 5 0.002 0.010
+2025-05-23 15:52:07,381 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:07] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 60 0.020 0.098
+2025-05-23 15:52:07,720 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-23 15:52:07,728 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-23 15:52:07,734 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:07] "GET /web/binary/company_logo HTTP/1.1" 304 - 6 0.003 0.331
+2025-05-23 15:52:07,813 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:07] "GET /web/webclient/translations/1748015527795 HTTP/1.1" 200 - 6 0.003 0.020
+2025-05-23 15:52:11,057 1 INFO odoo odoo.addons.base.models.res_users: Login failed for db:odoo login:odoo from 172.19.0.1 
+2025-05-23 15:52:11,060 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:11] "POST /web/login HTTP/1.1" 200 - 11 0.008 0.031
+2025-05-23 15:52:11,099 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:11] "GET /web/binary/company_logo HTTP/1.1" 304 - 6 0.003 0.012
+2025-05-23 15:52:11,139 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:52:11] "GET /web/webclient/translations/1748015531126 HTTP/1.1" 200 - 6 0.003 0.011
+2025-05-23 15:56:10,494 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:10] "GET / HTTP/1.1" 303 - 5 0.002 0.010
+2025-05-23 15:56:10,509 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:10] "GET /odoo HTTP/1.1" 303 - 5 0.002 0.010
+2025-05-23 15:56:10,537 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:10] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 8 0.004 0.019
+2025-05-23 15:56:10,566 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:10] "GET /web/binary/company_logo HTTP/1.1" 304 - 6 0.003 0.011
+2025-05-23 15:56:10,610 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:10] "GET /web/webclient/translations/1748015770605 HTTP/1.1" 200 - 6 0.003 0.010
+2025-05-23 15:56:13,689 1 INFO odoo odoo.addons.base.models.res_users: Login failed for db:odoo login:odoo from 172.19.0.1 
+2025-05-23 15:56:13,693 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:13] "POST /web/login HTTP/1.1" 200 - 9 0.005 0.020
+2025-05-23 15:56:13,740 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:13] "GET /web/binary/company_logo HTTP/1.1" 304 - 6 0.005 0.016
+2025-05-23 15:56:13,771 1 INFO odoo werkzeug: 172.19.0.1 - - [23/May/2025 15:56:13] "GET /web/webclient/translations/1748015773760 HTTP/1.1" 200 - 6 0.003 0.010
+2025-05-23 15:57:32,050 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-23 15:57:32,051 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-23 15:57:32,346 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  

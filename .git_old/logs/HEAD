@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 952551a2fad4113a702b37335001a6b5b222b623 Williams Alvarez Zabala <williamswaz18@gmail.com> 1747885831 -0400	commit (initial): first commit
+952551a2fad4113a702b37335001a6b5b222b623 0000000000000000000000000000000000000000 Williams Alvarez Zabala <williamswaz18@gmail.com> 1747885849 -0400	Branch: renamed refs/heads/main to refs/heads/main
+952551a2fad4113a702b37335001a6b5b222b623 952551a2fad4113a702b37335001a6b5b222b623 Williams Alvarez Zabala <williamswaz18@gmail.com> 1747885849 -0400	Branch: renamed refs/heads/main to refs/heads/main
+952551a2fad4113a702b37335001a6b5b222b623 dff6be7c9ebc3e72e2ebb4278627ceea9891c976 Williams Alvarez Zabala <williamswaz18@gmail.com> 1747933188 -0400	commit: docker runs with images correctly
