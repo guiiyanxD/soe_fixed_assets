@@ -156,7 +156,7 @@
       <field name="arch" type="xml">
         <list>
           <field name="name"/>
-          <field name="example"/>
+<!--          <field name="example"/>-->
           <field name="subsidiary_id"/>
           <field name="manager_id"/>
           <field name="description"/>
