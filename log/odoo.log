@@ -2448,3 +2448,1328 @@ odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/soe_fixed_assets/
 2025-05-24 16:40:45,765 1 INFO soe werkzeug: 172.19.0.1 - - [24/May/2025 16:40:45] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.020 0.031
 2025-05-24 16:40:45,872 1 INFO soe werkzeug: 172.19.0.1 - - [24/May/2025 16:40:45] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.087 0.080
 2025-05-24 16:49:38,157 1 INFO soe werkzeug: 172.19.0.1 - - [24/May/2025 16:49:38] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.002 0.017
+2025-05-25 03:04:35,369 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-25 03:04:35,370 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-25 03:04:35,370 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-25 03:04:35,370 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-25 03:04:35,644 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-25 03:04:35,689 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-25 03:04:35,956 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-25 03:04:37,543 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-25 03:04:37,551 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 03:04:37,577 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-25 03:04:37,945 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.37s, 0 queries (+0 extra) 
+2025-05-25 03:04:37,983 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-25 03:04:37,991 1 INFO ? odoo.modules.registry: Registry loaded in 0.503s 
+2025-05-25 03:04:37,993 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-25 03:04:38,012 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:38] "GET / HTTP/1.1" 303 - 20 0.078 0.469
+2025-05-25 03:04:38,027 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:38] "GET /odoo HTTP/1.1" 303 - 2 0.002 0.009
+2025-05-25 03:04:38,723 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:38] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 57 0.045 0.646
+2025-05-25 03:04:40,652 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-25 03:04:40,660 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-25 03:04:40,667 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:40] "GET /web/binary/company_logo HTTP/1.1" 304 - 3 0.005 1.926
+2025-05-25 03:04:41,308 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:41] "GET /web/webclient/translations/1748142279572 HTTP/1.1" 200 - 3 0.002 0.603
+2025-05-25 03:04:46,810 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: Login successful for db:soe_fixed_asste login:williamswaz18@gmail.com from 172.19.0.1 
+2025-05-25 03:04:46,817 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:46] "POST /web/login HTTP/1.1" 303 - 36 0.025 0.367
+2025-05-25 03:04:46,826 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: User 2 inserts device log (_joFyO1xZ3K1uU_YTJpKjaITdivUsFn_gfkp8ikNni) 
+2025-05-25 03:04:47,018 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /odoo HTTP/1.1" 200 - 67 0.045 0.153
+2025-05-25 03:04:47,045 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /web/webclient/load_menus/6dc20acac58778abe6943734bc08e06f77b2f025167ab07a8785fcd29168915f HTTP/1.1" 200 - 7 0.002 0.005
+2025-05-25 03:04:47,177 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 200 - 4 0.003 0.005
+2025-05-25 03:04:47,179 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-25 03:04:47,204 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /odoo/offline HTTP/1.1" 200 - 6 0.003 0.009
+2025-05-25 03:04:47,228 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.004 0.017
+2025-05-25 03:04:47,229 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.016
+2025-05-25 03:04:47,238 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /web/image/res.partner/3/avatar_128?unique=1748031508000 HTTP/1.1" 200 - 7 0.007 0.024
+2025-05-25 03:04:47,239 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "POST /web/action/load HTTP/1.1" 200 - 10 0.018 0.016
+2025-05-25 03:04:47,279 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2025-05-25 03:04:47,335 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 57 0.032 0.032
+2025-05-25 03:04:47,350 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.004
+2025-05-25 03:04:47,385 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.024 0.015
+2025-05-25 03:04:47,413 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:47] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.015 0.050
+2025-05-25 03:04:47,556 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-25 03:04:51,850 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:51] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 48 0.017 0.011
+2025-05-25 03:04:51,856 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:51] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.029
+2025-05-25 03:04:55,058 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:55] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 48 0.013 0.014
+2025-05-25 03:04:55,068 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:04:55] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2025-05-25 03:05:00,985 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:05:00] "POST /web/dataset/call_kw/ir.filters/create_or_replace HTTP/1.1" 200 - 10 0.004 0.006
+2025-05-25 03:05:00,997 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:05:00] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2025-05-25 03:05:01,015 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:05:01] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 48 0.014 0.012
+2025-05-25 03:05:02,628 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 03:05:02,628 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-05-25 03:05:02,630 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 03:05:02,972 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 03:05:02,978 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 03:05:02,995 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-25 03:05:02,997 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-25 03:05:03,530 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 03:05:03,538 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 03:05:03,539 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-25 03:05:03,539 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-25 03:05:03,808 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 03:05:03,808 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 03:05:03,809 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 03:05:03,812 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-25 03:05:04,064 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-25 03:05:04,083 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-25 03:05:04,148 1 WARNING soe_fixed_asste odoo.modules.loading: Transient module states were reset 
+2025-05-25 03:05:04,152 1 ERROR soe_fixed_asste odoo.modules.registry: Failed to load registry 
+2025-05-25 03:05:04,155 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 03:05:04,160 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 03:05:04,162 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 03:05:04,168 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 03:05:04,190 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-25 03:05:04,192 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 0.040s 
+2025-05-25 03:05:04,202 1 ERROR soe_fixed_asste odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 103, in lookup
+    r = d[key]
+        ~^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f168fe0c040>, 'soe_fixed_assets.action_report_asset_loan')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 405, in _tag_record
+    f_val = _eval_xml(self, field, env)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 127, in _eval_xml
+    +_process("".join(etree.tostring(n, encoding='unicode') for n in node))
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 116, in _process
+    self.idref[id] = self.id_get(id)
+                     ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 519, in id_get
+    res = self.model_id_get(id_str, raise_if_not_found)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 525, in model_id_get
+    return self.env['ir.model.data']._xmlid_to_res_model_res_id(id_str, raise_if_not_found=raise_if_not_found)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2253, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 110, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2246, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: soe_fixed_assets.action_report_asset_loan
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1913, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1976, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1943, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2191, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 740, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 228, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 72, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 608, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 679, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 594, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 550, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/soe_fixed_assets/views/views.xml:280, somewhere inside
+<record model="ir.ui.view" id="action_report_asset_loan">
+      <field name="name">fixed assets asset loans form</field>
+      <field name="model">soe_fixed_assets.asset_loans</field>
+      <field name="arch" type="xml">
+        <form string="Préstamo de Activos Fijos">
+          <header>
+            <button name="%(action_report_asset_loan)d" type="action" string="Imprimir Préstamo" class="oe_highlight"/>
+          </header>
+          <sheet>
+            <div class="oe_title">
+              <h1>H1 Nombre del documento</h1>
+            </div>
+            <group>
+              <group>
+                <div>
+                  <h3>Datos del prestamo</h3>
+                </div>
+                <field name="nro_cite"/>
+                <field name="destiny"/>
+                <field name="manager"/>
+              </group>
+              <group>
+                <field name="loan_date_ini"/>
+                <field name="loan_date_end"/>
+              </group>
+            </group>
+
+            <notebook>
+              <page string="Detalle del Préstamo">
+                <field name="asset_loans_detail_ids">
+                  <list editable="bottom">
+                    <field name="id" string="Item"/>
+                    <field name="asset_id"/>
+                    <field name="comments"/>
+                  </list>
+                  <form>
+                    <group>
+                      <field name="id" string="Item"/>
+                      <field name="asset_id"/>
+                      <field name="comments"/>
+                    </group>
+                  </form>
+
+                </field>
+
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+2025-05-25 03:05:04,205 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 03:05:04] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 1999 0.585 0.996
+2025-05-25 03:05:38,906 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-05-25 03:05:38,920 1 INFO soe_fixed_asste odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-05-25 03:05:38,951 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC'd 1 user log entries 
+2025-05-25 03:05:38,957 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-05-25 03:05:38,960 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-25 03:05:38,961 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-25 03:05:38,967 1 INFO soe_fixed_asste odoo.models.unlink: User #1 deleted base.language.install records with IDs: [1] 
+2025-05-25 03:05:38,976 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-05-25 03:05:38,982 1 INFO soe_fixed_asste odoo.models.unlink: User #1 deleted bus.bus records with IDs: [1, 2] 
+2025-05-25 03:05:38,987 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.080s 
+2025-05-25 03:05:38,990 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-05-25 03:05:38,993 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-05-25 03:05:38,998 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-05-25 03:05:39,001 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.003s 
+2025-05-25 03:05:39,003 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-05-25 03:05:39,005 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-05-25 04:04:01,204 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-25 04:04:01,207 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-25 04:04:01,619 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2025-05-25 04:04:04,174 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-25 04:04:04,175 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-25 04:04:04,176 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-25 04:04:04,176 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-25 04:04:04,438 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-25 04:04:04,483 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-25 04:04:04,790 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-25 04:04:07,825 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:04:07,830 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:04:07,839 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:04:08,198 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.36s, 0 queries (+0 extra) 
+2025-05-25 04:04:08,225 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-25 04:04:08,228 1 INFO ? odoo.modules.registry: Registry loaded in 0.420s 
+2025-05-25 04:04:08,229 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-25 04:04:08,246 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:08] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 20 0.020 0.419
+2025-05-25 04:04:08,254 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:08] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-25 04:04:08,543 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-25 04:04:10,168 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "GET /odoo/apps HTTP/1.1" 200 - 74 0.025 0.783
+2025-05-25 04:04:10,335 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.004
+2025-05-25 04:04:10,377 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.006 0.019
+2025-05-25 04:04:10,381 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.016
+2025-05-25 04:04:10,383 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.005 0.018
+2025-05-25 04:04:10,841 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-25 04:04:10,848 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-25 04:04:10,861 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "POST /web/action/load HTTP/1.1" 200 - 12 0.007 0.500
+2025-05-25 04:04:10,912 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 58 0.019 0.026
+2025-05-25 04:04:10,924 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.005
+2025-05-25 04:04:10,936 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.009 0.006
+2025-05-25 04:04:10,955 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:10] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.020 0.014
+2025-05-25 04:04:11,824 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:11] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-25 04:04:13,515 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:04:13,515 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-05-25 04:04:13,516 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:04:13,858 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:04:13,863 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:04:13,880 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-25 04:04:13,881 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-25 04:04:14,431 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:04:14,438 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:04:14,439 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-25 04:04:14,439 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-25 04:04:14,579 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:04:14,579 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:04:14,580 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:04:14,583 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-25 04:04:14,799 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-25 04:04:14,816 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-25 04:04:14,881 1 WARNING soe_fixed_asste odoo.modules.loading: Transient module states were reset 
+2025-05-25 04:04:14,882 1 ERROR soe_fixed_asste odoo.modules.registry: Failed to load registry 
+2025-05-25 04:04:14,886 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:04:14,891 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:04:14,893 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:04:14,899 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:04:14,919 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-25 04:04:14,921 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 0.039s 
+2025-05-25 04:04:14,930 1 ERROR soe_fixed_asste odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 103, in lookup
+    r = d[key]
+        ~^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7fa476fb4040>, 'soe_fixed_assets.action_report_asset_loan')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 405, in _tag_record
+    f_val = _eval_xml(self, field, env)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 127, in _eval_xml
+    +_process("".join(etree.tostring(n, encoding='unicode') for n in node))
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 116, in _process
+    self.idref[id] = self.id_get(id)
+                     ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 519, in id_get
+    res = self.model_id_get(id_str, raise_if_not_found)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 525, in model_id_get
+    return self.env['ir.model.data']._xmlid_to_res_model_res_id(id_str, raise_if_not_found=raise_if_not_found)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2253, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 110, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2246, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: soe_fixed_assets.action_report_asset_loan
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1913, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1976, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1943, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2191, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 740, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 228, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 72, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 608, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 679, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 594, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 550, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/soe_fixed_assets/views/views.xml:280, somewhere inside
+<record model="ir.ui.view" id="action_report_asset_loan">
+      <field name="name">fixed assets asset loans form</field>
+      <field name="model">soe_fixed_assets.asset_loans</field>
+      <field name="arch" type="xml">
+        <form string="Préstamo de Activos Fijos">
+          <header>
+            <button name="%(action_report_asset_loan)d" type="action" string="Imprimir Préstamo" class="oe_highlight"/>
+          </header>
+          <sheet>
+            <div class="oe_title">
+              <h1>H1 Nombre del documento</h1>
+            </div>
+            <group>
+              <group>
+                <div>
+                  <h3>Datos del prestamo</h3>
+                </div>
+                <field name="nro_cite"/>
+                <field name="destiny"/>
+                <field name="manager"/>
+              </group>
+              <group>
+                <field name="loan_date_ini"/>
+                <field name="loan_date_end"/>
+              </group>
+            </group>
+
+            <notebook>
+              <page string="Detalle del Préstamo">
+                <field name="asset_loans_detail_ids">
+                  <tree editable="bottom">
+                    <field name="id" string="Item"/>
+                    <field name="asset_id"/>
+                    <field name="comments"/>
+                  </tree>
+                  <form>
+                    <group>
+                      <field name="id" string="Item"/>
+                      <field name="asset_id"/>
+                      <field name="comments"/>
+                    </group>
+                  </form>
+
+                </field>
+
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+2025-05-25 04:04:14,933 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:04:14] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 1999 0.568 0.855
+2025-05-25 04:23:04,477 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-25 04:23:04,478 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-25 04:23:05,037 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2025-05-25 04:23:06,999 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-25 04:23:07,000 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-25 04:23:07,001 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-25 04:23:07,001 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-25 04:23:07,232 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-25 04:23:07,268 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-25 04:23:07,501 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-25 04:23:10,649 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:23:10,654 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:23:10,663 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:23:10,961 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.30s, 0 queries (+0 extra) 
+2025-05-25 04:23:10,986 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-25 04:23:10,988 1 INFO ? odoo.modules.registry: Registry loaded in 0.349s 
+2025-05-25 04:23:10,989 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-25 04:23:11,002 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: User 2 inserts device log (_joFyO1xZ3K1uU_YTJpKjaITdivUsFn_gfkp8ikNni) 
+2025-05-25 04:23:11,007 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:23:11] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 21 0.011 0.359
+2025-05-25 04:23:11,020 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:23:11] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-25 04:23:11,314 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-25 04:24:50,202 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "GET /odoo/apps HTTP/1.1" 200 - 74 0.019 0.717
+2025-05-25 04:24:50,275 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.004
+2025-05-25 04:24:50,315 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.010 0.013
+2025-05-25 04:24:50,320 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.017
+2025-05-25 04:24:50,324 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.008 0.017
+2025-05-25 04:24:50,778 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-25 04:24:50,785 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-25 04:24:50,795 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "POST /web/action/load HTTP/1.1" 200 - 12 0.004 0.498
+2025-05-25 04:24:50,847 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 58 0.016 0.027
+2025-05-25 04:24:50,860 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2025-05-25 04:24:50,868 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.006
+2025-05-25 04:24:50,891 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:50] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.018 0.016
+2025-05-25 04:24:51,750 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:51] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-25 04:24:52,793 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:24:52,794 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-05-25 04:24:52,795 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:24:53,126 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:24:53,130 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:24:53,146 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-25 04:24:53,147 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-25 04:24:53,670 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:24:53,677 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:24:53,678 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-25 04:24:53,678 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-25 04:24:53,795 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:24:53,796 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:24:53,796 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:24:53,799 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-25 04:24:53,990 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-25 04:24:54,008 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-25 04:24:54,107 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-25 04:24:54,112 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/asset_loans_views.xml 
+2025-05-25 04:24:54,119 1 WARNING soe_fixed_asste odoo.modules.loading: Transient module states were reset 
+2025-05-25 04:24:54,120 1 ERROR soe_fixed_asste odoo.modules.registry: Failed to load registry 
+2025-05-25 04:24:54,123 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:24:54,129 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:24:54,131 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:24:54,137 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:24:54,156 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-25 04:24:54,158 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 0.038s 
+2025-05-25 04:24:54,166 1 ERROR soe_fixed_asste odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1913, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1976, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1943, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2191, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 740, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 228, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 72, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 602, in convert_file
+    with file_open(pathname, 'rb') as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/misc.py", line 248, in file_open
+    path = file_path(name, filter_ext=filter_ext, env=env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/misc.py", line 226, in file_path
+    raise FileNotFoundError("File not found: " + file_path)
+FileNotFoundError: File not found: soe_fixed_assets/views/asset_loans_views.xml
+2025-05-25 04:24:54,168 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:24:54] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 2136 0.554 0.824
+2025-05-25 04:25:29,933 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-25 04:25:29,934 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-25 04:25:30,035 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 5 connections  
+2025-05-25 04:25:31,459 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-25 04:25:31,460 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-25 04:25:31,461 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-25 04:25:31,461 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-25 04:25:31,630 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-25 04:25:31,636 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-25 04:25:31,771 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-25 04:25:34,559 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:25:34,564 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:25:34,570 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:25:34,732 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.16s, 0 queries (+0 extra) 
+2025-05-25 04:25:34,754 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-25 04:25:34,756 1 INFO ? odoo.modules.registry: Registry loaded in 0.209s 
+2025-05-25 04:25:34,757 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-25 04:25:34,770 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:34] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 20 0.008 0.216
+2025-05-25 04:25:34,782 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:34] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-25 04:25:35,070 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-25 04:25:36,189 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "GET /odoo/apps HTTP/1.1" 200 - 74 0.019 0.632
+2025-05-25 04:25:36,246 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.003
+2025-05-25 04:25:36,284 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.014 0.012
+2025-05-25 04:25:36,290 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.017
+2025-05-25 04:25:36,293 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.006 0.019
+2025-05-25 04:25:36,540 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-25 04:25:36,547 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-25 04:25:36,555 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "POST /web/action/load HTTP/1.1" 200 - 12 0.003 0.292
+2025-05-25 04:25:36,603 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 58 0.015 0.026
+2025-05-25 04:25:36,616 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.005
+2025-05-25 04:25:36,622 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.006
+2025-05-25 04:25:36,646 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:36] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.021 0.014
+2025-05-25 04:25:38,111 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:38] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-25 04:25:38,461 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:25:38,462 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-05-25 04:25:38,463 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:25:38,802 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:25:38,808 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:25:38,825 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-25 04:25:38,826 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-25 04:25:39,339 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:25:39,346 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:25:39,347 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-25 04:25:39,348 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-25 04:25:39,467 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:25:39,467 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:25:39,468 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:25:39,471 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-25 04:25:39,665 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-25 04:25:39,683 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-25 04:25:39,781 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-25 04:25:39,787 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-25 04:25:39,801 1 WARNING soe_fixed_asste odoo.modules.loading: Transient module states were reset 
+2025-05-25 04:25:39,802 1 ERROR soe_fixed_asste odoo.modules.registry: Failed to load registry 
+2025-05-25 04:25:39,806 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:25:39,811 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:25:39,813 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:25:39,818 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:25:39,838 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-25 04:25:39,840 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 0.037s 
+2025-05-25 04:25:39,845 1 ERROR soe_fixed_asste odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 103, in lookup
+    r = d[key]
+        ~^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/lru.py", line 33, in __getitem__
+    a = self.d[obj]
+        ~~~~~~^^^^^
+KeyError: ('ir.model.data', <function IrModelData._xmlid_lookup at 0x7f09b89ec040>, 'soe_fixed_assets.action_report_asset_loan')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 405, in _tag_record
+    f_val = _eval_xml(self, field, env)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 127, in _eval_xml
+    +_process("".join(etree.tostring(n, encoding='unicode') for n in node))
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 116, in _process
+    self.idref[id] = self.id_get(id)
+                     ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 519, in id_get
+    res = self.model_id_get(id_str, raise_if_not_found)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 525, in model_id_get
+    return self.env['ir.model.data']._xmlid_to_res_model_res_id(id_str, raise_if_not_found=raise_if_not_found)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2253, in _xmlid_to_res_model_res_id
+    return self._xmlid_lookup(xmlid)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/cache.py", line 110, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_model.py", line 2246, in _xmlid_lookup
+    raise ValueError('External ID not found in the system: %s' % xmlid)
+ValueError: External ID not found in the system: soe_fixed_assets.action_report_asset_loan
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1913, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1976, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1943, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2191, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 740, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 228, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 72, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 608, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 679, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 594, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 550, in _tag_root
+    raise ParseError('while parsing %s:%s, somewhere inside\n%s' % (
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/soe_fixed_assets/views/aaset_loans_views.xml:19, somewhere inside
+<record model="ir.ui.view" id="action_report_asset_loan">
+      <field name="name">fixed assets asset loans form</field>
+      <field name="model">soe_fixed_assets.asset_loans</field>
+      <field name="arch" type="xml">
+        <form string="Préstamo de Activos Fijos">
+          <header>
+            <button name="%(action_report_asset_loan)d" type="action" string="Imprimir Préstamo" class="oe_highlight"/>
+          </header>
+          <sheet>
+            <div class="oe_title">
+              <h1>H1 Nombre del documento</h1>
+            </div>
+            <group>
+              <group>
+                <div>
+                  <h3>Datos del prestamo</h3>
+                </div>
+                <field name="nro_cite"/>
+                <field name="destiny"/>
+                <field name="manager"/>
+              </group>
+              <group>
+                <field name="loan_date_ini"/>
+                <field name="loan_date_end"/>
+              </group>
+            </group>
+
+            <notebook>
+              <page string="Detalle del Préstamo">
+                <field name="asset_loans_detail_ids">
+                  <tree editable="bottom">
+                    <field name="id" string="Item"/>
+                    <field name="asset_id"/>
+                    <field name="comments"/>
+                  </tree>
+                  <form>
+                    <group>
+                      <field name="id" string="Item"/>
+                      <field name="asset_id"/>
+                      <field name="comments"/>
+                    </group>
+                  </form>
+
+                </field>
+
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+2025-05-25 04:25:39,848 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:25:39] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 2144 0.549 0.841
+2025-05-25 04:26:08,601 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-25 04:26:08,601 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-25 04:26:08,808 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 5 connections  
+2025-05-25 04:26:10,314 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-25 04:26:10,315 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-25 04:26:10,315 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-25 04:26:10,316 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-25 04:26:10,494 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-25 04:26:10,501 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-25 04:26:10,633 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-25 04:26:13,902 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:26:13,907 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:26:13,913 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:26:14,077 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.16s, 0 queries (+0 extra) 
+2025-05-25 04:26:14,100 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-25 04:26:14,102 1 INFO ? odoo.modules.registry: Registry loaded in 0.209s 
+2025-05-25 04:26:14,103 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-25 04:26:14,116 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:14] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 20 0.008 0.216
+2025-05-25 04:26:14,127 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:14] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-25 04:26:14,416 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-25 04:26:15,846 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:15] "GET /odoo/apps HTTP/1.1" 200 - 74 0.019 0.630
+2025-05-25 04:26:15,914 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:15] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.003
+2025-05-25 04:26:15,956 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:15] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.018
+2025-05-25 04:26:15,957 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:15] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.010 0.019
+2025-05-25 04:26:15,966 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:15] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.011 0.025
+2025-05-25 04:26:16,210 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-25 04:26:16,216 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-25 04:26:16,226 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:16] "POST /web/action/load HTTP/1.1" 200 - 12 0.004 0.291
+2025-05-25 04:26:16,273 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:16] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 58 0.016 0.025
+2025-05-25 04:26:16,285 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2025-05-25 04:26:16,291 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:16] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.004 0.006
+2025-05-25 04:26:16,320 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.020 0.020
+2025-05-25 04:26:17,792 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:17] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2025-05-25 04:26:17,852 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:26:17,852 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-05-25 04:26:17,853 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:26:18,202 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:26:18,207 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:26:18,223 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-25 04:26:18,224 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-25 04:26:18,732 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:26:18,739 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:26:18,740 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-25 04:26:18,741 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-25 04:26:18,857 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:26:18,858 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:26:18,858 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:26:18,861 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-25 04:26:19,041 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-25 04:26:19,057 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-25 04:26:19,155 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-25 04:26:19,160 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-25 04:26:19,178 1 WARNING soe_fixed_asste odoo.modules.loading: Transient module states were reset 
+2025-05-25 04:26:19,179 1 ERROR soe_fixed_asste odoo.modules.registry: Failed to load registry 
+2025-05-25 04:26:19,183 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:26:19,187 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:26:19,190 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:26:19,196 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:26:19,215 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-25 04:26:19,217 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 0.037s 
+2025-05-25 04:26:19,220 1 ERROR soe_fixed_asste odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1913, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1976, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1943, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2191, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 740, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 228, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 72, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 608, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 679, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 594, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 548, in _tag_root
+    raise ParseError(msg) from None  # Restart with "--log-handler odoo.tools.convert:DEBUG" for complete traceback
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/soe_fixed_assets/views/aaset_loans_views.xml:19
+Ocurrió un error al validar vista cercana
+
+                  <tree editable="bottom">
+                    <field name="id" string="Item"/>
+                    <field name="asset_id"/>
+                    <field name="comments"/>
+                  </tree>
+
+El campo "asset_id" no existe en el modelo "soe_fixed_assets.asset_loans"
+
+View error context:
+{'file': '/mnt/extra-addons/soe_fixed_assets/views/aaset_loans_views.xml',
+ 'line': 29,
+ 'name': 'fixed assets asset loans form',
+ 'view': ir.ui.view(342,),
+ 'view.model': 'soe_fixed_assets.asset_loans',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'action_report_asset_loan'}
+
+2025-05-25 04:26:19,221 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:26:19] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 2148 0.535 0.838
+2025-05-25 04:27:18,828 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-25 04:27:18,828 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-25 04:27:19,049 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 5 connections  
+2025-05-25 04:27:20,865 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-25 04:27:20,866 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-25 04:27:20,866 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-25 04:27:20,867 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-25 04:27:21,086 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-25 04:27:21,120 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-25 04:27:21,324 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-25 04:27:23,568 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:27:23,572 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:27:23,581 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:27:23,860 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.28s, 0 queries (+0 extra) 
+2025-05-25 04:27:23,882 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-25 04:27:23,884 1 INFO ? odoo.modules.registry: Registry loaded in 0.328s 
+2025-05-25 04:27:23,885 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-25 04:27:23,898 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:23] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 20 0.008 0.336
+2025-05-25 04:27:23,909 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:23] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-25 04:27:24,198 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-25 04:27:28,304 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "GET /odoo/apps HTTP/1.1" 200 - 74 0.018 0.717
+2025-05-25 04:27:28,373 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.004
+2025-05-25 04:27:28,416 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.012 0.016
+2025-05-25 04:27:28,422 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.002 0.020
+2025-05-25 04:27:28,423 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.006 0.019
+2025-05-25 04:27:28,835 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-25 04:27:28,840 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-25 04:27:28,849 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "POST /web/action/load HTTP/1.1" 200 - 12 0.004 0.457
+2025-05-25 04:27:28,894 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 58 0.014 0.025
+2025-05-25 04:27:28,906 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2025-05-25 04:27:28,913 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.005
+2025-05-25 04:27:28,932 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:28] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.016 0.015
+2025-05-25 04:27:30,401 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:30] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-25 04:27:30,474 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:27:30,474 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-05-25 04:27:30,475 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:27:30,810 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:27:30,815 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:27:30,832 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-25 04:27:30,833 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-25 04:27:31,345 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:27:31,352 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:27:31,352 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-25 04:27:31,353 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-25 04:27:31,471 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:27:31,471 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:27:31,472 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:27:31,475 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-25 04:27:31,665 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-25 04:27:31,681 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-25 04:27:31,780 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-25 04:27:31,786 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-25 04:27:31,803 1 WARNING soe_fixed_asste odoo.modules.loading: Transient module states were reset 
+2025-05-25 04:27:31,804 1 ERROR soe_fixed_asste odoo.modules.registry: Failed to load registry 
+2025-05-25 04:27:31,807 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:27:31,813 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:27:31,815 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:27:31,821 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:27:31,840 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-25 04:27:31,842 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 0.038s 
+2025-05-25 04:27:31,849 1 ERROR soe_fixed_asste odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1913, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1976, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1943, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2191, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 740, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 228, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 72, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 608, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 679, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 594, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 548, in _tag_root
+    raise ParseError(msg) from None  # Restart with "--log-handler odoo.tools.convert:DEBUG" for complete traceback
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/soe_fixed_assets/views/aaset_loans_views.xml:19
+Ocurrió un error al validar vista cercana
+
+                  <tree editable="bottom">
+                    <field name="id" string="Item"/>
+                    <field name="comments"/>
+                  </tree>
+                  </field>
+
+El campo "comments" no existe en el modelo "soe_fixed_assets.asset_loans"
+
+View error context:
+{'file': '/mnt/extra-addons/soe_fixed_assets/views/aaset_loans_views.xml',
+ 'line': 29,
+ 'name': 'fixed assets asset loans form',
+ 'view': ir.ui.view(360,),
+ 'view.model': 'soe_fixed_assets.asset_loans',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'action_report_asset_loan'}
+
+2025-05-25 04:27:31,850 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:27:31] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 2148 0.541 0.839
+2025-05-25 04:32:45,903 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-25 04:32:45,903 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-25 04:32:46,074 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 5 connections  
+2025-05-25 04:32:47,905 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-25 04:32:47,906 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-25 04:32:47,907 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-25 04:32:47,907 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-25 04:32:48,141 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-25 04:32:48,175 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-25 04:32:48,383 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-25 04:32:50,288 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:32:50,293 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:32:50,302 1 INFO ? odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:32:50,580 1 INFO ? odoo.modules.loading: 12 modules loaded in 0.28s, 0 queries (+0 extra) 
+2025-05-25 04:32:50,603 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-25 04:32:50,605 1 INFO ? odoo.modules.registry: Registry loaded in 0.328s 
+2025-05-25 04:32:50,606 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-25 04:32:50,621 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:50] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 20 0.009 0.336
+2025-05-25 04:32:50,632 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:50] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-25 04:32:50,922 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-25 04:32:57,472 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:57] "GET /odoo/apps HTTP/1.1" 200 - 74 0.019 0.698
+2025-05-25 04:32:57,552 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:57] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.011
+2025-05-25 04:32:57,558 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:57] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.011
+2025-05-25 04:32:57,576 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:57] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.002
+2025-05-25 04:32:57,771 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:57] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.006 0.011
+2025-05-25 04:32:58,195 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-25 04:32:58,201 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-25 04:32:58,210 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:58] "POST /web/action/load HTTP/1.1" 200 - 12 0.004 0.453
+2025-05-25 04:32:58,256 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:58] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 58 0.014 0.025
+2025-05-25 04:32:58,274 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:58] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.010
+2025-05-25 04:32:58,280 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:58] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.010
+2025-05-25 04:32:58,299 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:58] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.016 0.020
+2025-05-25 04:32:59,107 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:32:59,107 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: User #2 triggered module installation 
+2025-05-25 04:32:59,108 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-25 04:32:59,263 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:32:59] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.006 0.060
+2025-05-25 04:32:59,453 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:32:59,459 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:32:59,478 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-25 04:32:59,480 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-25 04:33:00,010 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:33:00,017 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:33:00,018 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-25 04:33:00,018 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-25 04:33:00,149 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:33:00,149 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:33:00,150 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-25 04:33:00,154 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-25 04:33:00,360 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-25 04:33:00,377 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-25 04:33:00,477 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-25 04:33:00,482 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-25 04:33:00,498 1 WARNING soe_fixed_asste odoo.modules.loading: Transient module states were reset 
+2025-05-25 04:33:00,500 1 ERROR soe_fixed_asste odoo.modules.registry: Failed to load registry 
+2025-05-25 04:33:00,503 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-25 04:33:00,508 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-25 04:33:00,510 1 INFO soe_fixed_asste odoo.modules.loading: loading 12 modules... 
+2025-05-25 04:33:00,515 1 INFO soe_fixed_asste odoo.modules.loading: 12 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-25 04:33:00,536 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-25 04:33:00,537 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 0.037s 
+2025-05-25 04:33:00,545 1 ERROR soe_fixed_asste odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2386, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1913, in _serve_db
+    return self._transactioning(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1976, in _transactioning
+    return service_model.retrying(func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/service/model.py", line 156, in retrying
+    result = func()
+             ^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1943, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2191, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_http.py", line 333, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 740, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/web/controllers/dataset.py", line 42, in call_button
+    action = call_kw(request.env[model], method, args, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 533, in call_kw
+    result = getattr(recs, name)(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 75, in check_and_log
+    return method(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 480, in button_immediate_install
+    return self._button_immediate_function(self.env.registry[self._name].button_install)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_module.py", line 604, in _button_immediate_function
+    registry = modules.registry.Registry.new(self._cr.dbname, update_module=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 127, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 484, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+                        ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 228, in load_module_graph
+    load_data(env, idref, mode, kind='data', package=package)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 72, in load_data
+    tools.convert_file(env, package.name, filename, idref, mode, noupdate, kind)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 608, in convert_file
+    convert_xml_import(env, module, fp, idref, mode, noupdate)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 679, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 594, in parse
+    self._tag_root(de)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 537, in _tag_root
+    f(rec)
+  File "/usr/lib/python3/dist-packages/odoo/tools/convert.py", line 548, in _tag_root
+    raise ParseError(msg) from None  # Restart with "--log-handler odoo.tools.convert:DEBUG" for complete traceback
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+odoo.tools.convert.ParseError: while parsing /mnt/extra-addons/soe_fixed_assets/views/aaset_loans_views.xml:19
+Ocurrió un error al validar vista cercana
+
+<form string="Préstamo de Activos Fijos" __validate__="1">
+          <header>
+            <button name="action_report_asset_loan" type="action" string="Imprimir Préstamo" class="oe_highlight"/>
+          </header>
+          <sheet>
+
+Xmlid no válida action_report_asset_loan para el botón del tipo de acción.
+
+View error context:
+{'file': '/mnt/extra-addons/soe_fixed_assets/views/aaset_loans_views.xml',
+ 'line': 3,
+ 'name': 'fixed assets asset loans form',
+ 'view': ir.ui.view(378,),
+ 'view.model': 'soe_fixed_assets.asset_loans',
+ 'view.parent': ir.ui.view(),
+ 'xmlid': 'action_report_asset_loan'}
+
+2025-05-25 04:33:00,546 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [25/May/2025 04:33:00] "POST /web/dataset/call_button/ir.module.module/button_immediate_install HTTP/1.1" 200 - 2146 0.570 0.873

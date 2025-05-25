@@ -24,8 +24,9 @@ Long description of module's purpose
     'data': [
         'security/ir.model.access.csv',
         'views/views.xml',
-        'reports/loan_report.xml',
         'views/templates.xml',
+        'views/aaset_loans_views.xml',
+        'reports/loan_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

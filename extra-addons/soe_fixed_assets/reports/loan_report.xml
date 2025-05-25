@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
+        <!-- Template corregido para reporte de préstamo -->
         <template id="report_asset_loan_template">
             <t t-call="web.html_container">
                 <t t-foreach="docs" t-as="o">
                     <t t-call="web.external_layout">
                         <div class="page">
                             <style>
-                                /* Puedes añadir estilos CSS aquí si lo necesitas */
                                 .header-title {
                                     text-align: center;
                                     margin-bottom: 20px;
@@ -24,57 +24,56 @@
                                 }
                                 .signature-box {
                                     text-align: center;
-                                    width: 45%; /* Ajusta según necesidad */
+                                    width: 45%;
                                 }
                                 .signature-line {
                                     border-top: 1px solid black;
-                                    margin-top: 30px; /* Espacio para la firma */
+                                    margin-top: 30px;
                                     padding-top: 5px;
+                                }
+                                table {
+                                    width: 100%;
+                                    border-collapse: collapse;
+                                }
+                                th, td {
+                                    border: 1px solid black;
+                                    padding: 5px;
+                                    text-align: left;
                                 }
                             </style>
 
                             <h1 class="header-title">ACTA DE ENTREGA Y RESPONSABILIDAD</h1>
                             <h3 class="header-title">Informe de Préstamo de Activo Fijo</h3>
 
-                            <div class="row">
-                                <div class="col-6">
-                                    <h5>
-                                        <strong>Nro. Cite:</strong> <span t-field="o.nro_cite"/>
-                                    </h5>
-                                </div>
+                            <div>
+                                <h5><strong>Nro. Cite:</strong> <span t-field="o.nro_cite"/></h5>
+                            </div>
 
+                            <div>
+                                <strong>Fecha de Préstamo:</strong> <span t-field="o.loan_date_ini"/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <strong>Fecha de Devolución:</strong> <span t-field="o.loan_date_end"/>
                             </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <strong>Fecha de Préstamo:</strong> <span t-field="o.loan_date_ini"/>
-                                </div>
-                                <div class="col-6">
-                                    <strong>Fecha de Devolución:</strong> <span t-field="o.loan_date_end"/>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <strong>Destino:</strong> <span t-field="o.destiny"/>
-                                </div>
+
+                            <div>
+                                <strong>Destino:</strong> <span t-field="o.destiny"/>
                             </div>
 
                             <br/>
 
                             <h3 class="section-title">Detalles del Préstamo</h3>
-                            <table class="table table-sm table-bordered">
+                            <table>
                                 <thead>
                                     <tr>
                                         <th>Activo Fijo</th>
-                                        <th>Cantidad</th>
-                                        <th>Estado</th>
+                                        <th>Comentarios</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <t t-foreach="o.asset_loans_detail_ids" t-as="line">
                                         <tr>
                                             <td><span t-field="line.asset_id.name"/></td>
-                                            <td><span t-field="line.quantity"/></td>
-                                            <td><span t-field="line.state"/></td>
+                                            <td><span t-field="line.comments"/></td>
                                         </tr>
                                     </t>
                                 </tbody>
@@ -96,6 +95,7 @@
             </t>
         </template>
 
+        <!-- Definición del reporte -->
         <report
             id="action_report_asset_loan"
             model="soe_fixed_assets.asset_loans"
@@ -103,9 +103,10 @@
             report_type="qweb-pdf"
             name="soe_fixed_assets.report_asset_loan_template"
             file="soe_fixed_assets.report_asset_loan"
-            print_report_name="(object.name or 'Préstamo') + '.pdf'"
+            print_report_name="(object.nro_cite or 'Prestamo') + '.pdf'"
         />
 
+        <!-- Menú para imprimir el reporte -->
         <menuitem
             id="menu_report_asset_loan"
             name="Imprimir Préstamo"
@@ -114,6 +115,5 @@
             sequence="30"
             groups="base.group_user"
         />
-
     </data>
 </odoo>
