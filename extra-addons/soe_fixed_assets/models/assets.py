@@ -5,6 +5,7 @@ class Asset(models.Model):
     _name = 'soe_fixed_assets.asset'
     _description = 'soe_fixed_assets.asset'
 
+    code = fields.Char(string="Código", required=True, help="Escriba el código del activo fijo")
 
     acquisition_id = fields.Many2one("soe_fixed_assets.acquisition",  #TODO: CAMBIAR EL NOMBRE DEL IDENTIFICADOR
         string="Nro Acta de Recepcion", help="Seleccione el acta de Recepcion")

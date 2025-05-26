@@ -226,6 +226,7 @@
       <field name="model">soe_fixed_assets.asset</field>
       <field name="arch" type="xml">
         <list>
+          <field name="code"/>
           <field name="name"/>
           <field name="description"/>
           <field name="cost"/>
@@ -244,6 +245,7 @@
       <field name="arch" type="xml">
         <form>
           <group>
+          <field name="code"/>
           <field name="name"/>
           <field name="brand"/>
           <field name="description"/>

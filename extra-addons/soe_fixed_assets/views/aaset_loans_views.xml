@@ -7,8 +7,8 @@
         <list>
 
           <field name="nro_cite"/>
-          <field name="loan_date_ini"/>
-          <field name="loan_date_end"/>
+          <field name="loan_date"/>
+          <field name="return_date"/>
           <field name="destiny"/>
           <field name="asset_loans_detail_ids" string="Activos fijos a crear"/>
         </list>
@@ -16,47 +16,55 @@
       </field>
     </record>
 
-    <record model="ir.ui.view" id="action_report_asset_loan">
+    <record model="ir.ui.view" id="soe_fixed_assets.asset_loans_form">
       <field name="name">fixed assets asset loans form</field>
       <field name="model">soe_fixed_assets.asset_loans</field>
       <field name="arch" type="xml">
         <form string="Préstamo de Activos Fijos">
           <header>
-            <button name="action_report_asset_loan" type="action" string="Imprimir Préstamo" class="oe_highlight"/>
+            <button name="print_asset_loan_report"
+                    type="object"
+                    string="Imprimir Préstamo"
+                    class="btn-primary"
+                    icon="fa-print"/>
           </header>
+
           <sheet>
             <div class="oe_title">
-              <h1>H1 Nombre del documento</h1>
+              <h1>ACTA DE PRESTAMO</h1>
+              <h5>Datos del prestamo</h5>
             </div>
             <group>
               <group>
-                <div>
-                  <h3>Datos del prestamo</h3>
-                </div>
                 <field name="nro_cite"/>
                 <field name="destiny"/>
                 <field name="manager"/>
               </group>
               <group>
-                <field name="loan_date_ini"/>
-                <field name="loan_date_end"/>
+                <field name="loan_date" widget="date"/>
+                <field name="return_date" widget="date" />
               </group>
             </group>
 
             <notebook>
               <page  string="Detalle del Préstamo">
                 <field name="asset_loans_detail_ids">
-                  <!--<tree editable="bottom">
-                    <field name="id" string="Item"/>
+                  <list editable="bottom">
+                    <field name="asset_id"/>
+                    <field name="asset_brand"/>
+                    <field name="asset_description"/>
+                    <field name="asset_quality"/>
                     <field name="comments"/>
-                  </tree>
+                  </list>
                   <form>
                     <group>
-                      <field name="id" string="Item"/>
                       <field name="asset_id"/>
+                      <field name="asset_brand"/>
+                      <field name="asset_description"/>
+                      <field name="asset_quality"/>
                       <field name="comments"/>
                     </group>
-                  </form>-->
+                  </form>
 
                 </field>
 

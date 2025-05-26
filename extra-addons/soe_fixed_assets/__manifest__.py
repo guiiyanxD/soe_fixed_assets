@@ -32,5 +32,10 @@ Long description of module's purpose
     'demo': [
         'demo/demo.xml',
     ],
+    'assets':{
+        'web.assets_backend':[
+            # 'soe_fixed_assets/static/src/js/fecha_validacion.js',
+        ]
+    }
 }
 

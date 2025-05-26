@@ -50,9 +50,9 @@
                             </div>
 
                             <div>
-                                <strong>Fecha de Préstamo:</strong> <span t-field="o.loan_date_ini"/>
-                                &nbsp;&nbsp;&nbsp;&nbsp;
-                                <strong>Fecha de Devolución:</strong> <span t-field="o.loan_date_end"/>
+                                <strong>Fecha de Préstamo:</strong> <span t-field="o.loan_date"/>
+
+                                <strong>Fecha de Devolución:</strong> <span t-field="o.return_date"/>
                             </div>
 
                             <div>
@@ -65,14 +65,18 @@
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Activo Fijo</th>
+                                        <th colspan="5">Activo Fijo</th>
                                         <th>Comentarios</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <t t-foreach="o.asset_loans_detail_ids" t-as="line">
                                         <tr>
+                                            <td><span t-field="line.asset_id.code"/></td>
                                             <td><span t-field="line.asset_id.name"/></td>
+                                            <td><span t-field="line.asset_id.brand"/></td>
+                                            <td><span t-field="line.asset_id.description"/></td>
+                                            <td><span t-field="line.asset_id.quality"/></td>
                                             <td><span t-field="line.comments"/></td>
                                         </tr>
                                     </t>
@@ -107,13 +111,13 @@
         />
 
         <!-- Menú para imprimir el reporte -->
-        <menuitem
+        <!--<menuitem
             id="menu_report_asset_loan"
             name="Imprimir Préstamo"
             parent="soe_fixed_assets.menu_9_group_list"
             action="action_report_asset_loan"
             sequence="30"
             groups="base.group_user"
-        />
+        />-->
     </data>
 </odoo>
