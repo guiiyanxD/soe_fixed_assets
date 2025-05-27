@@ -65,3 +65,7 @@ class AssetsLoanDetail(models.Model):
                 if existing:
                     raise ValidationError("Este activo ya está prestado y no ha sido devuelto.")
 
+    # @api.depends('asset_id.quality_id.name')
+    # def _compute_campo_relacionado(self):
+    #     for record in self:
+    #         record.asset_id = record.modelo_b_id.campo_b or "Sin valor"

@@ -38,11 +38,7 @@ class AssetsLoan(models.Model):
         copy=True
     )
 
-#    @api.model
-#    def create(self, vals):
-        # if vals.get('name', _('Nuevo')) == _('Nuevo'):
-        #     vals['name'] = self.env['ir.sequence'].next_by_code('soe.fixed.assets.loan.sequence') or _(
-        #         'Nuevo')
+
 
     @api.constrains('loan_date', 'return_date')
     def _check_return_date(self):
@@ -52,4 +48,7 @@ class AssetsLoan(models.Model):
 
     def print_asset_loan_report(self):
         self.ensure_one()
-        return self.env.ref('soe_fixed_assets.action_report_asset_loan').report_action(self)
+        try:
+            return self.env.ref('report_asset_loan').report_action(self)
+        except Exception as e:
+            raise UserError(_("Error al generar el reporte: %s", str(e)))

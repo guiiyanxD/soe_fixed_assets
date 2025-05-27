@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 {
     'name': "soe_fixed_assets",
 
@@ -26,7 +27,7 @@ Long description of module's purpose
         'views/views.xml',
         'views/templates.xml',
         'views/aaset_loans_views.xml',
-        'reports/loan_report.xml',
+        'report/loan_report/template.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
@@ -38,4 +39,6 @@ Long description of module's purpose
         ]
     }
 }
+
+
 

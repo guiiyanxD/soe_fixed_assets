@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Definición del reporte -->
+    <report
+        id="report_asset_loan"
+        model="soe_fixed_assets.asset_loans"
+        menu="False"
+        string="Imprimir prestamo"
+        report_type="qweb-pdf"
+        name="soe_fixed_assets.report_asset_loan_template"
+        print_report_name="Prestamo1234.pdf"
+    />
+</odoo>
+ <!--&lt;!&ndash; Template corregido para reporte de préstamo &ndash;&gt;
+    <template id="report_asset_loan_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <style>
+                            .header-title {
+                                text-align: center;
+                                margin-bottom: 20px;
+                            }
+                            .section-title {
+                                margin-top: 20px;
+                                margin-bottom: 10px;
+                            }
+                            .signature-area {
+                                margin-top: 50px;
+                                display: flex;
+                                justify-content: space-around;
+                                width: 100%;
+                            }
+                            .signature-box {
+                                text-align: center;
+                                width: 45%;
+                            }
+                            .signature-line {
+                                border-top: 1px solid black;
+                                margin-top: 30px;
+                                padding-top: 5px;
+                            }
+                            table {
+                                width: 100%;
+                                border-collapse: collapse;
+                            }
+                            th, td {
+                                border: 1px solid black;
+                                padding: 5px;
+                                text-align: left;
+                            }
+                        </style>
+
+                        <h1 class="header-title">ACTA DE ENTREGA Y RESPONSABILIDAD</h1>
+                        <h3 class="header-title">Informe de Préstamo de Activo Fijo</h3>
+
+                        <div>
+                            <h5><strong>Nro. Cite:</strong> <span t-field="o.nro_cite"/></h5>
+                        </div>
+
+                        <div>
+                            <strong>Fecha de Préstamo:</strong> <span t-field="o.loan_date"/>
+
+                            <strong>Fecha de Devolución:</strong> <span t-field="o.return_date"/>
+                        </div>
+
+                        <div>
+                            <strong>Destino:</strong> <span t-field="o.destiny"/>
+                        </div>
+
+                        <br/>
+
+                        <h3 class="section-title">Detalles del Préstamo</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="5">Activo Fijo</th>
+                                    <th>Comentarios</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.asset_loans_detail_ids" t-as="line">
+                                    <tr>
+                                        <td><span t-field="line.asset_id.code"/></td>
+                                        <td><span t-field="line.asset_id.name"/></td>
+                                        <td><span t-field="line.asset_id.brand"/></td>
+                                        <td><span t-field="line.asset_id.description"/></td>
+                                        <td><span t-field="line.asset_id.quality"/></td>
+                                        <td><span t-field="line.comments"/></td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+
+                        <div class="signature-area">
+                            <div class="signature-box">
+                                <p class="signature-line"></p>
+                                <p>Firma del Responsable que entrega</p>
+                            </div>
+                            <div class="signature-box">
+                                <p class="signature-line"></p>
+                                <p>Firma del Responsable que recibe</p>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+-->
+
+
+    <!-- Menú para imprimir el reporte -->
+    <!--<menuitem
+        id="menu_report_asset_loan"
+        name="Imprimir Préstamo"
+        parent="soe_fixed_assets.menu_9_group_list"
+        action="action_report_asset_loan"
+        sequence="30"
+        groups="base.group_user"
+    />-->
