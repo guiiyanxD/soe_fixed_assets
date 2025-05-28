@@ -12,23 +12,31 @@ class TechnicalReportRequests(models.Model):
     )
     pdf_file_request = fields.Binary(
         string='Archivo PDF',
-        required=True,
+        # required=True,
         attachment=True
     )
     pdf_name_request = fields.Char(
         string="Nombre del archivo PDF",
-        required=True,
+        # required=True,
         help="Escriba el nombre del archivo PDF"
     )
-    created_at = fields.Date(
-        string="Fecha de carga",
+    date_request = fields.Date(
+        string="Fecha de solicitud",
         required=True,
         help="Fecha de creacion del archivo PDF",
         default=fields.Date.today
     )
 
+    technical_report_request_detail_ids = fields.One2many(
+        "soe_fixed_assets.technical_report_request_detail",
+        "technical_report_request_id",
+        string="Detalles de la solicitud de informe tecnico",
+        copy=True,
+        required=True
+    )
+
 
 
     _sql_constraints = [
-        ('unique_cite', 'unique(nro_cite)', 'El Nro de Cite debe ser unico'),
+        ('unique_cite_request', 'unique(nro_cite_request)', 'El Nro de Cite debe ser unico'),
     ]

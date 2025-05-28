@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+    <record model="ir.ui.view" id="soe_fixed_assets.technical_report_request_detail_status">
+          <field name="name">fixed assets technical report request detail status list</field>
+          <field name="model">soe_fixed_assets.technical_report_request_detail_status</field>
+          <field name="arch" type="xml">
+            <list>
+              <field name="name"/>
+              <field name="description"/>
+            </list>
+          </field>
+        </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.technical_report_request_detail_status">
+      <field name="name">fixed assets technical report request detail status form</field>
+      <field name="model">soe_fixed_assets.technical_report_request_detail_status</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="description" />
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    </data>
+</odoo>

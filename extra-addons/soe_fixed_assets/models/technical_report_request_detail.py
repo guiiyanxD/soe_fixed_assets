@@ -13,6 +13,10 @@ class TechnicalReportRequestDetail(models.Model):
     technical_report_request_id = fields.Many2one(
         "soe_fixed_assets.technical_report_requests",
         string="Solicitud de Informe Tecnico",
-        required=True,
+        required=False,
+    )
+    technical_report_status_id = fields.Many2one(
+        "soe_fixed_assets.technical_report_request_detail_status",
+        string="Estado de la solicitud de informe tecnico",
     )
     comments = fields.Text(string="Comentarios")

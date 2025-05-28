@@ -333,6 +333,28 @@
       </field>
     </record>
 
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_technical_report_request_detail_status_window">
+      <field name="name">Estados de solicitud de Inf. Tecnico</field>
+      <field name="res_model">soe_fixed_assets.technical_report_request_detail_status</field>
+      <field name="view_mode">list,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            ¡Crea los estados que pueden tener las solicitudes de activos fijos!
+        </p>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_technical_report_requests_window">
+      <field name="name">Solicitud de Informe Técnico</field>
+      <field name="res_model">soe_fixed_assets.technical_report_requests</field>
+      <field name="view_mode">list,form</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            ¡Crea una solicitud de informe técnico de los de activos fijos!
+        </p>
+      </field>
+    </record>
+
 
     <!-- server action to the one above -->
 <!--
@@ -357,6 +379,7 @@
     <menuitem name="Activos Fijos" id="soe_fixed_assets.menu_1" parent="soe_fixed_assets.menu_root"/>
     <menuitem name="Altas" id="soe_fixed_assets.menu_2" parent="soe_fixed_assets.menu_root"/>
     <menuitem name="Bajas" id="soe_fixed_assets.menu_3" parent="soe_fixed_assets.menu_root"/>
+    <menuitem name="Informes Técnicos" id="soe_fixed_assets.menu_4" parent="soe_fixed_assets.menu_root"/>
 
     <!-- actions -->
 
@@ -386,5 +409,11 @@ x
 
     <menuitem name="Prestamos" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_3"
               action="soe_fixed_assets.action_asset_loans_window"/>
+
+    <menuitem name="Prestamos" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_4"
+              action="soe_fixed_assets.action_technical_report_request_detail_status_window"/>
+
+    <menuitem name="Prestamos" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_4"
+              action="soe_fixed_assets.action_technical_report_requests_window"/>
   </data>
 </odoo>

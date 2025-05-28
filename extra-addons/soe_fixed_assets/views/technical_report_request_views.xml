@@ -1,0 +1,72 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="soe_fixed_assets.technical_report_requests_list">
+      <field name="name">fixed assets technical report request list</field>
+      <field name="model">soe_fixed_assets.technical_report_requests</field>
+      <field name="arch" type="xml">
+        <list>
+
+          <field name="nro_cite_request"/>
+          <field name="pdf_name_request"/>
+          <field name="date_request"/>
+          <field name="technical_report_request_detail_ids" string="Detalle"/>
+        </list>
+
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.technical_report_requests_form">
+      <field name="name">fixed assets technical report request form</field>
+      <field name="model">soe_fixed_assets.technical_report_requests</field>
+      <field name="arch" type="xml">
+        <form string="Solicitud de informe técnico de los siguientes activos">
+          <header>
+            <!--<button name="print_asset_loan_report"
+                    type="object"
+                    string="Imprimir Préstamo"
+                    class="btn-primary"
+                    icon="fa-print"/> -->
+          </header>
+
+          <sheet>
+            <div class="oe_title">
+              <strong>
+                  <h1>SOLICITUD DE INFORME TECNICO</h1>
+              </strong>
+              <h5>Datos de la solicitud</h5>
+            </div>
+            <group>
+              <group>
+                <field name="nro_cite_request"/>
+              </group>
+              <group>
+                <field name="date_request"/>
+              </group>
+            </group>
+
+            <notebook>
+              <page  string="Detalle de la Solicitud">
+                <field name="technical_report_request_detail_ids">
+                  <list editable="bottom">
+                    <field name="asset_id"/>
+                    <field name="technical_report_status_id"/>
+                    <field name="comments"/>
+                  </list>
+                  <form>
+                    <group>
+                    <field name="asset_id"/>
+                    <field name="technical_report_status_id"/>
+                    <field name="comments"/>
+                    </group>
+                  </form>
+
+                </field>
+
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    </data>
+</odoo>
