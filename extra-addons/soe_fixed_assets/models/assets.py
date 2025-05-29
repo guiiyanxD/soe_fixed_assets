@@ -7,14 +7,25 @@ class Asset(models.Model):
 
     code = fields.Char(string="Código", required=True, help="Escriba el código del activo fijo")
 
-    acquisition_id = fields.Many2one("soe_fixed_assets.acquisition",  #TODO: CAMBIAR EL NOMBRE DEL IDENTIFICADOR
-        string="Nro Acta de Recepcion", help="Seleccione el acta de Recepcion")
+    acquisition_id = fields.Many2one(
+        "soe_fixed_assets.acquisition",  #TODO: CAMBIAR EL NOMBRE DEL IDENTIFICADOR
+        string="Nro Acta de Recepcion",
+        help="Seleccione el acta de Recepcion"
+    )
 
-    area_id = fields.Many2one("soe_fixed_assets.area", string="Area",
-        help="Seleccione el area", required=True)
+    area_id = fields.Many2one(
+        "soe_fixed_assets.area",
+        string="Area",
+        help="Seleccione el area",
+        required=True
+    )
 
-    group_id = fields.Many2one("soe_fixed_assets.group", string="Grupo",
-        help="Seleccione el grupo", required=True)
+    group_id = fields.Many2one(
+        "soe_fixed_assets.group",
+        string="Grupo",
+        help="Seleccione el grupo",
+        required=True
+    )
 
     measure_id = fields.Many2one("soe_fixed_assets.measure", string="Medida",
         help="Seleccione la medida", required=True)
@@ -34,7 +45,7 @@ class Asset(models.Model):
     cost = fields.Float(string="Costo", required=True, help="Escriba el costo del activo fijo")
 
     asset_loan_id = fields.Many2one("soe_fixed_assets.asset_loans", string="Prestamo",
-        help="Seleccione la deuda del activo fijo")
+        help="")
 
     _sql_constraints = [
         ('unique_acquisition', 'unique(acquisition_id)', 'Esta Acta de Recepcion pertenece a otro activo fijo'),

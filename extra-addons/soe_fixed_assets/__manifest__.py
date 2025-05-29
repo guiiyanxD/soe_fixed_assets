@@ -28,6 +28,7 @@ Long description of module's purpose
         'views/templates.xml',
         'views/aaset_loans_views.xml',
         'views/technical_report_request_views.xml',
+        'views/technical_report_request_detail_views.xml',
         'views/technical_report_request_detail_status_views.xml',
         'views/aaset_loans_views.xml',
         'report/loan_report/template.xml',

@@ -21,17 +21,17 @@
       <field name="arch" type="xml">
         <form string="Solicitud de informe técnico de los siguientes activos">
           <header>
-            <!--<button name="print_asset_loan_report"
+            <button name="print_technical_report_request"
                     type="object"
                     string="Imprimir Préstamo"
                     class="btn-primary"
-                    icon="fa-print"/> -->
+                    icon="fa-print"/>
           </header>
 
           <sheet>
             <div class="oe_title">
               <strong>
-                  <h1>SOLICITUD DE INFORME TECNICO</h1>
+                  <h1>SOLICITUD DE INFORME TÉCNICO</h1>
               </strong>
               <h5>Datos de la solicitud</h5>
             </div>
@@ -48,7 +48,11 @@
               <page  string="Detalle de la Solicitud">
                 <field name="technical_report_request_detail_ids">
                   <list editable="bottom">
+                    <field name="asset_code"/>
                     <field name="asset_id"/>
+                    <field name="asset_brand"/>
+                    <field name="asset_description"/>
+                    <field name="asset_quality"/>
                     <field name="technical_report_status_id"/>
                     <field name="comments"/>
                   </list>

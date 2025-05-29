@@ -40,3 +40,6 @@ class TechnicalReportRequests(models.Model):
     _sql_constraints = [
         ('unique_cite_request', 'unique(nro_cite_request)', 'El Nro de Cite debe ser unico'),
     ]
+
+    def print_technical_report_request(self):
+        return True
