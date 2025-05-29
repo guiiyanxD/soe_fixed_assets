@@ -16244,3 +16244,547 @@ soe_fixed_assets.access_soe_fixed_assets_technical_report_request_detail,access_
 2025-05-29 02:46:13,316 1 INFO ? werkzeug: 172.19.0.1 - - [29/May/2025 02:46:13] "GET /web/static/img/smiling_face.svg HTTP/1.1" 200 - 0 0.000 0.001
 2025-05-29 02:46:20,248 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:46:20] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
 2025-05-29 02:46:21,049 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:46:21] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/onchange HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:47:05,626 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 02:47:05,635 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 02:47:05,636 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:05] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_save HTTP/1.1" 200 - 6 0.003 0.012
+2025-05-29 02:47:28,379 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 02:47:28,382 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 02:47:28,383 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:28] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_save HTTP/1.1" 200 - 5 0.002 0.007
+2025-05-29 02:47:31,642 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:31] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-29 02:47:35,404 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.005
+2025-05-29 02:47:35,431 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 10 0.005 0.010
+2025-05-29 02:47:35,462 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 26 0.006 0.014
+2025-05-29 02:47:35,489 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:47:35,499 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "POST /base_setup/data HTTP/1.1" 200 - 6 0.002 0.002
+2025-05-29 02:47:35,514 1 INFO ? werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.001
+2025-05-29 02:47:35,525 1 INFO ? werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "GET /web/static/img/mobile_app_qrcode_android.svg HTTP/1.1" 200 - 0 0.000 0.003
+2025-05-29 02:47:35,525 1 INFO ? werkzeug: 172.19.0.1 - - [29/May/2025 02:47:35] "GET /web/static/img/mobile_app_qrcode_ios.svg HTTP/1.1" 200 - 0 0.000 0.002
+2025-05-29 02:47:38,222 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:38] "POST /web/action/load HTTP/1.1" 200 - 10 0.002 0.005
+2025-05-29 02:47:38,269 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:38] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 51 0.012 0.023
+2025-05-29 02:47:38,282 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:38] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.004
+2025-05-29 02:47:38,289 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:38] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.005 0.006
+2025-05-29 02:47:38,309 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:38] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.016 0.016
+2025-05-29 02:47:41,647 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:47:41,648 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:47:41,649 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:47:42,235 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:47:42,259 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-29 02:47:42,264 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-29 02:47:42,280 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-29 02:47:42,282 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-29 02:47:42,809 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-29 02:47:42,809 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-29 02:47:42,836 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:42,837 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:42,837 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:42,840 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-29 02:47:42,900 1 WARNING soe_fixed_asste odoo.modules.loading: File views/aaset_loans_views.xml is imported twice in module soe_fixed_assets data 
+2025-05-29 02:47:42,901 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-29 02:47:42,921 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-29 02:47:43,099 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-29 02:47:43,105 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 02:47:43,120 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_views.xml 
+2025-05-29 02:47:43,133 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_detail_status_views.xml 
+2025-05-29 02:47:43,145 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 02:47:43,156 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/report/loan_report/template.xml 
+2025-05-29 02:47:43,171 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: module soe_fixed_assets: no translation for language es_ES 
+2025-05-29 02:47:43,177 1 WARNING soe_fixed_asste odoo.modules.loading: The models ['soe_fixed_assets.technical_report_request_detail'] have no access rules in module soe_fixed_assets, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+soe_fixed_assets.access_soe_fixed_assets_technical_report_request_detail,access_soe_fixed_assets_technical_report_request_detail,soe_fixed_assets.model_soe_fixed_assets_technical_report_request_detail,base.group_user,1,0,0,0 
+2025-05-29 02:47:43,182 1 INFO soe_fixed_asste odoo.modules.loading: Module soe_fixed_assets loaded in 0.37s, 508 queries (+508 other) 
+2025-05-29 02:47:43,189 1 INFO soe_fixed_asste odoo.modules.loading: 13 modules loaded in 0.38s, 508 queries (+508 extra) 
+2025-05-29 02:47:43,211 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:43,212 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:43,212 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:43,229 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:43,229 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:43,230 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:47:43,279 1 INFO soe_fixed_asste odoo.modules.registry: verifying fields for every extended model 
+2025-05-29 02:47:43,479 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-29 02:47:43,483 1 INFO soe_fixed_asste odoo.modules.registry: Registry changed, signaling through the database 
+2025-05-29 02:47:43,484 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 1.229s 
+2025-05-29 02:47:43,484 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-05-29 02:47:43,489 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4331 0.989 0.858
+2025-05-29 02:47:43,504 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-29 02:47:43,720 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "GET /odoo HTTP/1.1" 200 - 76 0.018 0.199
+2025-05-29 02:47:43,770 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "GET /web/webclient/load_menus/3fcbe5a35f61b95a619cd5e68503bffbc5b9dff2bf8ed7f51b9abd03b2d8b8ea HTTP/1.1" 200 - 18 0.010 0.018
+2025-05-29 02:47:43,814 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.005
+2025-05-29 02:47:43,855 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "POST /web/action/load HTTP/1.1" 200 - 9 0.010 0.007
+2025-05-29 02:47:43,856 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.007 0.009
+2025-05-29 02:47:43,856 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.010
+2025-05-29 02:47:43,884 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2025-05-29 02:47:43,894 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "POST /web/dataset/call_kw/soe_fixed_assets.quality/get_views HTTP/1.1" 200 - 21 0.009 0.014
+2025-05-29 02:47:43,909 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-29 02:47:43,910 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:43] "POST /web/dataset/call_kw/soe_fixed_assets.quality/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2025-05-29 02:47:45,442 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:47:45] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 02:47:56,200 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-05-29 02:47:56,219 1 INFO soe_fixed_asste odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-05-29 02:47:56,251 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC'd 3 user log entries 
+2025-05-29 02:47:56,258 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-05-29 02:47:56,262 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-29 02:47:56,263 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-29 02:47:56,278 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-05-29 02:47:56,284 1 INFO soe_fixed_asste odoo.models.unlink: User #1 deleted bus.bus records with IDs: [179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198] 
+2025-05-29 02:47:56,289 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.088s 
+2025-05-29 02:47:56,291 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-05-29 02:47:56,294 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-05-29 02:48:37,262 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:37] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2025-05-29 02:48:37,294 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:37] "POST /web/dataset/call_kw/res.config.settings/get_views HTTP/1.1" 200 - 10 0.004 0.011
+2025-05-29 02:48:37,318 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:37] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 26 0.006 0.008
+2025-05-29 02:48:37,346 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:37] "POST /base_setup/demo_active HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:48:37,355 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:37] "POST /base_setup/data HTTP/1.1" 200 - 6 0.002 0.002
+2025-05-29 02:48:39,341 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:39] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.006
+2025-05-29 02:48:39,393 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:39] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 51 0.013 0.026
+2025-05-29 02:48:39,406 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:39] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.004
+2025-05-29 02:48:39,412 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:39] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.005
+2025-05-29 02:48:39,434 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:39] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.017 0.015
+2025-05-29 02:48:41,407 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:48:41,408 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:48:41,408 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:48:41,979 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 02:48:42,002 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-29 02:48:42,007 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-29 02:48:42,025 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-29 02:48:42,026 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-29 02:48:42,554 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-29 02:48:42,555 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-29 02:48:42,581 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,581 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,582 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,584 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-29 02:48:42,648 1 WARNING soe_fixed_asste odoo.modules.loading: File views/aaset_loans_views.xml is imported twice in module soe_fixed_assets data 
+2025-05-29 02:48:42,648 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-29 02:48:42,669 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-29 02:48:42,786 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-29 02:48:42,791 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 02:48:42,806 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_views.xml 
+2025-05-29 02:48:42,820 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_detail_status_views.xml 
+2025-05-29 02:48:42,832 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 02:48:42,843 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/report/loan_report/template.xml 
+2025-05-29 02:48:42,859 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: module soe_fixed_assets: no translation for language es_ES 
+2025-05-29 02:48:42,865 1 WARNING soe_fixed_asste odoo.modules.loading: The models ['soe_fixed_assets.technical_report_request_detail'] have no access rules in module soe_fixed_assets, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+soe_fixed_assets.access_soe_fixed_assets_technical_report_request_detail,access_soe_fixed_assets_technical_report_request_detail,soe_fixed_assets.model_soe_fixed_assets_technical_report_request_detail,base.group_user,1,0,0,0 
+2025-05-29 02:48:42,870 1 INFO soe_fixed_asste odoo.modules.loading: Module soe_fixed_assets loaded in 0.32s, 505 queries (+505 other) 
+2025-05-29 02:48:42,878 1 INFO soe_fixed_asste odoo.modules.loading: 13 modules loaded in 0.32s, 505 queries (+505 extra) 
+2025-05-29 02:48:42,900 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,901 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,901 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,918 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,919 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,919 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 02:48:42,968 1 INFO soe_fixed_asste odoo.modules.registry: verifying fields for every extended model 
+2025-05-29 02:48:43,169 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-29 02:48:43,172 1 INFO soe_fixed_asste odoo.modules.registry: Registry changed, signaling through the database 
+2025-05-29 02:48:43,173 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 1.175s 
+2025-05-29 02:48:43,173 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-05-29 02:48:43,177 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4328 0.985 0.789
+2025-05-29 02:48:43,191 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-29 02:48:43,354 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "GET /odoo HTTP/1.1" 200 - 76 0.019 0.145
+2025-05-29 02:48:43,396 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "GET /web/webclient/load_menus/dc279b3119289ff90faeae6285db99437d31d3290ef7f1f8ace7b3728399f733 HTTP/1.1" 200 - 18 0.010 0.009
+2025-05-29 02:48:43,437 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.004
+2025-05-29 02:48:43,470 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.005 0.010
+2025-05-29 02:48:43,470 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "POST /web/action/load HTTP/1.1" 200 - 9 0.010 0.007
+2025-05-29 02:48:43,471 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.002 0.007
+2025-05-29 02:48:43,491 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2025-05-29 02:48:43,503 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "POST /web/dataset/call_kw/soe_fixed_assets.quality/get_views HTTP/1.1" 200 - 21 0.007 0.013
+2025-05-29 02:48:43,517 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2025-05-29 02:48:43,518 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:43] "POST /web/dataset/call_kw/soe_fixed_assets.quality/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2025-05-29 02:48:45,043 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:45] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 02:48:45,713 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:45] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.004
+2025-05-29 02:48:45,736 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:45] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/get_views HTTP/1.1" 200 - 14 0.004 0.008
+2025-05-29 02:48:45,745 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:45] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 3 0.001 0.002
+2025-05-29 02:48:49,666 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:48:49] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-29 02:48:57,731 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-05-29 02:48:57,743 1 INFO soe_fixed_asste odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-05-29 02:48:57,771 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-05-29 02:48:57,775 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-05-29 02:48:57,778 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-29 02:48:57,780 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-29 02:48:57,791 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-05-29 02:48:57,798 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.067s 
+2025-05-29 02:48:57,801 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-05-29 02:48:57,803 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-05-29 02:49:59,420 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-05-29 02:49:59,433 1 INFO soe_fixed_asste odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-05-29 02:49:59,459 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-05-29 02:49:59,463 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-05-29 02:49:59,466 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-29 02:49:59,467 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-05-29 02:49:59,478 1 INFO soe_fixed_asste odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-05-29 02:49:59,483 1 INFO soe_fixed_asste odoo.models.unlink: User #1 deleted bus.bus records with IDs: [199, 200] 
+2025-05-29 02:49:59,488 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.067s 
+2025-05-29 02:49:59,490 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-05-29 02:49:59,492 1 INFO soe_fixed_asste odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-05-29 02:50:13,863 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:13] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_save HTTP/1.1" 200 - 4 0.002 0.004
+2025-05-29 02:50:15,424 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:15] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/onchange HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 02:50:35,228 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:35] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_save HTTP/1.1" 200 - 3 0.001 0.004
+2025-05-29 02:50:36,098 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:36] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/onchange HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 02:50:37,900 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:37] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.005
+2025-05-29 02:50:37,927 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:37] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/get_views HTTP/1.1" 200 - 18 0.005 0.010
+2025-05-29 02:50:37,936 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:37] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 3 0.001 0.002
+2025-05-29 02:50:40,107 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:50:40] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:51:13,768 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:51:13] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-29 02:51:16,024 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:51:16] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:51:17,202 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:51:17] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/onchange HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:51:57,963 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:51:57] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_save HTTP/1.1" 200 - 4 0.001 0.004
+2025-05-29 02:51:57,984 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:51:57] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-29 02:51:59,459 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 02:51:59,462 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 02:51:59,463 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:51:59] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 4 0.002 0.005
+2025-05-29 02:51:59,478 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:51:59] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:52:02,008 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:02] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:52:02,997 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 02:52:03,000 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 02:52:03,000 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:03] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 4 0.001 0.004
+2025-05-29 02:52:03,012 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:03] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:52:13,631 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:13] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/onchange HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 02:52:39,207 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:39] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_save HTTP/1.1" 200 - 3 0.001 0.005
+2025-05-29 02:52:41,563 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:41] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:52:45,442 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 02:52:45,445 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 02:52:45,445 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:45] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 4 0.001 0.005
+2025-05-29 02:52:45,459 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:45] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:52:47,830 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 02:52:47,833 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 02:52:47,833 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:47] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 4 0.001 0.005
+2025-05-29 02:52:47,847 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:52:47] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:56:42,329 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:56:42] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_read HTTP/1.1" 200 - 2 0.001 0.004
+2025-05-29 02:56:44,783 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:56:44] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-29 02:56:48,945 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:56:48] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/copy HTTP/1.1" 200 - 4 0.001 0.004
+2025-05-29 02:56:48,953 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:56:48] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:56:55,182 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:56:55] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 02:56:56,593 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 02:56:56,595 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 02:56:56,596 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:56:56] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 4 0.001 0.004
+2025-05-29 02:56:56,608 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 02:56:56] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2025-05-29 03:45:14,083 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-29 03:45:14,084 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-29 03:45:14,087 1 ERROR ? odoo.addons.bus.models.bus: Bus.loop error, sleep and retry 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 255, in run
+    self.loop()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/models/bus.py", line 240, in loop
+    conn.poll()
+psycopg2.OperationalError: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2025-05-29 03:45:14,090 1 INFO soe_fixed_asste odoo.sql_db: Connection to the database failed 
+2025-05-29 03:45:14,090 1 WARNING soe_fixed_asste odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 132, in _process_jobs
+    with db.cursor() as cron_cr:
+         ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 796, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 723, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.19.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+2025-05-29 03:45:14,101 1 INFO soe_fixed_asste odoo.sql_db: Connection to the database failed 
+2025-05-29 03:45:14,102 1 WARNING soe_fixed_asste odoo.addons.base.models.ir_cron: Exception in cron: 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/base/models/ir_cron.py", line 132, in _process_jobs
+    with db.cursor() as cron_cr:
+         ^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 796, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 723, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "db" (172.19.0.2), port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+2025-05-29 03:45:18,212 1 INFO soe_fixed_asste odoo.sql_db: Connection to the database failed 
+2025-05-29 03:45:18,236 1 ERROR soe_fixed_asste odoo.addons.bus.websocket: could not translate host name "db" to address: Name or service not known
+ 
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 318, in get_messages
+    message = self._process_next_message()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 464, in _process_next_message
+    self._handle_control_frame(frame)
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 602, in _handle_control_frame
+    self._terminate()
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 583, in _terminate
+    with acquire_cursor(self._db) as cr:
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/addons/bus/websocket.py", line 47, in acquire_cursor
+    return Registry(db).cursor()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 1005, in cursor
+    return self._db.cursor()
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 796, in cursor
+    return Cursor(self.__pool, self.__dbname, self.__dsn)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 288, in __init__
+    self._cnx = pool.borrow(dsn)
+                ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/odoo/sql_db.py", line 723, in borrow
+    result = psycopg2.connect(
+             ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "db" to address: Name or service not known
+
+2025-05-29 03:45:20,440 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-29 03:45:20,442 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-29 03:45:20,442 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-29 03:45:20,442 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-29 03:45:20,679 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-29 03:45:20,720 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-29 03:45:20,973 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-29 03:45:24,937 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-29 03:45:24,943 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-29 03:45:24,952 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-29 03:45:24,960 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-05-29 03:45:25,395 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.44s, 0 queries (+0 extra) 
+2025-05-29 03:45:25,428 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:25,428 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:25,429 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:25,434 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-29 03:45:25,440 1 INFO ? odoo.modules.registry: Registry loaded in 0.540s 
+2025-05-29 03:45:25,442 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-29 03:45:25,461 1 INFO soe_fixed_asste odoo.addons.base.models.res_device: User 2 inserts device log (fZq7rR5HP6fGYvxo0MkyJXm7l4VFsQzwGf1FRDuakC) 
+2025-05-29 03:45:25,468 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:25] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 21 0.059 0.509
+2025-05-29 03:45:25,800 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-29 03:45:29,683 1 WARNING soe_fixed_asste odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-29 03:45:29,796 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:29] "GET /odoo/action-178 HTTP/1.1" 200 - 74 0.064 0.736
+2025-05-29 03:45:29,883 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:29] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.003 0.004
+2025-05-29 03:45:29,924 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:29] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.007 0.015
+2025-05-29 03:45:29,930 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:29] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.015
+2025-05-29 03:45:29,933 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:29] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.007 0.017
+2025-05-29 03:45:30,392 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-29 03:45:30,407 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:30] "POST /web/action/load HTTP/1.1" 200 - 10 0.009 0.493
+2025-05-29 03:45:30,434 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:30] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/get_views HTTP/1.1" 200 - 21 0.011 0.009
+2025-05-29 03:45:30,447 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:30] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-29 03:45:30,448 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:30] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2025-05-29 03:45:31,432 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:31] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 03:45:32,281 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:32] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2025-05-29 03:45:32,336 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:32] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 52 0.021 0.024
+2025-05-29 03:45:32,348 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:32] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.005
+2025-05-29 03:45:32,367 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:32] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.016 0.006
+2025-05-29 03:45:32,387 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:32] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.028 0.015
+2025-05-29 03:45:34,139 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:45:34,141 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:45:34,142 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:45:34,741 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:45:35,059 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-29 03:45:35,064 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-29 03:45:35,080 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-29 03:45:35,082 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-29 03:45:35,619 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-29 03:45:35,619 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-29 03:45:35,646 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:35,646 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:35,647 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:35,649 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-29 03:45:35,747 1 WARNING soe_fixed_asste odoo.modules.loading: File views/aaset_loans_views.xml is imported twice in module soe_fixed_assets data 
+2025-05-29 03:45:35,747 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-29 03:45:35,769 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-29 03:45:35,889 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-29 03:45:35,894 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 03:45:35,909 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_views.xml 
+2025-05-29 03:45:35,924 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_detail_status_views.xml 
+2025-05-29 03:45:35,936 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 03:45:35,947 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/report/loan_report/template.xml 
+2025-05-29 03:45:35,963 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: module soe_fixed_assets: no translation for language es_ES 
+2025-05-29 03:45:35,969 1 WARNING soe_fixed_asste odoo.modules.loading: The models ['soe_fixed_assets.technical_report_request_detail'] have no access rules in module soe_fixed_assets, consider adding some, like:
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+soe_fixed_assets.access_soe_fixed_assets_technical_report_request_detail,access_soe_fixed_assets_technical_report_request_detail,soe_fixed_assets.model_soe_fixed_assets_technical_report_request_detail,base.group_user,1,0,0,0 
+2025-05-29 03:45:35,974 1 INFO soe_fixed_asste odoo.modules.loading: Module soe_fixed_assets loaded in 0.35s, 505 queries (+505 other) 
+2025-05-29 03:45:35,981 1 INFO soe_fixed_asste odoo.modules.loading: 13 modules loaded in 0.36s, 505 queries (+505 extra) 
+2025-05-29 03:45:36,004 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:36,005 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:36,005 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:36,022 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:36,023 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:36,023 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:45:36,075 1 INFO soe_fixed_asste odoo.modules.registry: verifying fields for every extended model 
+2025-05-29 03:45:36,280 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-29 03:45:36,283 1 INFO soe_fixed_asste odoo.modules.registry: Registry changed, signaling through the database 
+2025-05-29 03:45:36,284 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 1.230s 
+2025-05-29 03:45:36,285 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-05-29 03:45:36,289 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4332 1.048 1.105
+2025-05-29 03:45:36,305 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-29 03:45:36,461 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "GET /odoo HTTP/1.1" 200 - 76 0.018 0.139
+2025-05-29 03:45:36,539 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.003
+2025-05-29 03:45:36,568 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.007
+2025-05-29 03:45:36,569 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.006 0.008
+2025-05-29 03:45:36,570 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "POST /web/action/load HTTP/1.1" 200 - 10 0.009 0.005
+2025-05-29 03:45:36,589 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2025-05-29 03:45:36,606 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "POST /web/dataset/call_kw/soe_fixed_assets.quality/get_views HTTP/1.1" 200 - 21 0.007 0.011
+2025-05-29 03:45:36,620 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 03:45:36,621 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:36] "POST /web/dataset/call_kw/soe_fixed_assets.quality/web_search_read HTTP/1.1" 200 - 3 0.003 0.003
+2025-05-29 03:45:38,165 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:38] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 03:45:39,473 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:39] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.005
+2025-05-29 03:45:39,500 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:39] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/get_views HTTP/1.1" 200 - 18 0.005 0.010
+2025-05-29 03:45:39,509 1 INFO soe_fixed_asste odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: soe_fixed_assets.technical_report_request_detail 
+2025-05-29 03:45:39,513 1 WARNING soe_fixed_asste odoo.http: No puede ingresar a los registros 'Detalles de la solicitud de informe tecnico' (soe_fixed_assets.technical_report_request_detail)
+
+Ningún grupo actualmente permite esta operación.
+
+Póngase en contacto con su administrador para solicitar acceso si es necesario. 
+2025-05-29 03:45:39,514 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:39] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 5 0.002 0.006
+2025-05-29 03:45:39,527 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:45:39] "POST /web/dataset/call_kw/soe_fixed_assets.quality/web_search_read HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-29 03:47:05,316 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-05-29 03:47:05,316 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-05-29 03:47:05,412 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 5 connections  
+2025-05-29 03:47:07,388 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-05-29 03:47:07,389 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-05-29 03:47:07,389 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-05-29 03:47:07,389 1 INFO ? odoo: database: odoo@db:5432 
+2025-05-29 03:47:07,625 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-05-29 03:47:07,660 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-05-29 03:47:07,875 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on d3f5575a3f7c:8069 
+2025-05-29 03:47:11,812 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-05-29 03:47:11,817 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-05-29 03:47:11,828 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-29 03:47:11,834 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-05-29 03:47:12,259 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.42s, 0 queries (+0 extra) 
+2025-05-29 03:47:12,282 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:12,282 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:12,283 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:12,288 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-05-29 03:47:12,290 1 INFO ? odoo.modules.registry: Registry loaded in 0.491s 
+2025-05-29 03:47:12,291 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-29 03:47:12,307 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:12] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 20 0.010 0.499
+2025-05-29 03:47:12,609 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-05-29 03:47:14,065 1 WARNING soe_fixed_asste odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-05-29 03:47:14,227 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "GET /odoo/action-143 HTTP/1.1" 200 - 74 0.021 0.757
+2025-05-29 03:47:14,305 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.003 0.004
+2025-05-29 03:47:14,320 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.005
+2025-05-29 03:47:14,355 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.008 0.011
+2025-05-29 03:47:14,358 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.011
+2025-05-29 03:47:14,808 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-05-29 03:47:14,817 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.477
+2025-05-29 03:47:14,840 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "POST /web/dataset/call_kw/soe_fixed_assets.quality/get_views HTTP/1.1" 200 - 22 0.006 0.010
+2025-05-29 03:47:14,853 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2025-05-29 03:47:14,854 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:14] "POST /web/dataset/call_kw/soe_fixed_assets.quality/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2025-05-29 03:47:15,991 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:15] "POST /web/action/load HTTP/1.1" 200 - 10 0.003 0.005
+2025-05-29 03:47:16,049 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:16] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 52 0.014 0.025
+2025-05-29 03:47:16,068 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.001 0.011
+2025-05-29 03:47:16,077 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:16] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.013
+2025-05-29 03:47:16,096 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:16] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 51 0.017 0.022
+2025-05-29 03:47:16,403 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:16] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2025-05-29 03:47:18,033 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:47:18,033 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:47:18,034 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['soe_fixed_assets'] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:47:18,626 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user williamswaz18@gmail.com #2 via 172.19.0.1 
+2025-05-29 03:47:18,955 1 INFO soe_fixed_asste odoo.modules.loading: loading 1 modules... 
+2025-05-29 03:47:18,960 1 INFO soe_fixed_asste odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-05-29 03:47:18,981 1 INFO soe_fixed_asste odoo.modules.loading: updating modules list 
+2025-05-29 03:47:18,983 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 172.19.0.1 
+2025-05-29 03:47:19,542 1 INFO soe_fixed_asste odoo.modules.loading: loading 13 modules... 
+2025-05-29 03:47:19,542 1 INFO soe_fixed_asste odoo.modules.loading: Loading module soe_fixed_assets (2/13) 
+2025-05-29 03:47:19,569 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,570 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,570 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,573 1 INFO soe_fixed_asste odoo.modules.registry: module soe_fixed_assets: creating or updating database tables 
+2025-05-29 03:47:19,654 1 WARNING soe_fixed_asste odoo.modules.loading: File views/aaset_loans_views.xml is imported twice in module soe_fixed_assets data 
+2025-05-29 03:47:19,654 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/security/ir.model.access.csv 
+2025-05-29 03:47:19,681 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/views.xml 
+2025-05-29 03:47:19,800 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/templates.xml 
+2025-05-29 03:47:19,806 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 03:47:19,821 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_views.xml 
+2025-05-29 03:47:19,836 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/technical_report_request_detail_status_views.xml 
+2025-05-29 03:47:19,849 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/views/aaset_loans_views.xml 
+2025-05-29 03:47:19,861 1 INFO soe_fixed_asste odoo.modules.loading: loading soe_fixed_assets/report/loan_report/template.xml 
+2025-05-29 03:47:19,876 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: module soe_fixed_assets: no translation for language es_ES 
+2025-05-29 03:47:19,886 1 INFO soe_fixed_asste odoo.modules.loading: Module soe_fixed_assets loaded in 0.34s, 510 queries (+510 other) 
+2025-05-29 03:47:19,893 1 INFO soe_fixed_asste odoo.modules.loading: 13 modules loaded in 0.35s, 510 queries (+510 extra) 
+2025-05-29 03:47:19,915 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,916 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,916 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,934 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,934 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.acquisition.asset_id: unknown parameter 'options', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:19,935 1 WARNING soe_fixed_asste odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-05-29 03:47:20,362 1 INFO soe_fixed_asste odoo.modules.registry: verifying fields for every extended model 
+2025-05-29 03:47:20,562 1 INFO soe_fixed_asste odoo.modules.loading: Modules loaded. 
+2025-05-29 03:47:20,565 1 INFO soe_fixed_asste odoo.modules.registry: Registry changed, signaling through the database 
+2025-05-29 03:47:20,566 1 INFO soe_fixed_asste odoo.modules.registry: Registry loaded in 1.617s 
+2025-05-29 03:47:20,567 1 INFO soe_fixed_asste odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-05-29 03:47:20,571 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "POST /web/dataset/call_button/ir.module.module/button_immediate_upgrade HTTP/1.1" 200 - 4337 1.401 1.141
+2025-05-29 03:47:20,586 1 INFO soe_fixed_asste odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-05-29 03:47:20,747 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "GET /odoo HTTP/1.1" 200 - 76 0.018 0.144
+2025-05-29 03:47:20,823 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.001 0.003
+2025-05-29 03:47:20,850 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "POST /web/action/load HTTP/1.1" 200 - 10 0.008 0.007
+2025-05-29 03:47:20,851 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.008 0.007
+2025-05-29 03:47:20,851 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.009
+2025-05-29 03:47:20,874 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.005 0.004
+2025-05-29 03:47:20,882 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "POST /web/dataset/call_kw/soe_fixed_assets.quality/get_views HTTP/1.1" 200 - 21 0.007 0.011
+2025-05-29 03:47:20,897 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2025-05-29 03:47:20,898 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:20] "POST /web/dataset/call_kw/soe_fixed_assets.quality/web_search_read HTTP/1.1" 200 - 3 0.002 0.003
+2025-05-29 03:47:22,480 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:22] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-05-29 03:47:22,694 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:22] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.005
+2025-05-29 03:47:22,722 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:22] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/get_views HTTP/1.1" 200 - 19 0.005 0.011
+2025-05-29 03:47:22,734 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:22] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_search_read HTTP/1.1" 200 - 5 0.002 0.003
+2025-05-29 03:47:28,371 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:28] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_requests/web_read HTTP/1.1" 200 - 3 0.001 0.003
+2025-05-29 03:47:31,273 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:31] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/onchange HTTP/1.1" 200 - 2 0.001 0.003
+2025-05-29 03:47:32,523 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:32] "POST /web/dataset/call_kw/soe_fixed_assets.asset/name_search HTTP/1.1" 200 - 3 0.003 0.003
+2025-05-29 03:47:36,453 1 INFO soe_fixed_asste werkzeug: 172.19.0.1 - - [29/May/2025 03:47:36] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail_status/name_search HTTP/1.1" 200 - 3 0.001 0.003
