@@ -410,10 +410,10 @@ x
     <menuitem name="Prestamos" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_3"
               action="soe_fixed_assets.action_asset_loans_window"/>
 
-    <menuitem name="Prestamos" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_4"
+    <menuitem name="Estados de las solicitudes de informe tecnico" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_4"
               action="soe_fixed_assets.action_technical_report_request_detail_status_window"/>
 
-    <menuitem name="Prestamos" id="soe_fixed_assets.menu_9_group_list" parent="soe_fixed_assets.menu_4"
+    <menuitem name="Solicitudes de informe técnico" id="soe_fixed_assets.menu_10_group_list" parent="soe_fixed_assets.menu_4"
               action="soe_fixed_assets.action_technical_report_requests_window"/>
   </data>
 </odoo>

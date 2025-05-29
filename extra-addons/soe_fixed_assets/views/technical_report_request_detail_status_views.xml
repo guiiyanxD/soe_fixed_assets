@@ -1,6 +1,6 @@
 <odoo>
     <data>
-    <record model="ir.ui.view" id="soe_fixed_assets.technical_report_request_detail_status">
+    <record model="ir.ui.view" id="soe_fixed_assets.technical_report_request_detail_status_list">
           <field name="name">fixed assets technical report request detail status list</field>
           <field name="model">soe_fixed_assets.technical_report_request_detail_status</field>
           <field name="arch" type="xml">
@@ -11,7 +11,7 @@
           </field>
         </record>
 
-    <record model="ir.ui.view" id="soe_fixed_assets.technical_report_request_detail_status">
+    <record model="ir.ui.view" id="soe_fixed_assets.technical_report_request_detail_status_form">
       <field name="name">fixed assets technical report request detail status form</field>
       <field name="model">soe_fixed_assets.technical_report_request_detail_status</field>
       <field name="arch" type="xml">
