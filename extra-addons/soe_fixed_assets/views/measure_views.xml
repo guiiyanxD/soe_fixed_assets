@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <!-- MEASURE -->
+    <record model="ir.ui.view" id="soe_fixed_assets.measure_list">
+      <field name="name">fixed assets measure list</field>
+      <field name="model">soe_fixed_assets.measure</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="abbreviation"/>
+          <field name="asset_id" string="Activo Fijo"/>
+
+        </list>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="soe_fixed_assets.measure_form">
+      <field name="name">fixed assets measure form</field>
+      <field name="model">soe_fixed_assets.measure</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="abbreviation"/>
+            <field name="asset_id" string="Activo Fijo"/>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    </data>
+</odoo>

@@ -3,6 +3,7 @@
 from . import models
 from . import assets
 from . import acquisitions
+from . import acquisition_detail
 from . import subsidiaries
 from . import groups
 from . import categories

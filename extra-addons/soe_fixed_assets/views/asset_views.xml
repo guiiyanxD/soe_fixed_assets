@@ -1,0 +1,44 @@
+<odoo>
+    <data>
+       <!-- ACTIVO FIJO -->
+    <record model="ir.ui.view" id="soe_fixed_assets.asset_list">
+      <field name="name">fixed assets asset list</field>
+      <field name="model">soe_fixed_assets.asset</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="code"/>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="cost"/>
+          <header>
+<!--            <button name="action_ver_acta" type="object" string="Ver Acta de Recepción" class="oe_highlight"/>-->
+        </header>
+        </list>
+
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.asset_form">
+      <field name="name">fixed assets asset form</field>
+      <field name="model">soe_fixed_assets.asset</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+          <field name="code"/>
+          <field name="name"/>
+          <field name="brand"/>
+          <field name="description"/>
+          <field name="cost"/>
+          <field name="area_id"/>
+          <field name="group_id"/>
+          <field name="measure_id"/>
+          <field name="quality_id"/>
+          <field name="manager_id"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    </data>
+</odoo>

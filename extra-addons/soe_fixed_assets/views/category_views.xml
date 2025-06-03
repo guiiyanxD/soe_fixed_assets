@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- CATEGORY -->
+        <record model="ir.ui.view" id="soe_fixed_assets.category_list"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+          <field name="name">fixed assets category list</field>
+          <field name="model">soe_fixed_assets.category</field> <!--El modelo al que pertenece esta vista -->
+          <field name="arch" type="xml">
+            <list>
+              <field name="name"/>
+              <field name="lifespan"/>
+              <field name="coefficient"/>
+              <field name="group_id"/>
+            </list>
+          </field>
+        </record>
+
+        <record model="ir.ui.view" id="soe_fixed_assets.category_form">
+          <field name="name">fixed assets category form</field>
+          <field name="model">soe_fixed_assets.category</field>
+          <field name="arch" type="xml">
+            <form>
+              <group>
+                <field name="name"/>
+                <field name="lifespan"/>
+                <field name="coefficient"/>
+                <field name="group_id"/>
+              </group>
+            </form>
+          </field>
+        </record>
+
+    </data>
+</odoo>

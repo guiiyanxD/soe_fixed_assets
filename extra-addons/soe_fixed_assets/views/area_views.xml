@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+       <!-- AREA -->
+    <record model="ir.ui.view" id="soe_fixed_assets.area_list">
+      <field name="name">fixed assets area list</field>
+      <field name="model">soe_fixed_assets.area</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+<!--          <field name="example"/>-->
+          <field name="subsidiary_id"/>
+          <field name="manager_id"/>
+          <field name="description"/>
+          <field name="asset_id" string="Activo Fijo"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.area_form">
+      <field name="name">fixed assets area form</field>
+      <field name="model">soe_fixed_assets.area</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+          <field name="name"/>
+          <field name="subsidiary_id"/>
+          <field name="manager_id"/>
+          <field name="description"/>
+          <field name="asset_id" string="Activo Fijo"/>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    </data>
+</odoo>

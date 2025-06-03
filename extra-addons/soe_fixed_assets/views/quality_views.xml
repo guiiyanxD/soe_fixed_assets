@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <!-- QUALITY -->
+    <record model="ir.ui.view" id="soe_fixed_assets.quality_list"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+      <field name="name">fixed assets quality list</field>
+      <field name="model">soe_fixed_assets.quality</field> <!--El modelo al que pertenece esta vista -->
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="description"/>
+          <field name="created_by"/>
+
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.quality_form"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+      <field name="name">fixed assets quality form</field>
+      <field name="model">soe_fixed_assets.quality</field> <!--El modelo al que pertenece esta vista -->
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="created_by"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    </data>
+</odoo>

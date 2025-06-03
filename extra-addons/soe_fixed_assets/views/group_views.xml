@@ -1,0 +1,33 @@
+<odoo>
+    <data>
+        <!-- GROUP -->
+    <record model="ir.ui.view" id="soe_fixed_assets.group_list"> <!-- Cada vista tambien es almacenado como modelo por lo tanto c/u debe tener un id unico-->
+      <field name="name">fixed assets group list</field>
+      <field name="model">soe_fixed_assets.group</field> <!--El modelo al que pertenece esta vista -->
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="category_id"/>
+          <field name="asset_id" string="Activo Fijo"/>
+        </list>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="soe_fixed_assets.group_form">
+      <field name="name">fixed assets group form</field>
+      <field name="model">soe_fixed_assets.group</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="category_id"/>
+            <field name="asset_id" string="Activo Fijo"/>
+
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    </data>
+</odoo>

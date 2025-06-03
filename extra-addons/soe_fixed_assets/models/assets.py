@@ -1,5 +1,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError
+from odoo.fields import One2many, Many2many, Many2one
+
 
 class Asset(models.Model):
     _name = 'soe_fixed_assets.asset'
@@ -7,10 +9,9 @@ class Asset(models.Model):
 
     code = fields.Char(string="Código", required=True, help="Escriba el código del activo fijo")
 
-    acquisition_id = fields.Many2one(
-        "soe_fixed_assets.acquisition",  #TODO: CAMBIAR EL NOMBRE DEL IDENTIFICADOR
-        string="Nro Acta de Recepcion",
-        help="Seleccione el acta de Recepcion"
+    acquisition_detail_id = fields.Many2one(
+        "soe_fixed_assets.acquisition_detail",
+        string = "Activos fijos alta detail",
     )
 
     area_id = fields.Many2one(
@@ -74,16 +75,16 @@ class Asset(models.Model):
         super().write(vals)
         return True
 
-    def action_ver_acta(self):
-        """
-        Este método abre la vista formulario del acta de recepción relacionada con el activo fijo.
-        """
-        self.ensure_one()  # Asegura que self es un solo registro
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'Acta de Recepción',
-            'view_mode': 'form',
-            'res_model': 'soe_fixed_assets.acquisition',
-            'res_id': self.acquisition_id.id,  # Abre el registro específico del acta
-            'target': 'current',  # La vista se abre en la misma ventana
-        }
+    # def action_ver_acta(self):
+    #     """
+    #     Este método abre la vista formulario del acta de recepción relacionada con el activo fijo.
+    #     """
+    #     self.ensure_one()  # Asegura que self es un solo registro
+    #     return {
+    #         'type': 'ir.actions.act_window',
+    #         'name': 'Acta de Recepción',
+    #         'view_mode': 'form',
+    #         'res_model': 'soe_fixed_assets.acquisition',
+    #         'res_id': self.acquisition_id.id,  # Abre el registro específico del acta
+    #         'target': 'current',  # La vista se abre en la misma ventana
+    #     }

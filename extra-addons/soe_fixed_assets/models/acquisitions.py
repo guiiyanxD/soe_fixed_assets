@@ -4,18 +4,46 @@ class Acquisition(models.Model):
     _name = 'soe_fixed_assets.acquisition'
     _description = 'soe_fixed_assets.acquisition'
 
-    nro_cite = fields.Char(string="Nro de Acta de Recepcion ", required=True, help="Escriba el numero de cite",
-                            regex=r'^\d{4}/20\d{2}$') #TODO: Comprobar la validacion de la expresion regular
-    pdf_file = fields.Binary(string='Archivo PDF', required=True, attachment=True)
-    pdf_name = fields.Char(string="Archivo PDF del acta de entrega del activo fijo ", required=True,
-                            help="Cargue la imagen del acta de entrega del activo fijo")
-    created_at = fields.Date(string="Fecha de carga", required=True,
-                            help="Fecha de creacion del acta de entrega del activo fijo", default=fields.Date.today)
-    asset_id = fields.Many2one("soe_fixed_assets.asset", string="Activo fijo",
-                               options='{"no_create": True}', ondelete='cascade')
+    acquisition_detail_id = fields.One2many(
+        "soe_fixed_assets.acquisition_detail",
+        "acquisition_id",
+        string="Detalle del alta de activos fijos",
+        required=True
+    )
+
+    nro_cite = fields.Char(
+        string="Nro de Acta de Recepcion ",
+        required=True, help="Escriba el numero de cite",
+        regex=r'^\d{4}/20\d{2}$'
+    ) #TODO: Comprobar la validacion de la expresion regular
+
+    pdf_file = fields.Binary(
+        string='Archivo PDF',
+        required=True,
+        attachment=True
+    )
+    pdf_name = fields.Char(
+        string="Archivo PDF del acta de entrega del activo fijo ",
+        required=True,
+        help="Cargue la imagen del acta de entrega del activo fijo"
+    )
+    date_received = fields.Date(
+        string="Fecha de recepcion del activo",
+        required=True,
+        help="Fecha de recepcion del activo",
+        default=fields.Date.today
+    )
+
+    acquisition_type = fields.Selection([
+        ('reasignacion', 'Reasignacion'),
+        ('acquisition', 'Compra'),
+    ],  string="Tipo de alta de activos fijo",
+        help="Seleccione el tipo de alta de activos fijo que corresponda"
+    )
+
     _sql_constraints = [
         ('unique_cite', 'unique(nro_cite)', 'El Nro de Cite debe ser unico'),
-        ('unique_asset', 'unique(asset_id)', 'Este activo fijo ya fue vinculado a otra acta de recepcion'),
+        # ('unique_asset', 'unique(asset_id)', 'Este activo fijo ya fue vinculado a otra acta de recepcion'),
         ]
 
     @api.model_create_multi
