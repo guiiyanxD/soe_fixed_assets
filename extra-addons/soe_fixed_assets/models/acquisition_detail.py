@@ -7,7 +7,7 @@ class AcquisitionDetail(models.Model):
     asset_id = fields.One2many(
         "soe_fixed_assets.asset",
         "acquisition_detail_id",
-        string = "Activos fijos",
+        string = "Activos fijos adquiridos",
         required=True
     )
 
