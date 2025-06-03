@@ -32858,3 +32858,33 @@ TypeError: _String.__init__() got multiple values for argument 'string'
 2025-06-03 15:56:15,165 1 INFO ? odoo.service.server: Initiating shutdown 
 2025-06-03 15:56:15,165 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2025-06-03 15:56:15,616 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 3 connections  
+2025-06-03 15:56:16,936 1 INFO ? odoo: Odoo version 18.0-20250520 
+2025-06-03 15:56:16,937 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-06-03 15:56:16,937 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-06-03 15:56:16,938 1 INFO ? odoo: database: odoo@db:5432 
+2025-06-03 15:56:17,130 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-06-03 15:56:17,136 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-06-03 15:56:17,270 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on f5fd1c35c339:8069 
+2025-06-03 15:56:17,663 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-06-03 15:56:17,668 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-06-03 15:56:17,680 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-06-03 15:56:17,682 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-06-03 15:56:18,029 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.35s, 0 queries (+0 extra) 
+2025-06-03 15:56:18,053 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-06-03 15:56:18,054 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-06-03 15:56:18,059 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-06-03 15:56:18,062 1 INFO ? odoo.modules.registry: Registry loaded in 0.411s 
+2025-06-03 15:56:18,063 1 INFO soe_fixed_assets odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-06-03 15:56:17,863 1 WARNING soe_fixed_assets odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-06-03 15:56:17,980 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:17] "GET /odoo/action-89 HTTP/1.1" 200 - 99 0.035 0.295
+2025-06-03 15:56:18,055 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.002 0.004
+2025-06-03 15:56:18,096 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.013 0.013
+2025-06-03 15:56:18,101 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.017
+2025-06-03 15:56:18,105 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.008 0.018
+2025-06-03 15:56:18,389 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'quality', defaulting to LGPL-3 
+2025-06-03 15:56:18,401 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "POST /web/action/load HTTP/1.1" 200 - 10 0.004 0.320
+2025-06-03 15:56:18,423 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-06-03 15:56:18,435 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "POST /web/dataset/call_kw/soe_fixed_assets.quality/get_views HTTP/1.1" 200 - 23 0.010 0.016
+2025-06-03 15:56:18,449 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.003
+2025-06-03 15:56:18,450 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:18] "POST /web/dataset/call_kw/soe_fixed_assets.quality/web_search_read HTTP/1.1" 200 - 3 0.002 0.004
+2025-06-03 15:56:20,099 1 INFO soe_fixed_assets werkzeug: 172.20.0.1 - - [03/Jun/2025 15:56:20] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
