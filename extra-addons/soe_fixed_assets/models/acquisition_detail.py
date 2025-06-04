@@ -8,13 +8,11 @@ class AcquisitionDetail(models.Model):
         "soe_fixed_assets.asset",
         "acquisition_detail_id",
         string = "Activos fijos adquiridos",
-        required=True
     )
 
     acquisition_id = fields.Many2one(
         "soe_fixed_assets.acquisition",
-        string = "Activos fijos documento alta",
-        required=True,
+        string = "Documento de alta del activo fijo",
     )
 
     # asset_code = fields.Char(
@@ -37,6 +35,16 @@ class AcquisitionDetail(models.Model):
     #     string="Calidad",
     #     required=True
     # )
-    comments = fields.Text(
+    comments = fields.Char(
         string="Comentarios",
     )
+
+    def open_acquisition_modal(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Nuevo Documento de Alta',
+            'res_model': 'soe_fixed_assets.acquisition',
+            'view_mode': 'form',
+            'target': 'new',
+
+        }

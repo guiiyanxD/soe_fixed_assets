@@ -39,31 +39,18 @@
             </group>
             </group>
 
-            <notebook>
+            <!--<notebook>
                 <page string="Acitvo(s) Fijo(s)">
                     <field name="acquisition_detail_id"/>
                     <form string="Detale del alta">
                         <sheet>
                             <group>
                             </group>
-                            <field name="asset_id">
-                                <tree editable="bottom">
-                                    <field name="code"/>
-                                    <field name="name"/>
-                                    <field name="brand"/>
-                                    <field name="description"/>
-                                    <field name="cost"/>
-                                    <field name="area_id"/>
-                                    <field name="group_id"/>
-                                    <field name="measure_id"/>
-                                    <field name="quality_id"/>
-                                    <field name="manager_id"/>
-                                </tree>
-                            </field>
+
                         </sheet>
                     </form>
                 </page>
-            </notebook>
+            </notebook>-->
 
           </sheet>
         </form>

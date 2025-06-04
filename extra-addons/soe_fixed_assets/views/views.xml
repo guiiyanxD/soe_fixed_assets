@@ -104,6 +104,17 @@
       </field>
     </record>
 
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_acquisition_detail_window">
+      <field name="name">Detalles de un Alta de activos fijos</field>
+      <field name="res_model">soe_fixed_assets.acquisition_detail</field>
+      <field name="view_mode">list</field>
+      <field name="help" type="html">
+        <p class="o_view_nocontent_smiling_face">
+            ¡Crea un alta de los de activos fijos!
+        </p>
+      </field>
+    </record>
+
 
     <!-- server action to the one above -->
 <!--
@@ -167,5 +178,8 @@ x
 
     <menuitem name="Detales de Solicitudes de informe técnico" id="soe_fixed_assets.menu_12_group_list" parent="soe_fixed_assets.menu_4"
               action="soe_fixed_assets.action_technical_report_requests_detail_window"/>
+
+    <menuitem name="Detales de Alta" id="soe_fixed_assets.menu_13_group_list" parent="soe_fixed_assets.menu_4"
+              action="soe_fixed_assets.action_acquisition_detail_window"/>
   </data>
 </odoo>

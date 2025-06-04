@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+
+<record id="view_acquisition_detail_form" model="ir.ui.view">
+        <field name="name">soe_fixed_assets.acquisition_detail_form</field>
+        <field name="model">soe_fixed_assets.acquisition_detail</field>
+        <field name="arch" type="xml">
+            <form string="Detalle del Alta de Activos Fijos">
+                <sheet>
+                    <div>
+                        <h1>Formulario de alta</h1>
+                    </div>
+
+
+                    <notebook>
+                        <!-- Pestaña para ver/editar datos del documento de adquisición -->
+                        <page string="Documento de Alta">
+                            <div>
+                                <h3>Datos de la documentacion recibida</h3>
+                            </div>
+                            <header>
+                                <button name="open_acquisition_modal"
+                                        string="Nueva Acta"
+                                        type="object"
+                                        class="oe_highlight"/>
+                            </header>
+                        </page>
+
+                        <!-- Pestaña para ingresar activos fijos relacionados -->
+                        <page string="Activos Fijos">
+                            <field name="asset_id">
+
+
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    </data>
+</odoo>
