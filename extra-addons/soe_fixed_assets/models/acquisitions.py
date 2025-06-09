@@ -4,11 +4,11 @@ class Acquisition(models.Model):
     _name = 'soe_fixed_assets.acquisition'
     _description = 'soe_fixed_assets.acquisition'
 
+
     acquisition_detail_id = fields.One2many(
-        "soe_fixed_assets.acquisition_detail",
-        "acquisition_id",
-        string="Detalle del alta de activos fijos",
-        required=True
+        'soe_fixed_assets.acquisition_detail',
+        'acquisition_id',
+        string='Detalle del Acta de Activos Fijos',
     )
 
     nro_cite = fields.Char(
@@ -28,16 +28,16 @@ class Acquisition(models.Model):
         help="Cargue la imagen del acta de entrega del activo fijo"
     )
     date_received = fields.Date(
-        string="Fecha de recepcion del activo",
+        string="Fecha de recepción",
         required=True,
-        help="Fecha de recepcion del activo",
+        help="Fecha de recepción del activo",
         default=fields.Date.today
     )
 
     acquisition_type = fields.Selection([
-        ('reasignacion', 'Reasignacion'),
+        ('reasignacion', 'Reasignación'),
         ('acquisition', 'Compra'),
-    ],  string="Tipo de alta de activos fijo",
+    ],  string="Tipo",
         help="Seleccione el tipo de alta de activos fijo que corresponda"
     )
 
@@ -67,14 +67,14 @@ class Acquisition(models.Model):
                 vals['pdf_name'] = f"{nro_cite}.pdf"
         return super().write(vals)
 
-    def action_registrar_activo_fijo(self):
-        self.ensure_one()
-        return {
-            'name': 'Registrar Activo Fijo',
-            'type': 'ir.actions.act_window',
-            'res_model': 'soe_fixed_assets.asset',
-            'view_mode': 'form',
-            'context': {'default_acquisition_id': self.id},  # Pasar el ID del acta al formulario del activo
-            'target': 'new',
-        }
+    # def action_registrar_activo_fijo(self):
+    #     self.ensure_one()
+    #     return {
+    #         'name': 'Registrar Activo Fijo',
+    #         'type': 'ir.actions.act_window',
+    #         'res_model': 'soe_fixed_assets.asset',
+    #         'view_mode': 'form',
+    #         'context': {'default_acquisition_id': self.id},  # Pasar el ID del acta al formulario del activo
+    #         'target': 'new',
+    #     }
 

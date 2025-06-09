@@ -11,7 +11,8 @@ class Asset(models.Model):
 
     acquisition_detail_id = fields.Many2one(
         "soe_fixed_assets.acquisition_detail",
-        string = "Activos fijos alta detail",
+        string = "Detalle del Acta",
+        ondelete='restrict',
     )
 
     area_id = fields.Many2one(
@@ -49,7 +50,8 @@ class Asset(models.Model):
         help="")
 
     _sql_constraints = [
-        ('unique_acquisition', 'unique(acquisition_id)', 'Esta Acta de Recepcion pertenece a otro activo fijo'),
+        ('unique_code', 'unique(code)', 'El Código del Activo Fijo debe ser único.'),
+        ('unique_asset_to_detail', 'unique(acquisition_detail_id, code)', 'Este activo ya está en este detalle de alta.'),
     ]
 
     @api.model_create_multi
@@ -59,14 +61,15 @@ class Asset(models.Model):
         y delega la actualización del acquisition_id al método write.
         """
         for vals in vals_list:
-            if not vals.get('acquisition_id'):
+            if not vals.get('acquisition_detail_id'):
                 raise UserError(_("No se puede crear un Activo Fijo sin un Acta de Recepción asociada."))
-        # Llama al create original para crear el activo
-        new_assets = super().create(vals_list)
-        # Actualiza el acquisition_id en la acquisition correspondiente
-        for new_asset in new_assets:
-            new_asset.acquisition_id.write({'asset_id': new_asset.id})
-        return new_assets
+        return super().create(vals_list)
+        # # Llama al create original para crear el activo
+        # new_assets = super().create(vals_list)
+        # # Actualiza el acquisition_id en la acquisition correspondiente
+        # for new_asset in new_assets:
+        #     new_asset.acquisition_detail_id.write({'asset_id': new_asset.id})
+        # return new_assets
 
     def write(self, vals):
         """

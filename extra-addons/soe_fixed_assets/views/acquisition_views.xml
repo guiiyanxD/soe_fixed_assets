@@ -8,6 +8,7 @@
         <list>
           <field name="id"/>
           <field name="nro_cite"/>
+          <field name="acquisition_type"/>
           <field name="date_received"/>
         </list>
       </field>
@@ -17,7 +18,7 @@
       <field name="name">fixed assets acquisition form</field>
       <field name="model">soe_fixed_assets.acquisition</field>
       <field name="arch" type="xml">
-        <form>
+        <form string="Acta de Recepción">
           <header>
 
 <!--              <button name="" class="oe_highlight" type="object" string="Registrar Activo Fijo"-->
@@ -25,32 +26,63 @@
             </header>
           <sheet>
               <div class="oe_title">
-                  <h1>ACTA DE RECEPCION</h1>
-                  <h5>Activos fijos</h5>
+                  <h1>Nro. Cite:<field name="nro_cite"/></h1>
               </div>
             <group>
-              <group>
-              <field name="nro_cite"/>
-              <field name="date_received"/>
-              <field name="acquisition_type"/>
-            </group>
-            <group>
-                <field name="pdf_file" widget="pdf_viewer" filename="pdf_name"/>
-            </group>
+                <group>
+                    <field name="date_received"/>
+                    <field name="acquisition_type"/>
+                </group>
+                <group>
+                    <field name="pdf_file" widget="pdf_viewer" filename="pdf_name"/>
+                </group>
             </group>
 
-            <!--<notebook>
-                <page string="Acitvo(s) Fijo(s)">
-                    <field name="acquisition_detail_id"/>
-                    <form string="Detale del alta">
-                        <sheet>
-                            <group>
-                            </group>
+            <notebook>
+                    <page string="Detalles del Acta">
+                        <field name="acquisition_detail_id">
+                            <list string="Detalles del Alta" editable="top">
 
-                        </sheet>
-                    </form>
-                </page>
-            </notebook>-->
+                                <!-- No se muestra el asset_ids aquí directamente porque sería un One2many dentro de un One2many -->
+                                <!-- Se gestiona en el formulario del detalle -->
+                            </list>
+                            <form string="Detalle del Acta">
+                                <!-- Este es el formulario pop-up para crear/editar un AcquisitionDetail -->
+                                <group>
+                                    <field name="comments"/>
+                                    <!-- Aquí está el One2many de Assets dentro del AcquisitionDetail -->
+                                    <field name="asset_id"
+                                           create="can_add_multiple_assets"
+                                           delete="can_add_multiple_assets">
+
+                                        <!--<tree string="Activos" editable="bottom">
+                                            <field name="name"/>
+                                            <field name="code"/>
+                                            <field name="brand"/>
+                                            <field name="cost"/>
+                                        </tree>-->
+                                        <form string="Activo Fijo">
+                                            <group>
+                                                <field name="code"/>
+                                                <field name="name"/>
+                                                <field name="brand"/>
+                                                <field name="description"/>
+                                                <field name="cost"/>
+                                            </group>
+                                            <group>
+                                                <field name="area_id"/>
+                                                <field name="group_id"/>
+                                                <field name="measure_id"/>
+                                                <field name="quality_id"/>
+                                                <field name="manager_id"/>
+                                            </group>
+                                        </form>
+                                    </field>
+                                </group>
+                            </form>
+                        </field>
+                    </page>
+                </notebook>
 
           </sheet>
         </form>

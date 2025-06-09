@@ -1,8 +1,12 @@
 from odoo import models, fields, api
+from odoo.exceptions import UserError, ValidationError
+
 
 class AcquisitionDetail(models.Model):
     _name = 'soe_fixed_assets.acquisition_detail'
     _description = 'Detail of Acquisition'
+
+    name = fields.Char(string='Acquisition Name')
 
     asset_id = fields.One2many(
         "soe_fixed_assets.asset",
@@ -12,39 +16,40 @@ class AcquisitionDetail(models.Model):
 
     acquisition_id = fields.Many2one(
         "soe_fixed_assets.acquisition",
-        string = "Documento de alta del activo fijo",
+        string="Documento de Alta",
+        required=True,
+        ondelete='cascade',
     )
-
-    # asset_code = fields.Char(
-    #     'asset_id.code',
-    #     string="Codigo",
-    #     required=True
-    # )
-    # asset_brand = fields.Char(
-    #     'asset_id.brand',
-    #     string="Marca",
-    #     required=True
-    # )
-    # asset_description = fields.Char(
-    #     'asset_id.description',
-    #     string="Descripcion",
-    #     required=True
-    # )
-    # asset_quality = fields.Char(
-    #     'asset_id.quality',
-    #     string="Calidad",
-    #     required=True
-    # )
     comments = fields.Char(
         string="Comentarios",
     )
+    can_add_multiple_assets = fields.Boolean(
+        compute="_compute_can_add_multiple_assets",
+        store=False,
+        string="Permitir Múltiples Activos",
+    )
+
+    @api.depends('acquisition_id.acquisition_type')
+    def _compute_can_add_multiple_assets(self):
+        for rec in self:
+            # Si hay una adquisición vinculada y su tipo es 'reasignacion', entonces True
+            rec.can_add_multiple_assets = False  # Valor por defecto
+            if rec.acquisition_id and rec.acquisition_id.acquisition_type == 'reasignacion':
+                rec.can_add_multiple_assets = True
 
     def open_acquisition_modal(self):
+        if self.acquisition_id:
+            raise UserError("Ya existe un documento de alta relacionado a este detalle.")
         return {
             'type': 'ir.actions.act_window',
             'name': 'Nuevo Documento de Alta',
             'res_model': 'soe_fixed_assets.acquisition',
             'view_mode': 'form',
             'target': 'new',
+            'context': {
+                'default_acquisition_detail_id': self.id,
+                # 'default_name': self.acquisition_id.nro_cite,  # ← importante
+            }
 
         }
+
