@@ -51,25 +51,28 @@ class Asset(models.Model):
 
     _sql_constraints = [
         ('unique_code', 'unique(code)', 'El Código del Activo Fijo debe ser único.'),
-        ('unique_asset_to_detail', 'unique(acquisition_detail_id, code)', 'Este activo ya está en este detalle de alta.'),
     ]
+
+    # @api.model_create_multi
+    # def create(self, vals_list):
+    #     """
+    #     Sobrescribe el método create para asegurar que acquisition_id sea requerido,
+    #     y delega la actualización del acquisition_id al método write.
+    #     """
+    #     for vals in vals_list:
+    #         if not vals.get('acquisition_detail_id'):
+    #             raise UserError(_("No se puede crear un Activo Fijo sin un Acta de Recepción asociada."))
+    #     return super().create(vals_list)
+    #     # # Llama al create original para crear el activo
+    #     # new_assets = super().create(vals_list)
+    #     # # Actualiza el acquisition_id en la acquisition correspondiente
+    #     # for new_asset in new_assets:
+    #     #     new_asset.acquisition_detail_id.write({'asset_id': new_asset.id})
+    #     # return new_assets
 
     @api.model_create_multi
     def create(self, vals_list):
-        """
-        Sobrescribe el método create para asegurar que acquisition_id sea requerido,
-        y delega la actualización del acquisition_id al método write.
-        """
-        for vals in vals_list:
-            if not vals.get('acquisition_detail_id'):
-                raise UserError(_("No se puede crear un Activo Fijo sin un Acta de Recepción asociada."))
         return super().create(vals_list)
-        # # Llama al create original para crear el activo
-        # new_assets = super().create(vals_list)
-        # # Actualiza el acquisition_id en la acquisition correspondiente
-        # for new_asset in new_assets:
-        #     new_asset.acquisition_detail_id.write({'asset_id': new_asset.id})
-        # return new_assets
 
     def write(self, vals):
         """

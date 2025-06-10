@@ -40,7 +40,9 @@
 
             <notebook>
                     <page string="Detalles del Acta">
-                        <field name="acquisition_detail_id">
+                        <field name="acquisition_detail_id"
+                               create="can_add_multiple_details"
+                               delete="can_add_multiple_details">
                             <list string="Detalles del Alta" editable="top">
 
                                 <!-- No se muestra el asset_ids aquí directamente porque sería un One2many dentro de un One2many -->
@@ -51,9 +53,7 @@
                                 <group>
                                     <field name="comments"/>
                                     <!-- Aquí está el One2many de Assets dentro del AcquisitionDetail -->
-                                    <field name="asset_id"
-                                           create="can_add_multiple_assets"
-                                           delete="can_add_multiple_assets">
+                                    <field name="asset_id" options="{'no_open': False, 'no_create': False, 'no_edit': False}">
 
                                         <!--<tree string="Activos" editable="bottom">
                                             <field name="name"/>

@@ -8,15 +8,17 @@ class AcquisitionDetail(models.Model):
 
     name = fields.Char(string='Acquisition Name')
 
-    asset_id = fields.One2many(
-        "soe_fixed_assets.asset",
-        "acquisition_detail_id",
-        string = "Activos fijos adquiridos",
+    asset_id = fields.Many2one(
+        'soe_fixed_assets.asset',
+        string='Activo Fijo',
+        required=True,
+        ondelete='restrict',
+        help='Seleccione el activo fijo asociado a este detalle.',
     )
 
     acquisition_id = fields.Many2one(
         "soe_fixed_assets.acquisition",
-        string="Documento de Alta",
+        string="Acta de Recepcion",
         required=True,
         ondelete='cascade',
     )
@@ -28,6 +30,11 @@ class AcquisitionDetail(models.Model):
         store=False,
         string="Permitir Múltiples Activos",
     )
+
+    _sql_constraints = [
+        ('unique_asset_per_acquisition', 'unique(acquisition_id, code)',
+         'Este activo ya está listado en este Acta de Recepción.'),
+    ]
 
     @api.depends('acquisition_id.acquisition_type')
     def _compute_can_add_multiple_assets(self):
