@@ -5,6 +5,7 @@ from odoo.fields import One2many, Many2many, Many2one
 
 class Asset(models.Model):
     _name = 'soe_fixed_assets.asset'
+    _rec_name = 'code'
     _description = 'soe_fixed_assets.asset'
 
     code = fields.Char(string="Código", required=True, help="Escriba el código del activo fijo")
@@ -51,24 +52,9 @@ class Asset(models.Model):
 
     _sql_constraints = [
         ('unique_code', 'unique(code)', 'El Código del Activo Fijo debe ser único.'),
+        ('unique_acquisition_detail', 'unique(acquisition_detail_id)', 'Este detalle ya está asignado a otro activo.')
     ]
 
-    # @api.model_create_multi
-    # def create(self, vals_list):
-    #     """
-    #     Sobrescribe el método create para asegurar que acquisition_id sea requerido,
-    #     y delega la actualización del acquisition_id al método write.
-    #     """
-    #     for vals in vals_list:
-    #         if not vals.get('acquisition_detail_id'):
-    #             raise UserError(_("No se puede crear un Activo Fijo sin un Acta de Recepción asociada."))
-    #     return super().create(vals_list)
-    #     # # Llama al create original para crear el activo
-    #     # new_assets = super().create(vals_list)
-    #     # # Actualiza el acquisition_id en la acquisition correspondiente
-    #     # for new_asset in new_assets:
-    #     #     new_asset.acquisition_detail_id.write({'asset_id': new_asset.id})
-    #     # return new_assets
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -81,16 +67,18 @@ class Asset(models.Model):
         super().write(vals)
         return True
 
-    # def action_ver_acta(self):
-    #     """
-    #     Este método abre la vista formulario del acta de recepción relacionada con el activo fijo.
-    #     """
-    #     self.ensure_one()  # Asegura que self es un solo registro
-    #     return {
-    #         'type': 'ir.actions.act_window',
-    #         'name': 'Acta de Recepción',
-    #         'view_mode': 'form',
-    #         'res_model': 'soe_fixed_assets.acquisition',
-    #         'res_id': self.acquisition_id.id,  # Abre el registro específico del acta
-    #         'target': 'current',  # La vista se abre en la misma ventana
-    #     }
+
+
+    def action_ver_acta(self):
+        """
+        Este método abre la vista formulario del acta de recepción relacionada con el activo fijo.
+        """
+        self.ensure_one()  # Asegura que self es un solo registro
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Acta de Recepción',
+            'view_mode': 'form',
+            'res_model': 'soe_fixed_assets.acquisition',
+            'res_id': self.acquisition_detail_id.acquisition_id.id,  # Abre el registro específico del acta
+            'target': 'current',  # La vista se abre en la misma ventana
+        }

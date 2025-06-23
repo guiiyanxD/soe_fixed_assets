@@ -8,7 +8,9 @@
         <list>
           <field name="id"/>
           <field name="nro_cite"/>
-          <field name="acquisition_type"/>
+          <field name="acquisition_type" widget="badge"
+                   decoration-success="acquisition_type == 'reasignacion'"
+                   decoration-info="acquisition_type == 'compra'"/>
           <field name="date_received"/>
         </list>
       </field>

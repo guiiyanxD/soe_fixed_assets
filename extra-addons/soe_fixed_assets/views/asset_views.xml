@@ -10,8 +10,12 @@
           <field name="name"/>
           <field name="description"/>
           <field name="cost"/>
+          <field name="acquisition_detail_id" />
+
+
+
           <header>
-<!--            <button name="action_ver_acta" type="object" string="Ver Acta de Recepción" class="oe_highlight"/>-->
+            <button name="action_ver_acta" type="object" string="Ver Acta de Recepción" class="oe_highlight"/>
         </header>
         </list>
 

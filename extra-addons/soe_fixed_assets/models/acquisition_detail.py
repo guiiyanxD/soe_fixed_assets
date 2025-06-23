@@ -6,15 +6,17 @@ class AcquisitionDetail(models.Model):
     _name = 'soe_fixed_assets.acquisition_detail'
     _description = 'Detail of Acquisition'
 
-    name = fields.Char(string='Acquisition Name')
+    name = fields.Char(string="Nombre Detalle", compute="_compute_name", store=True)
 
-    asset_id = fields.Many2one(
-        'soe_fixed_assets.asset',
-        string='Activo Fijo',
+    asset_id = fields.One2many(
+        "soe_fixed_assets.asset",
+        "acquisition_detail_id",
+        string="Activo Fijo asociado",
+        help='Seleccione el activo fijo asociado a este detalle.',
         required=True,
         ondelete='restrict',
-        help='Seleccione el activo fijo asociado a este detalle.',
     )
+
 
     acquisition_id = fields.Many2one(
         "soe_fixed_assets.acquisition",
@@ -60,3 +62,14 @@ class AcquisitionDetail(models.Model):
 
         }
 
+    @api.depends('acquisition_id.nro_cite', 'asset_id.code')
+    def _compute_name(self):
+        for record in self:
+            acta = record.acquisition_id.nro_cite or ''
+            # Asegúrate que hay al menos un asset
+            if record.asset_id:
+                # Solo uno por diseño, usamos el primero
+                asset_code = record.asset_id[0].code or ''
+                record.name = f"{acta} - {asset_code}"
+            else:
+                record.name = acta
