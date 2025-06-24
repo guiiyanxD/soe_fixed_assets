@@ -20,6 +20,7 @@
                    decoration-success="acquisition_detail_id != False"/>
 
           <header>
+            <button name="action_return_asset" type="object" string="Recibir Acitvo Fijo" class="oe_highlight"/>
             <button name="action_ver_acta" type="object" string="Ver Acta de Recepción" class="oe_highlight"/>
         </header>
         </list>

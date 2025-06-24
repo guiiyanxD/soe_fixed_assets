@@ -90,18 +90,21 @@ class Asset(models.Model):
         string="Préstamo Asociado"
     )
 
-    #asset_loan_id = fields.Many2one(
-    #     "soe_fixed_assets.asset_loans",
-    #     string="Prestamo",
-    #     help="")
-
-
 
     _sql_constraints = [
         ('unique_code', 'unique(code)', 'El Código del Activo Fijo debe ser único.'),
-        ('unique_acquisition_detail', 'unique(acquisition_detail_id)', 'Este detalle ya está asignado a otro activo.')
+        ('unique_acquisition_detail', 'unique(acquisition_detail_id)', 'Este detalle ya está asignado a otro activo.'),
+        ('unique_loan_detail', 'unique(loan_detail_id)', 'Este detalle de prestamo ya esta asignado a otro activo')
     ]
 
+
+    def action_return_asset(self):
+        self.ensure_one()
+        if self.loan_status == 'unavailable' and self.loan_detail_id.loan_detail_status == 'loaned':
+            self.write({'loan_status': 'available'})
+            self.loan_detail_id.write({'loan_detail_status': 'returned'})
+        else:
+            raise ValidationError("Este activo no esta prestado")
 
     @api.model_create_multi
     def create(self, vals_list):

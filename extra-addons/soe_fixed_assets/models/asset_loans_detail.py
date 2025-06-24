@@ -1,5 +1,5 @@
 from odoo import models, fields, api
-from odoo.exceptions import ValidationError
+from odoo.exceptions import ValidationError, UserError
 
 
 class AssetsLoanDetail(models.Model):
@@ -45,7 +45,7 @@ class AssetsLoanDetail(models.Model):
 
     asset_loans_id = fields.Many2one(
         "soe_fixed_assets.asset_loans",
-        string="Prestamo",
+        string="Activos fijos en calidad de préstamo",
         ondelete="cascade"
     )
 
@@ -55,18 +55,35 @@ class AssetsLoanDetail(models.Model):
             ('returned', 'Devuelto'),
             ('expired', 'Expirado')
         ],
-        string="Estado del prestamo",
+        string="Estado del préstamo",
         default="loaned"
     )
 
     _sql_constraints = [
-        ('asset_unique', 'UNIQUE(asset_id)', '¡Este activo ya está prestado!'),
+        ('asset_unique_per_loan', 'UNIQUE(asset_id, id, asset_loan_id)', '¡Este activo fijo ya existe en este préstamo!'),
+        ('asset_unique_per_detail', 'UNIQUE(asset_id, id)', '¡Este activo fijo !'),
     ]
 
     @api.onchange('asset_id')
     def _onchange_asset_id(self):
-        if self.asset_id:
+        if self.asset_id == 'available':
             self.asset_id.loan_status = 'unavailable'
+        else:
+            self.asset_id.loan_status = 'available'
+
+    @api.model
+    def create(self, vals):
+        record = super(AssetsLoanDetail, self).create(vals)
+        if record.asset_id:
+            record.asset_id.write({'loan_status': 'unavailable'})
+        return record
+
+    def unlink(self):
+        for rec in self:
+            if rec.loan_detail_status == 'expired':
+                raise UserError("No puedes eliminar activos de un préstamo vencido.")
+            rec.asset_id.loan_status = 'available'
+        return super(AssetsLoanDetail, self).unlink()
 
     @api.constrains('asset_id')
     def _check_asset_not_already_loaned(self):
@@ -80,8 +97,3 @@ class AssetsLoanDetail(models.Model):
                 existing = self.search(domain, limit=1)
                 if existing:
                     raise ValidationError("Este activo ya está prestado y no ha sido devuelto.")
-
-    # @api.depends('asset_id.quality_id.name')
-    # def _compute_campo_relacionado(self):
-    #     for record in self:
-    #         record.asset_id = record.modelo_b_id.campo_b or "Sin valor"

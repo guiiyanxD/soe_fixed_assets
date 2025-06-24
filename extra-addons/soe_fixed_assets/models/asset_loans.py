@@ -38,7 +38,9 @@ class AssetsLoan(models.Model):
         ondelete="cascade"
     )
 
-
+    _sql_constraints = [
+        ('unique_cite', 'unique(nro_cite)', 'El Nro. Cite ya ha sido usado.'),
+    ]
 
     @api.constrains('loan_date', 'return_date')
     def _check_return_date(self):
