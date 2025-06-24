@@ -55,6 +55,10 @@
                     <field name="asset_brand"/>
                     <field name="asset_description"/>
                     <field name="asset_quality"/>
+                    <field name="loan_detail_status" widget="badge"
+                        decoration-danger="loan_detail_status == 'expired'"
+                        decoration-success="loan_detail_status == 'returned'"
+                        decoration-primary="loan_detail_status == 'loaned'"/>
                     <field name="comments"/>
                   </list>
                   <form>
@@ -64,6 +68,7 @@
                       <field name="asset_brand"/>
                       <field name="asset_description"/>
                       <field name="asset_quality"/>
+
                       <field name="comments"/>
                     </group>
                   </form>

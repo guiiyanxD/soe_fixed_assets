@@ -17,7 +17,6 @@ class AcquisitionDetail(models.Model):
         ondelete='restrict',
     )
 
-
     acquisition_id = fields.Many2one(
         "soe_fixed_assets.acquisition",
         string="Acta de Recepcion",
@@ -27,24 +26,12 @@ class AcquisitionDetail(models.Model):
     comments = fields.Char(
         string="Comentarios",
     )
-    can_add_multiple_assets = fields.Boolean(
-        compute="_compute_can_add_multiple_assets",
-        store=False,
-        string="Permitir Múltiples Activos",
-    )
 
     _sql_constraints = [
         ('unique_asset_per_acquisition', 'unique(acquisition_id, code)',
          'Este activo ya está listado en este Acta de Recepción.'),
     ]
 
-    @api.depends('acquisition_id.acquisition_type')
-    def _compute_can_add_multiple_assets(self):
-        for rec in self:
-            # Si hay una adquisición vinculada y su tipo es 'reasignacion', entonces True
-            rec.can_add_multiple_assets = False  # Valor por defecto
-            if rec.acquisition_id and rec.acquisition_id.acquisition_type == 'reasignacion':
-                rec.can_add_multiple_assets = True
 
     def open_acquisition_modal(self):
         if self.acquisition_id:
@@ -57,7 +44,6 @@ class AcquisitionDetail(models.Model):
             'target': 'new',
             'context': {
                 'default_acquisition_detail_id': self.id,
-                # 'default_name': self.acquisition_id.nro_cite,  # ← importante
             }
 
         }
@@ -66,9 +52,9 @@ class AcquisitionDetail(models.Model):
     def _compute_name(self):
         for record in self:
             acta = record.acquisition_id.nro_cite or ''
-            # Asegúrate que hay al menos un asset
+
             if record.asset_id:
-                # Solo uno por diseño, usamos el primero
+
                 asset_code = record.asset_id[0].code or ''
                 record.name = f"{acta} - {asset_code}"
             else:

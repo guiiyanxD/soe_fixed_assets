@@ -1,18 +1,23 @@
+
 <odoo>
     <data>
        <!-- ACTIVO FIJO -->
     <record model="ir.ui.view" id="soe_fixed_assets.asset_list">
       <field name="name">fixed assets asset list</field>
       <field name="model">soe_fixed_assets.asset</field>
-      <field name="arch" type="xml">
-        <list>
+      <field name="arch" type="xml" >
+        <list >
           <field name="code"/>
           <field name="name"/>
           <field name="description"/>
           <field name="cost"/>
-          <field name="acquisition_detail_id" />
+          <field name="loan_status" widget="badge"
+                    decoration-danger="loan_status == 'unavailable'"
+                   decoration-primary="loan_status == 'available'"/>
 
-
+          <field name="acquisition_detail_id" widget="badge"
+                    decoration-danger="acquisition_detail_id == 'null'"
+                   decoration-success="acquisition_detail_id != False"/>
 
           <header>
             <button name="action_ver_acta" type="object" string="Ver Acta de Recepción" class="oe_highlight"/>
@@ -26,7 +31,7 @@
       <field name="name">fixed assets asset form</field>
       <field name="model">soe_fixed_assets.asset</field>
       <field name="arch" type="xml">
-        <form>
+        <form >
           <group>
           <field name="code"/>
           <field name="name"/>

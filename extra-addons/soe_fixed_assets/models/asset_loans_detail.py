@@ -2,7 +2,6 @@ from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
 
-
 class AssetsLoanDetail(models.Model):
     _name = 'soe_fixed_assets.asset_loans_detail'
     _description = 'Detalle del prestamo del activo fijo'
@@ -36,12 +35,12 @@ class AssetsLoanDetail(models.Model):
         readonly=True
     )
 
-
     asset_id = fields.Many2one(
         "soe_fixed_assets.asset",
         string="Activo fijo",
         required=True,
-        ondelete='restrict'
+        ondelete='restrict',
+        domain="[('loan_status', '=', 'available')]"
     )
 
     asset_loans_id = fields.Many2one(
@@ -50,7 +49,24 @@ class AssetsLoanDetail(models.Model):
         ondelete="cascade"
     )
 
+    loan_detail_status = fields.Selection(
+        [
+            ('loaned', 'Prestado'),
+            ('returned', 'Devuelto'),
+            ('expired', 'Expirado')
+        ],
+        string="Estado del prestamo",
+        default="loaned"
+    )
 
+    _sql_constraints = [
+        ('asset_unique', 'UNIQUE(asset_id)', '¡Este activo ya está prestado!'),
+    ]
+
+    @api.onchange('asset_id')
+    def _onchange_asset_id(self):
+        if self.asset_id:
+            self.asset_id.loan_status = 'unavailable'
 
     @api.constrains('asset_id')
     def _check_asset_not_already_loaned(self):

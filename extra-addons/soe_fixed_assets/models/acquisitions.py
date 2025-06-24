@@ -42,17 +42,6 @@ class Acquisition(models.Model):
         required=True,
     )
 
-    can_add_multiple_details = fields.Boolean(
-        string="Permitir Múltiples Detalles",
-        compute="_compute_can_add_multiple_details",
-        store=False,
-    )
-
-    @api.depends('acquisition_type')
-    def _compute_can_add_multiple_details(self):
-        for rec in self:
-            # Si el tipo de adquisición es 'reasignacion', permite añadir múltiples detalles
-            rec.can_add_multiple_details = (rec.acquisition_type == 'reasignacion')
 
     _sql_constraints = [
         ('unique_cite', 'unique(nro_cite)', 'El Nro de Cite debe ser unico'),

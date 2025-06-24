@@ -1,5 +1,5 @@
 from odoo import models, fields, api, _
-from odoo.exceptions import UserError
+from odoo.exceptions import UserError, ValidationError
 from odoo.fields import One2many, Many2many, Many2one
 
 
@@ -30,25 +30,72 @@ class Asset(models.Model):
         required=True
     )
 
-    measure_id = fields.Many2one("soe_fixed_assets.measure", string="Medida",
-        help="Seleccione la medida", required=True)
+    measure_id = fields.Many2one(
+        "soe_fixed_assets.measure",
+        string="Medida",
+        help="Seleccione la medida",
+        required=True
+    )
 
-    quality_id = fields.Many2one("soe_fixed_assets.quality", string="Calidad",
-        help="Seleccione la calidad", required=True)
+    quality_id = fields.Many2one(
+        "soe_fixed_assets.quality",
+        string="Calidad",
+        help="Seleccione la calidad",
+        required=True
+    )
 
-    manager_id = fields.Char(string="Encargado", required=True,
-        help="Seleccione el encargado del activo fijo")
+    manager_id = fields.Char(
+        string="Encargado",
+        required=True,
+        help="Seleccione el encargado del activo fijo"
+    )
 
-    name = fields.Char(string="Nombre", required=True, help="Escriba el nombre del activo fijo")
+    name = fields.Char(
+        string="Nombre",
+        required=True,
+        help="Escriba el nombre del activo fijo"
+    )
 
-    description = fields.Char(string="Descripcion", required=True, help="Escriba la descripcion del activo fijo")
+    description = fields.Char(
+        string="Descripcion",
+        required=True,
+        help="Escriba la descripcion del activo fijo"
+    )
 
-    brand = fields.Char(string="Marca", required=True, help="Escriba la marca del activo fijo")
+    brand = fields.Char(
+        string="Marca",
+        required=True,
+        help="Escriba la marca del activo fijo"
+    )
 
-    cost = fields.Float(string="Costo", required=True, help="Escriba el costo del activo fijo")
+    cost = fields.Float(
+        string="Costo",
+        required=True,
+        help="Escriba el costo del activo fijo"
+    )
 
-    asset_loan_id = fields.Many2one("soe_fixed_assets.asset_loans", string="Prestamo",
-        help="")
+    loan_status = fields.Selection(
+        [
+        ('available', 'Disponible'),
+        ('unavailable', 'Prestado'),
+        ],
+        required=True,
+        string="Estado de Prestamo",
+        default="available"
+    )
+
+    loan_detail_id = fields.One2many(
+        'soe_fixed_assets.asset_loans_detail',
+        'asset_id',
+        string="Préstamo Asociado"
+    )
+
+    #asset_loan_id = fields.Many2one(
+    #     "soe_fixed_assets.asset_loans",
+    #     string="Prestamo",
+    #     help="")
+
+
 
     _sql_constraints = [
         ('unique_code', 'unique(code)', 'El Código del Activo Fijo debe ser único.'),
@@ -67,18 +114,19 @@ class Asset(models.Model):
         super().write(vals)
         return True
 
-
-
     def action_ver_acta(self):
         """
         Este método abre la vista formulario del acta de recepción relacionada con el activo fijo.
         """
         self.ensure_one()  # Asegura que self es un solo registro
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'Acta de Recepción',
-            'view_mode': 'form',
-            'res_model': 'soe_fixed_assets.acquisition',
-            'res_id': self.acquisition_detail_id.acquisition_id.id,  # Abre el registro específico del acta
-            'target': 'current',  # La vista se abre en la misma ventana
-        }
+        if self.acquisition_detail_id:
+            return {
+                'type': 'ir.actions.act_window',
+                'name': 'Acta de Recepción',
+                'view_mode': 'form',
+                'res_model': 'soe_fixed_assets.acquisition',
+                'res_id': self.acquisition_detail_id.acquisition_id.id,  # Abre el registro específico del acta
+                'target': 'current',  # La vista se abre en la misma ventana
+            }
+        else:
+            raise ValidationError("El activo no esta vinculado a ningun acta de recepcion.")

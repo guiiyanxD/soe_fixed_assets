@@ -12,6 +12,7 @@
                    decoration-success="acquisition_type == 'reasignacion'"
                    decoration-info="acquisition_type == 'compra'"/>
           <field name="date_received"/>
+         <field name="acquisition_detail_id" decoration-success="acquisition_type == 'No hay Registros'"/>
         </list>
       </field>
     </record>
@@ -23,8 +24,6 @@
         <form string="Acta de Recepción">
           <header>
 
-<!--              <button name="" class="oe_highlight" type="object" string="Registrar Activo Fijo"-->
-<!--                  invisible="asset_id"/>-->
             </header>
           <sheet>
               <div class="oe_title">

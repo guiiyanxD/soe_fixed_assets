@@ -35,7 +35,7 @@ class AssetsLoan(models.Model):
         "soe_fixed_assets.asset_loans_detail",
         "asset_loans_id",
         string="Detalles del prestamo",
-        copy=True
+        ondelete="cascade"
     )
 
 
@@ -44,7 +44,7 @@ class AssetsLoan(models.Model):
     def _check_return_date(self):
         for record in self:
             if record.return_date and record.loan_date and record.return_date <= record.loan_date:
-                    raise UserError(_("⚠️ La fecha de devolución no puede ser anterior a la fecha de préstamo."))
+                    raise UserError(_("⚠️ La fecha de devolución no puede ser anterior o igual a la fecha de préstamo."))
 
     def print_asset_loan_report(self):
         self.ensure_one()
