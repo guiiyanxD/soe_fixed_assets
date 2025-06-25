@@ -1,5 +1,6 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError, UserError
+from datetime import date
 
 
 class AssetsLoanDetail(models.Model):
@@ -97,3 +98,11 @@ class AssetsLoanDetail(models.Model):
                 existing = self.search(domain, limit=1)
                 if existing:
                     raise ValidationError("Este activo ya está prestado y no ha sido devuelto.")
+
+    def _check_expired_loans(self):
+        hoy = date.today()
+        prestamos_vencidos = self.search([
+            ('loan_detail_status', '=', 'loaned'),
+            ('asset_loans_id.return_date', '<', hoy)
+        ])
+        prestamos_vencidos.write({'loan_detail_status': 'expired'})

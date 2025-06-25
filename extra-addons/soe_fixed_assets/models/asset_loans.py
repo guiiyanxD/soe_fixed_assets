@@ -54,3 +54,6 @@ class AssetsLoan(models.Model):
             return self.env.ref('report_asset_loan').report_action(self)
         except Exception as e:
             raise UserError(_("Error al generar el reporte: %s", str(e)))
+
+    def action_print_loan_report(self):
+        return self.env.ref('soe_fixed_assets.report_asset_loans').report_action(self)

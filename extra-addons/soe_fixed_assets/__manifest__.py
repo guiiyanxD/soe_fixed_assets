@@ -40,6 +40,8 @@ Long description of module's purpose
         'views/technical_report_request_detail_status_views.xml',
         'views/aaset_loans_views.xml',
         'report/loan_report/template.xml',
+        'report/asset_loan_detail_report.xml',
+        'data/daily_check_expired_loans_cron.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

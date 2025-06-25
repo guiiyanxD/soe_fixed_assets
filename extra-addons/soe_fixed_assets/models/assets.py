@@ -97,14 +97,19 @@ class Asset(models.Model):
         ('unique_loan_detail', 'unique(loan_detail_id)', 'Este detalle de prestamo ya esta asignado a otro activo')
     ]
 
-
     def action_return_asset(self):
         self.ensure_one()
-        if self.loan_status == 'unavailable' and self.loan_detail_id.loan_detail_status == 'loaned':
+        asset_loan = self.loan_detail_id.filtered(
+            lambda l: l.loan_detail_status == 'loaned'
+        )
+        asset_loan_expired = self.loan_detail_id.filtered(
+            lambda l: l.loan_detail_status == 'expired'
+        )
+        if self.loan_status == 'unavailable' and (asset_loan or asset_loan_expired):
             self.write({'loan_status': 'available'})
-            self.loan_detail_id.write({'loan_detail_status': 'returned'})
+            asset_loan.write({'loan_detail_status': 'returned'})
         else:
-            raise ValidationError("Este activo no esta prestado")
+            raise ValidationError("Este activo no está prestado")
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -112,14 +117,14 @@ class Asset(models.Model):
 
     def write(self, vals):
         """
-        Sobrescribe el método write para evitar problemas de herencia y recursividad.
+        Sobrescribe el métod o write para evitar problemas de herencia y recursividad.
         """
         super().write(vals)
         return True
 
     def action_ver_acta(self):
         """
-        Este método abre la vista formulario del acta de recepción relacionada con el activo fijo.
+        Este mé todo abre la vista formulario del acta de recepción relacionada con el activo fijo.
         """
         self.ensure_one()  # Asegura que self es un solo registro
         if self.acquisition_detail_id:

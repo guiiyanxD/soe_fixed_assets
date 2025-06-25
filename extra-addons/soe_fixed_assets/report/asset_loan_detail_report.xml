@@ -1,0 +1,31 @@
+<!-- reports/asset_loan_report.xml -->
+<template id="report_asset_loans">
+    <t t-call="web.html_container">
+        <div class="header">
+            <h1>ACTA DE PRÉSTAMO</h1>
+            <h2>Préstamo: <span t-esc="docs.nro_cite"/></h2>
+            <p>Fecha: <span t-esc="docs.loan_date"/></p>
+            <p>Unidad Destino: <span t-esc="docs.destiny"/></p> <!-- Ajusta el campo según tu modelo -->
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr t-foreach="docs.detail_ids" t-as="detail">
+                    <td t-esc="detail.asset_code"/>
+                    <td t-esc="detail.asset_name"/>
+                    <td t-esc="detail.asset_brand"/>
+                    <td t-esc="detail.asset_description"/>
+                    <td t-esc="detail.loan_detail_status"/>
+                </tr>
+            </tbody>
+        </table>
+    </t>
+</template>
