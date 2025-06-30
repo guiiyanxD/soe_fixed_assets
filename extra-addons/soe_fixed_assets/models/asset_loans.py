@@ -12,9 +12,9 @@ class AssetsLoan(models.Model):
     )
 
     loan_date = fields.Date(
-        string="Fecha de prestamo",
+        string="Fecha de préstamo",
         required=True,
-        help="Fecha de prestamo del activo fijo"
+        help="Fecha de prestado del activo fijo"
     )
 
     return_date = fields.Date(
@@ -22,7 +22,7 @@ class AssetsLoan(models.Model):
         help="Fecha de devolucion del activo fijo"
     )
     destiny = fields.Char(
-        string="Destino del prestamo",
+        string="Destino del préstamo",
         required=True
     )
 
