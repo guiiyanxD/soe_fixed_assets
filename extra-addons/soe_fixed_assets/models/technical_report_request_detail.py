@@ -30,8 +30,8 @@ class TechnicalReportRequestDetail(models.Model):
         readonly=True
 
     )
-    asset_quality = fields.Char(
-        related = 'asset_id.quality_id.name',
+    asset_physical_status = fields.Char(
+        related = 'asset_id.physical_status_id.name',
         string="Calidad",
         required=True,
         readonly=True

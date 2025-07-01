@@ -8,7 +8,7 @@
         <list>
           <field name="name"/>
 <!--          <field name="example"/>-->
-          <field name="subsidiary_id"/>
+          <field name="ubication_id"/>
           <field name="manager_id"/>
           <field name="description"/>
           <field name="asset_id" string="Activo Fijo"/>
@@ -23,7 +23,7 @@
         <form>
           <group>
           <field name="name"/>
-          <field name="subsidiary_id"/>
+          <field name="ubication_id"/>
           <field name="manager_id"/>
           <field name="description"/>
           <field name="asset_id" string="Activo Fijo"/>

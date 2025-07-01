@@ -2,9 +2,9 @@
   <data>
 
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="soe_fixed_assets.action_quality_window">
-      <field name="name">Lista de los estados de calidad de los activos fijos</field> <!--Este  valor sera mostrado en la cabecera de la vista. Valor anterior: soe_fixed_assets quality window -->
-      <field name="res_model">soe_fixed_assets.quality</field> <!--El modelo al que pertenece este menu -->
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_physical_status_window">
+      <field name="name">Lista de los estados fisicos posibles de los activos fijos</field> <!--Este  valor sera mostrado en la cabecera de la vista. Valor anterior: soe_fixed_assets physical_status window -->
+      <field name="res_model">soe_fixed_assets.physical_status</field> <!--El modelo al que pertenece este menu -->
       <field name="view_mode">list,form</field>
     </record>
 
@@ -26,9 +26,9 @@
       <field name="view_mode">list,form</field>
     </record>
 
-    <record model="ir.actions.act_window" id="soe_fixed_assets.action_subsidiary_window">
+    <record model="ir.actions.act_window" id="soe_fixed_assets.action_ubications_window">
       <field name="name">Lista de las sucursales</field>
-      <field name="res_model">soe_fixed_assets.subsidiary</field>
+      <field name="res_model">soe_fixed_assets.ubications</field>
       <field name="view_mode">list,form</field>
     </record>
 
@@ -143,8 +143,8 @@
 
     <!-- actions -->
 
-    <menuitem name="Lista Estados de Calidad" id="soe_fixed_assets.menu_1_quality_list" parent="soe_fixed_assets.menu_1"
-              action="soe_fixed_assets.action_quality_window"/>
+    <menuitem name="Lista Estados de Calidad" id="soe_fixed_assets.menu_1_physical_status_list" parent="soe_fixed_assets.menu_1"
+              action="soe_fixed_assets.action_physical_status_window"/>
 
     <menuitem name="Lista Categorias" id="soe_fixed_assets.menu_2_category_list" parent="soe_fixed_assets.menu_1"
               action="soe_fixed_assets.action_category_window"/>
@@ -156,7 +156,7 @@
               action="soe_fixed_assets.action_group_window"/>
 
     <menuitem name="Lista Sucursales" id="soe_fixed_assets.menu_5_group_list" parent="soe_fixed_assets.menu_1"
-              action="soe_fixed_assets.action_subsidiary_window"/>
+              action="soe_fixed_assets.action_ubications_window"/>
 x
     <menuitem name="Lista Areas" id="soe_fixed_assets.menu_6_group_list" parent="soe_fixed_assets.menu_1"
               action="soe_fixed_assets.action_area_window"/>

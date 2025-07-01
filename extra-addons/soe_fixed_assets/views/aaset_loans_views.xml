@@ -61,7 +61,7 @@
                     <field name="asset_name"/>
                     <field name="asset_brand"/>
                     <field name="asset_description"/>
-                    <field name="asset_quality"/>
+                    <field name="asset_physical_status"/>
                     <field name="loan_detail_status" widget="badge"
                         decoration-danger="loan_detail_status == 'expired'"
                         decoration-success="loan_detail_status == 'returned'"
@@ -74,7 +74,7 @@
                       <field name="asset_id"/>
                       <field name="asset_brand"/>
                       <field name="asset_description"/>
-                      <field name="asset_quality"/>
+                      <field name="asset_physical_status"/>
 
                       <field name="comments"/>
                     </group>

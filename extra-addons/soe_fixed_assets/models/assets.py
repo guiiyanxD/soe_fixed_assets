@@ -37,8 +37,8 @@ class Asset(models.Model):
         required=True
     )
 
-    quality_id = fields.Many2one(
-        "soe_fixed_assets.quality",
+    physical_status_id = fields.Many2one(
+        "soe_fixed_assets.physical_status",
         string="Calidad",
         help="Seleccione la calidad",
         required=True

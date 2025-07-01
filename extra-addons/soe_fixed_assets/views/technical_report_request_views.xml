@@ -52,7 +52,7 @@
                     <field name="asset_id"/>
                     <field name="asset_brand"/>
                     <field name="asset_description"/>
-                    <field name="asset_quality"/>
+                    <field name="asset_physical_status"/>
                     <field name="technical_report_status_id"/>
                     <field name="comments"/>
                   </list>

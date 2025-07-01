@@ -74,7 +74,7 @@
                                                 <field name="area_id"/>
                                                 <field name="group_id"/>
                                                 <field name="measure_id"/>
-                                                <field name="quality_id"/>
+                                                <field name="physical_status_id"/>
                                                 <field name="manager_id"/>
                                             </group>
                                         </form>

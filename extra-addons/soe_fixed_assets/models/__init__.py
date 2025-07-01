@@ -4,10 +4,10 @@ from . import models
 from . import assets
 from . import acquisitions
 from . import acquisition_detail
-from . import subsidiaries
+from . import ubications
 from . import groups
 from . import categories
-from . import qualities
+from . import physical_status
 from . import areas
 from . import measures
 from . import asset_loans
