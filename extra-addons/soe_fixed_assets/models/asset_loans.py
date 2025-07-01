@@ -4,6 +4,7 @@ from odoo.exceptions import UserError
 
 class AssetsLoan(models.Model):
     _name = 'soe_fixed_assets.asset_loans'
+    _rec_name = 'nro_cite'
     _description = 'soe_fixed_assets.asset_loans'
 
     nro_cite = fields.Char(
@@ -35,7 +36,8 @@ class AssetsLoan(models.Model):
         "soe_fixed_assets.asset_loans_detail",
         "asset_loans_id",
         string="Detalles del prestamo",
-        ondelete="cascade"
+        ondelete="cascade",
+        required=True,
     )
 
     _sql_constraints = [

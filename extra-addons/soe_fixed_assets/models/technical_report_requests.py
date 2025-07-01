@@ -3,7 +3,8 @@ from odoo.exceptions import ValidationError
 
 class TechnicalReportRequests(models.Model):
     _name = 'soe_fixed_assets.technical_report_requests'
-    _description = 'Solicitudes de Informe Tecnico'
+    _rec_name = 'nro_cite_request'
+    _description = 'Solicitudes de Informe Técnico'
 
     nro_cite_request = fields.Char(
         string="Nro Cite Solicitud",

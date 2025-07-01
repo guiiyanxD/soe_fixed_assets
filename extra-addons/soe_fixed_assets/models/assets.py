@@ -110,8 +110,8 @@ class Asset(models.Model):
         asset_loan_expired = self.loan_detail_id.filtered(
             lambda l: l.loan_detail_status == 'expired'
         )
-        if self.loan_status == 'unavailable' and (asset_loan or asset_loan_expired):
-            self.write({'loan_status': 'available'})
+        if self.availability == 'unavailable' and (asset_loan or asset_loan_expired):
+            self.write({'availability': 'available'})
             asset_loan.write({'loan_detail_status': 'returned'})
         else:
             raise ValidationError("Este activo no está prestado")

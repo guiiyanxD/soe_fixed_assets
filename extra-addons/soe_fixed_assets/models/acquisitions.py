@@ -2,6 +2,7 @@ from odoo import models, fields, api
 
 class Acquisition(models.Model):
     _name = 'soe_fixed_assets.acquisition'
+    _rec_name = 'nro_cite'
     _description = 'soe_fixed_assets.acquisition'
 
 

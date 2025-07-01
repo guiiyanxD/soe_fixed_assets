@@ -8,6 +8,7 @@ class AssetsLoanDetail(models.Model):
     _description = 'Detalle del prestamo del activo fijo'
 
     comments = fields.Text(string="Comentarios")
+
     asset_code = fields.Char(
         related='asset_id.code',
         string='Codigo',
@@ -41,7 +42,7 @@ class AssetsLoanDetail(models.Model):
         string="Activo fijo",
         required=True,
         ondelete='restrict',
-        domain="[('loan_status', '=', 'available')]"
+        domain="[('availability', '=', 'available')]"
     )
 
     asset_loans_id = fields.Many2one(
@@ -54,7 +55,7 @@ class AssetsLoanDetail(models.Model):
         [
             ('loaned', 'Prestado'),
             ('returned', 'Devuelto'),
-            ('expired', 'Expirado')
+            ('expired', 'Préstamo Expirado')
         ],
         string="Estado del préstamo",
         default="loaned"
@@ -62,28 +63,27 @@ class AssetsLoanDetail(models.Model):
 
     _sql_constraints = [
         ('asset_unique_per_loan', 'UNIQUE(asset_id, id, asset_loan_id)', '¡Este activo fijo ya existe en este préstamo!'),
-        ('asset_unique_per_detail', 'UNIQUE(asset_id, id)', '¡Este activo fijo !'),
     ]
 
     @api.onchange('asset_id')
     def _onchange_asset_id(self):
         if self.asset_id == 'available':
-            self.asset_id.loan_status = 'unavailable'
+            self.asset_id.availability = 'unavailable'
         else:
-            self.asset_id.loan_status = 'available'
+            self.asset_id.availability = 'available'
 
     @api.model
     def create(self, vals):
         record = super(AssetsLoanDetail, self).create(vals)
         if record.asset_id:
-            record.asset_id.write({'loan_status': 'unavailable'})
+            record.asset_id.write({'availability': 'unavailable'})
         return record
 
     def unlink(self):
         for rec in self:
             if rec.loan_detail_status == 'expired':
                 raise UserError("No puedes eliminar activos de un préstamo vencido.")
-            rec.asset_id.loan_status = 'available'
+            rec.asset_id.availability = 'available'
         return super(AssetsLoanDetail, self).unlink()
 
     @api.constrains('asset_id')
