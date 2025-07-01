@@ -4,7 +4,7 @@ class Area(models.Model):
     _name = 'soe_fixed_assets.area'
     _description = 'soe_fixed_assets.area'
 
-    # example = fields.Char(required=True),
+
     name = fields.Char(
         string="Nombre",
         required=True,
@@ -29,6 +29,6 @@ class Area(models.Model):
     asset_id = fields.One2many(
         "soe_fixed_assets.asset",
         'area_id',
-        string="Activo fijo"
+        string="Activos fijos asociados"
     )
 

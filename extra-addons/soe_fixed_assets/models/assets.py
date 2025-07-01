@@ -8,7 +8,11 @@ class Asset(models.Model):
     _rec_name = 'code'
     _description = 'soe_fixed_assets.asset'
 
-    code = fields.Char(string="Código", required=True, help="Escriba el código del activo fijo")
+    code = fields.Char(
+        string="Código",
+        required=True,
+        help="Escriba el código del activo fijo"
+    )
 
     acquisition_detail_id = fields.Many2one(
         "soe_fixed_assets.acquisition_detail",
@@ -39,8 +43,8 @@ class Asset(models.Model):
 
     physical_status_id = fields.Many2one(
         "soe_fixed_assets.physical_status",
-        string="Calidad",
-        help="Seleccione la calidad",
+        string="Estado Físico",
+        help="Seleccione el estado físico",
         required=True
     )
 
@@ -74,13 +78,14 @@ class Asset(models.Model):
         help="Escriba el costo del activo fijo"
     )
 
-    loan_status = fields.Selection(
+    availability = fields.Selection(
         [
         ('available', 'Disponible'),
-        ('unavailable', 'Prestado'),
+        ('loaned', 'Prestado'),
+        ('unavailable', 'Baja'),
         ],
         required=True,
-        string="Estado de Prestamo",
+        string="Disponibilidad",
         default="available"
     )
 

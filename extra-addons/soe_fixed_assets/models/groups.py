@@ -17,5 +17,5 @@ class Group(models.Model):
     asset_id = fields.One2many(
         "soe_fixed_assets.asset",
         'group_id',
-        string="Activo fijo"
+        string="Activos fijos asociados"
     )
