@@ -21,7 +21,8 @@ class Area(models.Model):
         help="Seleccione la sucursal",
         required=True)
 
-    manager_id = fields.Char(
+    manager_id = fields.Many2one(
+        'res.users',
         string="Encargado",
         required=True,
         help="Seleccione el encargado del area"
@@ -32,3 +33,6 @@ class Area(models.Model):
         string="Activos fijos asociados"
     )
 
+    _sql_constraints = [
+        ('unique_area_manager', 'unique(manager_id, id)', 'El Area solo puede manejada por una sola persona a la vez.'),
+    ]

@@ -14,6 +14,7 @@ class Asset(models.Model):
         help="Escriba el código del activo fijo"
     )
 
+
     acquisition_detail_id = fields.Many2one(
         "soe_fixed_assets.acquisition_detail",
         string = "Detalle del Acta",
