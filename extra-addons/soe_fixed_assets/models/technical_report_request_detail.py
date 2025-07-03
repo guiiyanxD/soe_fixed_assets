@@ -60,10 +60,12 @@ class TechnicalReportRequestDetail(models.Model):
 
     conclusion = fields.Selection(
         [
+            ('pending', 'pendiente'),
             ('to maintenance', 'requiere mantenimiento'),
             ('to unavailable', 'requiere dar de baja'),
         ],
         string="Conclusion del informe técnico",
+        default="pending"
     )
 
 
@@ -105,16 +107,55 @@ class TechnicalReportRequestDetail(models.Model):
             'target': 'current',  # La vista se abre en la misma ventana
         }
 
-    def action_recibir_informe(self):
+    def action_to_maintenance(self):
+
+        for record in self:
+            if record.technical_report_status == 'pending':
+                record.write({
+                    'conclusion': 'to maintenance',
+                    'technical_report_status': 'received',
+                })
+
+                if record.asset_id:
+                    record.asset_id.write({
+                        'availability': 'maintenance',
+                    })
+                return {
+                    'type': 'ir.actions.client',
+                    'tag': 'display_notification',
+                    'params': {
+                        'message': 'El activo ha sido enviado a mantenimiento correctamente.',
+                        'type': 'success',
+                        'sticky': False,
+                    }
+                }
+            else:
+                raise ValidationError("Solo puedes enviar a mantenimiento activos que tienen pendiente una respuesta tecnica.")
+
+    def action_to_unavailable(self):
         """
-        Este método abre la vista formulario del acta de recepción relacionada con el activo fijo.
+        Cambia la conclusión a 'to maintenance' y actualiza el estado del activo a 'maintenance'.
         """
-        self.ensure_one()  # Asegura que self es un solo registro
-        return {
-            'type': 'ir.actions.act_window',
-            'name': 'Solciitud Informe Tecnico',
-            'view_mode': 'form',
-            'res_model': 'soe_fixed_assets.technical_report_requests',
-            'res_id': self.technical_report_request_id.id,  # Abre el registro específico del acta
-            'target': 'current',  # La vista se abre en la misma ventana
-        }
+        for record in self:
+            if record.technical_report_status == 'pending':
+                record.write({
+                    'conclusion': 'to unavailable',
+                    'technical_report_status': 'received',
+                })
+
+                if record.asset_id:
+                    record.asset_id.write({
+                        'availability': 'unavailable',
+                    })
+
+                return {
+                    'type': 'ir.actions.client',
+                    'tag': 'display_notification',
+                    'params': {
+                        'message': 'El activo ha sido enviado dado de baja correctamente.',
+                        'type': 'success',
+                        'sticky': True,
+                    }
+                }
+            else:
+                raise ValidationError("Solo puedes dar de baja activos que tienen pendiente una respuesta tecnica.")

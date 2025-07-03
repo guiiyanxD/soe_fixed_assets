@@ -8,14 +8,19 @@
             <list>
                 <header>
                     <button name="action_ver_solicitud" type="object" string="Ver Solicitud de Inf. Tecnico" class="oe_highlight"/>
-                    <button name="action_recibir_informe" type="object" string="Mantenimiento" class="btn-warning" confirm="¿Estás seguro de que deseas dar de mantenimiento a este activo fijo? Esta acción no se puede deshacer."/>
-                    <button name="action_recibir_informe" type="object" string="Dar de baja" class="btn-danger"  confirm="¿Estás seguro de que deseas dar de baja a este activo fijo? Esta acción no se puede deshacer."/>
+                    <button name="action_to_maintenance" type="object" string="Mantenimiento" class="btn-warning" confirm="¿Estás seguro de que deseas dar de mantenimiento a este activo fijo? Esta acción no se puede deshacer."/>
+                    <button name="action_to_unavailable" type="object" string="Dar de baja" class="btn-danger"  confirm="¿Estás seguro de que deseas dar de baja a este activo fijo? Esta acción no se puede deshacer."/>
                 </header>
                 <field name="technical_report_request_id" string="Nro Cite Solicitud"/>
                 <field name="asset_id"/>
                 <field name="technical_report_status" widget="badge"
                    decoration-warning="technical_report_status == 'requested'"
                    decoration-success="technical_report_status == 'received'"/>
+
+                <field name="conclusion" widget="badge"
+                   decoration-info="conclusion == 'pending'"
+                   decoration-warning="conclusion == 'to maintenance'"
+                   decoration-danger="conclusion == 'to unavailable'"/>
             </list>
 
           </field>
