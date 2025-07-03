@@ -19,8 +19,8 @@
 
           <header>
             <button name="action_ver_acta" type="object" string="Ver Acta de recepción" class="oe_highlight"/>
-            <button name="action_return_asset" type="object" string="Vuelve de préstamo" class="oe_highlight"/>
-            <button name="action_ver_acta" type="object" string="Vuelve de mantenimiento" class="oe_highlight"/>
+            <button name="action_return_asset_from_loan" type="object" string="Vuelve de préstamo" class="btn-info"/>
+            <button name="action_return_from_maintenance" type="object" string="Vuelve de mantenimiento" class="btn-warning"/>
         </header>
         </list>
 

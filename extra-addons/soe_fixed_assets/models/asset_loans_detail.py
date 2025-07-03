@@ -68,15 +68,17 @@ class AssetsLoanDetail(models.Model):
     @api.onchange('asset_id')
     def _onchange_asset_id(self):
         if self.asset_id == 'available':
-            self.asset_id.availability = 'unavailable'
-        else:
+            self.asset_id.availability = 'loaned'
+        elif self.asset_id == 'loaned':
             self.asset_id.availability = 'available'
+        else:
+            raise ValidationError("El activo fijo no esta prestado")
 
     @api.model
     def create(self, vals):
         record = super(AssetsLoanDetail, self).create(vals)
         if record.asset_id:
-            record.asset_id.write({'availability': 'unavailable'})
+            record.asset_id.write({'availability': 'loaned'})
         return record
 
     def unlink(self):

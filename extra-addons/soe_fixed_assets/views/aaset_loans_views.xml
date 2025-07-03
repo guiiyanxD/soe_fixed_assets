@@ -25,14 +25,6 @@
                     string="Imprimir Préstamo"
                     class="btn-primary"
                     icon="fa-print"/>
-
-            <div class="oe_button_box" name="button_box">
-                    <button
-                        name="action_print_loan_report"
-                        string="Imprimir Acta"
-                        type="object"
-                        class="btn-primary"/>
-                </div>
           </header>
 
           <sheet>

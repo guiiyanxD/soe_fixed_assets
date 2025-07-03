@@ -1,6 +1,5 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError, ValidationError
-from odoo.fields import One2many, Many2many, Many2one
 
 
 class Asset(models.Model):
@@ -77,7 +76,8 @@ class Asset(models.Model):
     cost = fields.Float(
         string="Costo",
         required=True,
-        help="Escriba el costo del activo fijo"
+        help="Escriba el costo del activo fijo",
+        default=0.0
     )
 
     availability = fields.Selection(
@@ -105,7 +105,7 @@ class Asset(models.Model):
         ('unique_loan_detail', 'unique(loan_detail_id)', 'Este detalle de prestamo ya esta asignado a otro activo')
     ]
 
-    def action_return_asset(self):
+    def action_return_asset_from_loan(self):
         self.ensure_one()
         asset_loan = self.loan_detail_id.filtered(
             lambda l: l.loan_detail_status == 'loaned'
@@ -119,19 +119,15 @@ class Asset(models.Model):
         else:
             raise ValidationError("Este activo no está prestado")
 
-    def action_return_maintenance(self):
+
+
+    def action_return_from_maintenance(self):
         self.ensure_one()
-        asset_loan = self.loan_detail_id.filtered(
-            lambda l: l.loan_detail_status == 'loaned'
-        )
-        asset_loan_expired = self.loan_detail_id.filtered(
-            lambda l: l.loan_detail_status == 'expired'
-        )
-        if self.availability == 'loaned' and (asset_loan or asset_loan_expired):
+
+        if self.availability == 'maintenance':
             self.write({'availability': 'available'})
-            asset_loan.write({'loan_detail_status': 'returned'})
         else:
-            raise ValidationError("Este activo no está prestado")
+            raise ValidationError("Este activo fijo no esta en mantenimiento")
 
     @api.model_create_multi
     def create(self, vals_list):
@@ -155,8 +151,8 @@ class Asset(models.Model):
                 'name': 'Acta de Recepción',
                 'view_mode': 'form',
                 'res_model': 'soe_fixed_assets.acquisition',
-                'res_id': self.acquisition_detail_id.acquisition_id.id,  # Abre el registro específico del acta
-                'target': 'current',  # La vista se abre en la misma ventana
+                'res_id': self.acquisition_detail_id.acquisition_id.id,
+                'target': 'blank',#current para abrir en la misma venataan
             }
         else:
             raise ValidationError("El activo no esta vinculado a ningun acta de recepcion.")
