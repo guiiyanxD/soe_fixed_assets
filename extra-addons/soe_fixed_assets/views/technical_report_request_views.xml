@@ -22,7 +22,7 @@
           <header>
             <button name="print_technical_report_request"
                     type="object"
-                    string="Imprimir Préstamo"
+                    string="Imprimir Solicitud Informe Técnico"
                     class="btn-primary"
                     icon="fa-print"/>
           </header>

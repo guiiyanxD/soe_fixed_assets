@@ -108,18 +108,21 @@ class TechnicalReportRequestDetail(models.Model):
         }
 
     def action_to_maintenance(self):
-
+        self.ensure_one()
         for record in self:
-            if record.technical_report_status == 'pending':
-                record.write({
-                    'conclusion': 'to maintenance',
-                    'technical_report_status': 'received',
-                })
-
-                if record.asset_id:
-                    record.asset_id.write({
-                        'availability': 'maintenance',
+            if (record.technical_report_status == 'requested' and record.conclusion == 'pending'):
+                if (record.asset_id.availability == 'available'):
+                    record.write({
+                        'conclusion': 'to maintenance',
+                        'technical_report_status': 'received',
                     })
+
+                    if record.asset_id:
+                        record.asset_id.write({
+                            'availability': 'maintenance',
+                        })
+                    else:
+                        raise ValidationError("El activo fijo no se encuentra Disponible.")
                 return {
                     'type': 'ir.actions.client',
                     'tag': 'display_notification',
@@ -133,26 +136,28 @@ class TechnicalReportRequestDetail(models.Model):
                 raise ValidationError("Solo puedes enviar a mantenimiento activos que tienen pendiente una respuesta tecnica.")
 
     def action_to_unavailable(self):
-        """
-        Cambia la conclusión a 'to maintenance' y actualiza el estado del activo a 'maintenance'.
-        """
+        self.ensure_one()
         for record in self:
-            if record.technical_report_status == 'pending':
-                record.write({
-                    'conclusion': 'to unavailable',
-                    'technical_report_status': 'received',
-                })
-
-                if record.asset_id:
-                    record.asset_id.write({
-                        'availability': 'unavailable',
+            #Que el detalle aun este solicitado, que la conclusion ste pendiente y que el activo se encuentre available
+            if (record.technical_report_status == 'requested' and record.conclusion == 'pending'):
+                if (record.asset_id.availability == 'available'):
+                    record.write({
+                        'conclusion': 'to unavailable',
+                        'technical_report_status': 'received',
                     })
+
+                    if record.asset_id:
+                        record.asset_id.write({
+                            'availability': 'unavailable',
+                        })
+                else:
+                    raise ValidationError("El activo fijo no se encuentra Disponible.")
 
                 return {
                     'type': 'ir.actions.client',
                     'tag': 'display_notification',
                     'params': {
-                        'message': 'El activo ha sido enviado dado de baja correctamente.',
+                        'message': 'El activo ha sido dado de baja correctamente.',
                         'type': 'success',
                         'sticky': True,
                     }
