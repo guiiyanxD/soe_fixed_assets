@@ -16,10 +16,11 @@ class Ubications(models.Model):
         help="Escriba la dirección"
     )
 
-    id_manager = fields.Char(
+    manager_id = fields.Many2one(
+        'res.users',
         string="Encargado",
         required=True,
-        help="Nombre del encargado de la sucursal"
+        help="Seleccione el encargado de la sucursal"
     )
 
     area_id = fields.One2many(

@@ -19,7 +19,7 @@ services:
       - LANG=C.UTF-8
     networks:
       - general-net
-    command: odoo -c /etc/odoo/odoo.conf -i base
+    command: odoo -c /etc/odoo/odoo.conf
 
   db:
     image: postgres:16

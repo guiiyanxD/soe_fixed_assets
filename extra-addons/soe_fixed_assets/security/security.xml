@@ -1,7 +1,7 @@
 <odoo>
     <!-- Administrador Total -->
     <record id="group_admin_activos" model="res.groups">
-        <field name="name">Admin Activos</field>
+        <field name="name">Director</field>
          <field name="category_id" ref="base.module_category_user_type"/>
         <field name="implied_ids" eval="[(4, ref('base.group_system'))]"/>
     </record>

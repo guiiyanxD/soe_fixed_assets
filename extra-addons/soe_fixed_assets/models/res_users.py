@@ -28,5 +28,4 @@ class ResUsers(models.Model):
 
     _sql_constraints = [
         ('unique_card_number', 'unique(card_number)', 'El numero de CI debe ser unico.'),
-
     ]

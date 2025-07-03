@@ -11,6 +11,7 @@
           <field name="ubication_id"/>
           <field name="manager_id"/>
           <field name="description"/>
+            <field name="manager_id" string="Encargado de Area"/>
           <field name="asset_id" string="Activo Fijo"/>
         </list>
       </field>
@@ -24,7 +25,6 @@
           <group>
           <field name="name"/>
           <field name="ubication_id"/>
-          <field name="manager_id"/>
           <field name="description"/>
           <field name="manager_id" string="Encargado de Area"/>
           <field name="asset_id" string="Activo Fijo"/>

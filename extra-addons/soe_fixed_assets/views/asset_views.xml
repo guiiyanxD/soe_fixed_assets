@@ -40,6 +40,7 @@
           <field name="brand"/>
           <field name="description"/>
           <field name="cost"/>
+          <field name="manager_id" string="Responsable"/>
           <field name="area_id"/>
           <field name="group_id"/>
           <field name="measure_id"/>

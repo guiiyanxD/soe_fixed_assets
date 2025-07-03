@@ -8,7 +8,7 @@
         <list>
           <field name="name"/>
           <field name="address"/>
-          <field name="id_manager"/>
+            <field name="manager_id" string="Director"/>
           <field name="area_id" string="Areas"/>
         </list>
       </field>
@@ -22,7 +22,7 @@
           <group>
             <field name="name"/>
             <field name="address"/>
-            <field name="id_manager"/>
+            <field name="manager_id" string="Director"/>
             <field name="area_id" string="Areas"/>
 
           </group>
