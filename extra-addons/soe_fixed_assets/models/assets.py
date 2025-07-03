@@ -49,10 +49,11 @@ class Asset(models.Model):
         required=True
     )
 
-    manager_id = fields.Char(
+    manager_id = fields.Many2one(
+        'res.users',
         string="Encargado",
         required=True,
-        help="Seleccione el encargado del activo fijo"
+        help="Seleccione el encargado del area"
     )
 
     name = fields.Char(
@@ -83,6 +84,7 @@ class Asset(models.Model):
         [
         ('available', 'Disponible'),
         ('loaned', 'Prestado'),
+        ('maintenance', 'Mantenimiento'),
         ('unavailable', 'Baja'),
         ],
         required=True,
@@ -111,7 +113,21 @@ class Asset(models.Model):
         asset_loan_expired = self.loan_detail_id.filtered(
             lambda l: l.loan_detail_status == 'expired'
         )
-        if self.availability == 'unavailable' and (asset_loan or asset_loan_expired):
+        if self.availability == 'loaned' and (asset_loan or asset_loan_expired):
+            self.write({'availability': 'available'})
+            asset_loan.write({'loan_detail_status': 'returned'})
+        else:
+            raise ValidationError("Este activo no está prestado")
+
+    def action_return_maintenance(self):
+        self.ensure_one()
+        asset_loan = self.loan_detail_id.filtered(
+            lambda l: l.loan_detail_status == 'loaned'
+        )
+        asset_loan_expired = self.loan_detail_id.filtered(
+            lambda l: l.loan_detail_status == 'expired'
+        )
+        if self.availability == 'loaned' and (asset_loan or asset_loan_expired):
             self.write({'availability': 'available'})
             asset_loan.write({'loan_detail_status': 'returned'})
         else:

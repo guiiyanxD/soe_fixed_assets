@@ -7,7 +7,6 @@
         <list>
 
           <field name="nro_cite_request"/>
-          <field name="pdf_name_request"/>
           <field name="date_request"/>
           <field name="technical_report_request_detail_ids" string="Detalle"/>
         </list>
@@ -48,18 +47,15 @@
               <page  string="Detalle de la Solicitud">
                 <field name="technical_report_request_detail_ids">
                   <list editable="bottom">
-                    <field name="asset_code"/>
+
                     <field name="asset_id"/>
-                    <field name="asset_brand"/>
-                    <field name="asset_description"/>
-                    <field name="asset_physical_status"/>
-                    <field name="technical_report_status_id"/>
+
                     <field name="comments"/>
                   </list>
                   <form>
                     <group>
                     <field name="asset_id"/>
-                    <field name="technical_report_status_id"/>
+<!--                    <field name="technical_report_status_id"/>-->
                     <field name="comments"/>
                     </group>
                   </form>

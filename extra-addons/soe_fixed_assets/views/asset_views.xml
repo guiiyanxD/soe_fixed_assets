@@ -13,16 +13,14 @@
           <field name="cost"/>
           <field name="availability" widget="badge"
                     decoration-danger="availability == 'unavailable'"
-                    decoration-warning="availability == 'loaned'"
+                    decoration-warning="availability == 'maintenance'"
+                    decoration-primary="availability == 'loaned'"
                    decoration-success="availability == 'available'"/>
 
-          <field name="acquisition_detail_id" widget="badge"
-                    decoration-danger="acquisition_detail_id == 'null'"
-                   decoration-success="acquisition_detail_id != False"/>
-
           <header>
-            <button name="action_return_asset" type="object" string="Recibir Acitvo Fijo" class="oe_highlight"/>
-            <button name="action_ver_acta" type="object" string="Ver Acta de Recepción" class="oe_highlight"/>
+            <button name="action_ver_acta" type="object" string="Ver Acta de recepción" class="oe_highlight"/>
+            <button name="action_return_asset" type="object" string="Vuelve de préstamo" class="oe_highlight"/>
+            <button name="action_ver_acta" type="object" string="Vuelve de mantenimiento" class="oe_highlight"/>
         </header>
         </list>
 
@@ -45,7 +43,7 @@
           <field name="group_id"/>
           <field name="measure_id"/>
           <field name="physical_status_id"/>
-          <field name="manager_id"/>
+          <field name="availability"/>
           </group>
         </form>
       </field>

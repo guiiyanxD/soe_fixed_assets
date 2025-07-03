@@ -40,51 +40,41 @@
             </group>
 
             <notebook>
-                    <page string="Detalles del Acta">
-                        <field name="acquisition_detail_id"
-                               create="can_add_multiple_details"
-                               delete="can_add_multiple_details">
-                            <list string="Detalles del Alta" editable="top">
+                <page string="Detalles del Acta">
+                    <field name="acquisition_detail_id"
+                           create="can_add_multiple_details"
+                           delete="can_add_multiple_details">
+                        <list string="Detalles del Alta" editable="top">
 
-                                <!-- No se muestra el asset_ids aquí directamente porque sería un One2many dentro de un One2many -->
-                                <!-- Se gestiona en el formulario del detalle -->
-                            </list>
-                            <form string="Detalle del Acta">
-                                <!-- Este es el formulario pop-up para crear/editar un AcquisitionDetail -->
-                                <group>
-                                    <field name="comments"/>
-                                    <!-- Aquí está el One2many de Assets dentro del AcquisitionDetail -->
-                                    <field name="asset_id" options="{'no_open': False, 'no_create': False, 'no_edit': False}">
 
-                                        <!--<tree string="Activos" editable="bottom">
-                                            <field name="name"/>
+                        </list>
+                        <form string="Detalle del Acta">
+
+                            <group>
+                                <field name="comments"/>
+                                <field name="asset_id" options="{'no_open': False, 'no_create': False, 'no_edit': False}">
+                                    <form string="Activo Fijo">
+                                        <group>
                                             <field name="code"/>
+                                            <field name="name"/>
                                             <field name="brand"/>
+                                            <field name="description"/>
                                             <field name="cost"/>
-                                        </tree>-->
-                                        <form string="Activo Fijo">
-                                            <group>
-                                                <field name="code"/>
-                                                <field name="name"/>
-                                                <field name="brand"/>
-                                                <field name="description"/>
-                                                <field name="cost"/>
-                                            </group>
-                                            <group>
-                                                <field name="area_id"/>
-                                                <field name="group_id"/>
-                                                <field name="measure_id"/>
-                                                <field name="physical_status_id"/>
-                                                <field name="manager_id"/>
-                                            </group>
-                                        </form>
-                                    </field>
-                                </group>
-                            </form>
-                        </field>
-                    </page>
-                </notebook>
-
+                                        </group>
+                                        <group>
+                                            <field name="area_id"/>
+                                            <field name="group_id"/>
+                                            <field name="measure_id"/>
+                                            <field name="physical_status_id"/>
+                                            <field name="manager_id"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </notebook>
           </sheet>
         </form>
       </field>

@@ -11,16 +11,7 @@ class TechnicalReportRequests(models.Model):
         required=True,
         help="Escriba el numero de cite de la solicitud del informe tecnico"
     )
-    pdf_file_request = fields.Binary(
-        string='Archivo PDF',
-        # required=True,
-        attachment=True
-    )
-    pdf_name_request = fields.Char(
-        string="Nombre del archivo PDF",
-        # required=True,
-        help="Escriba el nombre del archivo PDF"
-    )
+
     date_request = fields.Date(
         string="Fecha de solicitud",
         required=True,
