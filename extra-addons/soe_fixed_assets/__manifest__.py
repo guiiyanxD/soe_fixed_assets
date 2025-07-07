@@ -26,6 +26,7 @@ Long description of module's purpose
         'security/security.xml',
         'security/ir.model.access.csv',
         'security/rules.xml',
+        'views/res_users_views.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/asset_views.xml',

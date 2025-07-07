@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_users_form_inherit_activos_role" model="ir.ui.view">
+        <field name="name">res.users.form.inherit.activos.role</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <!-- Añadir el campo en la sección 'Preferences' -->
+            <xpath expr="//page[@name='access_rights']//group" position="inside">
+                <group string="Rol en Activos Fijos">
+                    <field name="activos_role" widget="radio"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

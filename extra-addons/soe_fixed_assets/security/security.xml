@@ -1,19 +1,19 @@
 <odoo>
     <!-- Administrador Total -->
     <record id="group_admin_activos" model="res.groups">
-        <field name="name">Directorrr</field>
+        <field name="name">Director</field>
         <field name="comment">Rol con la totalidad de permisos en el modulo</field>
     </record>
 
     <!-- Jefe de Área -->
     <record id="group_manager_area" model="res.groups">
-        <field name="name">Jefe de Áreaaa</field>
+        <field name="name">Jefe de Área</field>
         <field name="comment">Rol que solo permite ver los activos asignados al área en cuestion</field>
     </record>
 
     <!-- Usuario Operativo -->
     <record id="group_operator" model="res.groups">
-        <field name="name">Operativooo</field>
+        <field name="name">Operativo</field>
         <field name="comment">Rol que solo permite ver los activos asignados al usuario en cuestion</field>
     </record>
 </odoo>
