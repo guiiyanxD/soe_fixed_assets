@@ -22,6 +22,7 @@ class AssetsLoan(models.Model):
         string="Fecha de devolucion",
         help="Fecha de devolucion del activo fijo"
     )
+
     destiny = fields.Char(
         string="Destino del préstamo",
         required=True

@@ -67,9 +67,13 @@ class AssetsLoanDetail(models.Model):
 
     @api.onchange('asset_id')
     def _onchange_asset_id(self):
-        if self.asset_id == 'available':
+        if not self.asset_id:
+            return
+
+        availability = self.asset_id.availability
+        if availability == 'available':
             self.asset_id.availability = 'loaned'
-        elif self.asset_id == 'loaned':
+        elif availability == 'loaned':
             self.asset_id.availability = 'available'
         else:
             raise ValidationError("El activo fijo no esta prestado")

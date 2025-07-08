@@ -75,7 +75,7 @@ class Asset(models.Model):
 
     cost = fields.Float(
         string="Costo",
-        required=True,
+        # required=True,
         help="Escriba el costo del activo fijo",
         default=0.0
     )

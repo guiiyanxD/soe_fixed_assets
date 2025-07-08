@@ -10,6 +10,7 @@ class ResUsers(models.Model):
          ('operador', 'Operador')],
         string="Rol en Activos Fijos",
     )
+
     card_number = fields.Char(
         string="Carne Identidad",
         required=True,
@@ -52,19 +53,16 @@ class ResUsers(models.Model):
         elif self.activos_role == 'operador':
             self.groups_id += group_operador
 
-    class ResUsers(models.Model):
-        _inherit = 'res.users'
-
-        @api.model_create_multi
-        def create(self, vals_list):
-            # Eliminar 'base.group_user' de los valores iniciales si existe
-            for vals in vals_list:
-                if 'groups_id' in vals:
-                    # Filtrar para excluir 'base.group_user'
-                    group_user_id = self.env.ref('base.group_user').id
-                    vals['groups_id'] = [
-                        (4, group_id)
-                        for group_id in vals['groups_id'][0][2]
-                        if group_id != group_user_id
-                    ]
-            return super().create(vals_list)
+    @api.model_create_multi
+    def create(self, vals_list):
+        # Eliminar 'base.group_user' de los valores iniciales si existe
+        for vals in vals_list:
+            if 'groups_id' in vals:
+                # Filtrar para excluir 'base.group_user'
+                group_user_id = self.env.ref('base.group_user').id
+                vals['groups_id'] = [
+                    (4, group_id)
+                    for group_id in vals['groups_id'][0][2]
+                    if group_id != group_user_id
+                ]
+        return super().create(vals_list)
