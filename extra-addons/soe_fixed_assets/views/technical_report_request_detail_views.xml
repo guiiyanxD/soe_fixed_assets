@@ -42,5 +42,19 @@
           </field>
         </record>
 
+        <record model="ir.ui.view" id="soe_fixed_assets.technical_report_request_detail_form">
+          <field name="name">fixed assets technical report request detail form</field>
+          <field name="model">soe_fixed_assets.technical_report_request_detail</field>
+          <field name="arch" type="xml">
+            <form>
+              <div class="oe_title">
+                <group>
+                  <h1>Solicitud De Reporte Técnico </h1>
+                    <field name="technical_report_request_id" readonly="true"/>
+                </group>
+              </div>
+            </form>
+          </field>
+        </record>
     </data>
 </odoo>

@@ -96,7 +96,7 @@
     <record model="ir.actions.act_window" id="soe_fixed_assets.action_technical_report_requests_detail_window">
       <field name="name">Detalles de un Solicitud de Informe Técnico</field>
       <field name="res_model">soe_fixed_assets.technical_report_request_detail</field>
-      <field name="view_mode">list</field>
+      <field name="view_mode">list,form</field>
       <field name="help" type="html">
         <p class="o_view_nocontent_smiling_face">
             ¡Crea una solicitud de informe técnico de los de activos fijos!
