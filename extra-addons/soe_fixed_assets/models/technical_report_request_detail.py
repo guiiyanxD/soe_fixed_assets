@@ -10,43 +10,12 @@ class TechnicalReportRequestDetail(models.Model):
         string="Activo fijo",
         required=True
     )
-    # asset_code = fields.Char(
-    #     related = 'asset_id.code',
-    #     string="Codigo",
-    #     required=True,
-    #     readonly=True
-    # )
-    # asset_brand = fields.Char(
-    #     related = 'asset_id.brand',
-    #     string="Marca",
-    #     required=True,
-    #     readonly=True
-    #
-    # )
-    # asset_description = fields.Char(
-    #     related = 'asset_id.description',
-    #     string="Descripcion",
-    #     required=True,
-    #     readonly=True
-    #
-    # )
-    # asset_physical_status = fields.Char(
-    #     related = 'asset_id.physical_status_id.name',
-    #     string="Calidad",
-    #     required=True,
-    #     readonly=True
-    #
-    # )
+
     technical_report_request_id = fields.Many2one(
         "soe_fixed_assets.technical_report_requests",
         string="Solicitud de Informe Tecnico",
         required=False,
     )
-    # technical_report_request_id_nro_cite = fields.Char(
-    #     related= "technical_report_request_id.nro_cite_request",
-    #     string="Nro Cite de la Solicitud de Informe Tecnico",
-    #     readonly=True,
-    # )
 
     technical_report_status = fields.Selection(
         [
@@ -56,6 +25,17 @@ class TechnicalReportRequestDetail(models.Model):
         required=True,
         string="Estado de solicitud",
         default="requested"
+    )
+
+    pdf_file = fields.Binary(
+        string='Archivo PDF',
+        required=True,
+        attachment=True
+    )
+    pdf_name = fields.Char(
+        string="Respuesta del informe técnico ",
+        required=True,
+        help="Cargue el informe tecnico recibido del activo fijo"
     )
 
     conclusion = fields.Selection(
