@@ -8,7 +8,7 @@
 
           <field name="nro_cite_request"/>
           <field name="date_request"/>
-          <field name="technical_report_request_detail_ids" string="Detalle"/>
+          <field name="technical_report_request_detail_ids" widget="badges" />
         </list>
 
       </field>

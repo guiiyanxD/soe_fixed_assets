@@ -114,6 +114,10 @@ class TechnicalReportRequestDetail(models.Model):
                 }
             else:
                 raise ValidationError("Solo puedes enviar a mantenimiento activos que tienen pendiente una respuesta tecnica.")
+        return True
+
+    def action_generate_specific_report(self):
+        return True
 
     def action_to_unavailable(self):
         self.ensure_one()
@@ -144,3 +148,4 @@ class TechnicalReportRequestDetail(models.Model):
                 }
             else:
                 raise ValidationError("Solo puedes dar de baja activos que tienen pendiente una respuesta tecnica.")
+        return True

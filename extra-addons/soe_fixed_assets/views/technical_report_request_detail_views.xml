@@ -48,15 +48,40 @@
           <field name="arch" type="xml">
             <form>
               <div class="oe_title">
-                <group>
-                    <h1>Solicitud De Reporte Técnico</h1>
-                    <field name="technical_report_request_id"
-                       readonly="true"
-                       class="oe_header"
-                       widget="many2one"
-                    />
-                </group>
+                  <header class="inline">
+                    <h1>Solicitud De Reporte Técnico
+                        <field name="technical_report_request_id"
+                           readonly="true"
+                           class="oe_header"
+                           no_label="1"
+                        />
+                    </h1>
+                  </header>
               </div>
+                <sheet>
+                    <div>
+                        <group>
+                            <div style="width:50%">
+                                <field name="pdf_file"
+                                       widget="pdf_viewer"
+                                       filename="pdf_name"
+                                       required="1"
+                                />
+                            </div>
+                        </group>
+                        <group>
+                            <field name="conclusion"
+                                   widget="radio"
+                            />
+                             <button name="action_generate_specific_report"
+                                     type="object"
+                                     string="Generar Reporte de Conclusión"
+                                     class="oe_highlight"
+                                     confirm="Una vez generado el reporte, no se podría editar, esta seguro?"
+                             />
+                        </group>
+                    </div>
+                </sheet>
             </form>
           </field>
         </record>

@@ -15,14 +15,14 @@ class TechnicalReportRequests(models.Model):
     date_request = fields.Date(
         string="Fecha de solicitud",
         required=True,
-        help="Fecha de creacion del archivo PDF",
+        help="Fecha de solicitud",
         default=fields.Date.today
     )
 
     technical_report_request_detail_ids = fields.One2many(
         "soe_fixed_assets.technical_report_request_detail",
         "technical_report_request_id",
-        string="Detalles de la solicitud de informe tecnico",
+        string="Detalles de la solicitud de informe técnico",
         copy=True,
         required=True
     )
