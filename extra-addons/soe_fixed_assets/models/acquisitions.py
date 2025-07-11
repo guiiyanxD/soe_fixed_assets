@@ -14,8 +14,7 @@ class Acquisition(models.Model):
 
     nro_cite = fields.Char(
         string="Nro de Acta de Recepcion ",
-        required=True, help="Escriba el numero de cite",
-        regex=r'^\d{4}/20\d{2}$'
+        required=True, help="Escriba el numero de cite"
     ) #TODO: Comprobar la validacion de la expresion regular
 
     pdf_file = fields.Binary(

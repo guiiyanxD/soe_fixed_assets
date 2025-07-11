@@ -1,19 +1,31 @@
 <odoo>
+    <!-- Categoría para los grupos del módulo -->
+    <record id="module_category_soe_fixed_assets" model="ir.module.category">
+        <field name="name">Activos Fijos</field>
+        <field name="description">Categoría para el módulo de activos fijos</field>
+        <field name="sequence">20</field>
+    </record>
+
     <!-- Administrador Total -->
     <record id="group_admin_activos" model="res.groups">
         <field name="name">Director</field>
+        <field name="category_id" ref="module_category_soe_fixed_assets"/>
         <field name="comment">Rol con la totalidad de permisos en el modulo</field>
+        <field name="implied_ids" eval="[(4, ref('group_manager_area'))]"/>
     </record>
 
     <!-- Jefe de Área -->
     <record id="group_manager_area" model="res.groups">
         <field name="name">Jefe de Área</field>
+        <field name="category_id" ref="module_category_soe_fixed_assets"/>
         <field name="comment">Rol que solo permite ver los activos asignados al área en cuestion</field>
+        <field name="implied_ids" eval="[(4, ref('group_operator'))]"/>
     </record>
 
     <!-- Usuario Operativo -->
     <record id="group_operator" model="res.groups">
         <field name="name">Operativo</field>
+        <field name="category_id" ref="module_category_soe_fixed_assets"/>
         <field name="comment">Rol que solo permite ver los activos asignados al usuario en cuestion</field>
     </record>
 </odoo>

@@ -37,7 +37,6 @@ class AssetsLoan(models.Model):
         "soe_fixed_assets.asset_loans_detail",
         "asset_loans_id",
         string="Detalles del prestamo",
-        ondelete="cascade",
         required=True,
     )
 

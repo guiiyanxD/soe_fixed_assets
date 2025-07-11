@@ -14,7 +14,6 @@ class AcquisitionDetail(models.Model):
         string="Activo Fijo asociado",
         help='Seleccione el activo fijo asociado a este detalle.',
         required=True,
-        ondelete='restrict',
     )
 
     acquisition_id = fields.Many2one(
