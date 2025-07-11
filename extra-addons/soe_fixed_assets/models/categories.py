@@ -16,7 +16,7 @@ class Category(models.Model):
     )
     coefficient = fields.Float(
         string="Coeficiente de depreciacion",
-        decimal=2,
+        digits=(16, 2),
         required=True
     )
     group_id = fields.One2many(

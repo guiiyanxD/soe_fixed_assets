@@ -1,59 +1,58 @@
-version: "3.8"
-
 services:
+    odoo:
+        image: odoo:18
+        container_name: odoo-container
+        restart: unless-stopped
+        depends_on:
+            - db
+        ports:
+            - "8069:8069"
+        volumes:
+            - odoo-data:/var/lib/odoo
+            - ./config:/etc/odoo # Contiene odoo.conf
+            - ./extra-addons:/mnt/extra-addons
+            - ./log:/var/log/odoo
+        environment:
+            - LANG=C.UTF-8
+        networks:
+            - general-net
+        command: odoo -c /etc/odoo/odoo.conf
 
-  odoo:
-    image: odoo:18
-    container_name: odoo-container
-    restart: unless-stopped
-    depends_on:
-      - db
-    ports:
-      - "8069:8069"
-    volumes:
-      - odoo-data:/var/lib/odoo
-      - ./config:/etc/odoo  # Contiene odoo.conf
-      - ./extra-addons:/mnt/extra-addons
-      - ./log:/var/log/odoo
-    environment:
-      - LANG=C.UTF-8
-    networks:
-      - general-net
-    command: odoo -c /etc/odoo/odoo.conf
+    db:
+        image: postgres:16
+        container_name: db-container
+        restart: unless-stopped
+        environment:
+            - POSTGRES_DB=odoo
+            - POSTGRES_PASSWORD=odoo
+            - POSTGRES_USER=odoo
+            - PGDATA=/var/lib/postgresql/data/pgdata
+        volumes:
+            - db-data:/var/lib/postgresql/data
+        networks:
+            - general-net
 
-  db:
-    image: postgres:16
-    container_name: db-container
-    restart: unless-stopped
-    environment:
-      - POSTGRES_DB=odoo
-      - POSTGRES_PASSWORD=odoo
-      - POSTGRES_USER=odoo
-      - PGDATA=/var/lib/postgresql/data/pgdata
-    volumes:
-      - db-data:/var/lib/postgresql/data
-    networks:
-      - general-net
-
-  pgsql:
-    image: dpage/pgadmin4:9.3.0
-    container_name: pgadmin4-container
-    ports:
-      #interno:externo
-      - "8090:80"
-    restart: unless-stopped
-    environment:
-      - PGADMIN_DEFAULT_EMAIL=williamswaz18@gmail.com
-      - PGADMIN_DEFAULT_PASSWORD=12345678
-    volumes:
-      - ../pgadmin4:/var/lib/pgadmin
-    networks:
-      - general-net
+    pgsql:
+        image: dpage/pgadmin4:9.3.0
+        container_name: pgadmin4-container
+        ports:
+            #interno:externo
+            - "6789:80"
+        restart: unless-stopped
+        environment:
+            - PGADMIN_DEFAULT_EMAIL=borysquiroga@gmail.com
+            - PGADMIN_DEFAULT_PASSWORD=12345678
+        volumes:
+            - pgadmin-data:/var/lib/pgadmin
+        networks:
+            - general-net
+        depends_on:
+            - db
 volumes:
-  odoo-data:
-  db-data:
-  pgadmin-data:
+    odoo-data:
+    db-data:
+    pgadmin-data:
 
 networks:
-  general-net:
-    driver: bridge
+    general-net:
+        driver: bridge
