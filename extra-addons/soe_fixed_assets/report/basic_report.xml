@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-       <record id="basic_report_example" model="ir.actions.report">
-           <field name="name">Basic Report Example</field>
+       <record id="technical_report_request_pdf" model="ir.actions.report">
+           <field name="name">Informe Técnico PDF</field>
            <field name="model">soe_fixed_assets.technical_report_requests</field>
            <field name="report_type">qweb-pdf</field>
-           <field name="report_name">technical_report_request.example_report</field>
-           <field name="report_file">technical_report_request.example_report</field>
+           <field name="report_name">soe_fixed_assets.report_technical_template</field>
+           <field name="report_file">soe_fixed_assets.report_technical_template</field>
+           <field name="binding_model_id" ref="model_soe_fixed_assets_technical_report_requests"/>
+           <field name="binding_type">report</field>
        </record>
     </data>
 </odoo>
