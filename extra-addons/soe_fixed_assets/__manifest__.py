@@ -27,8 +27,8 @@ Long description of module's purpose
         'security/security.xml',
         'security/ir.model.access.csv',
         'security/rules.xml',
-        'report/basic_template.xml',
-        'report/basic_report.xml',
+        'report/tech_report_requests/technical_report_request_report.xml',
+        'report/tech_report_requests/technical_report_request_template.xml',
         'security/rules.xml',
         'views/views.xml',
         'views/templates.xml',
@@ -45,8 +45,7 @@ Long description of module's purpose
         'views/technical_report_request_detail_views.xml',
         'views/technical_report_request_detail_status_views.xml',
         'views/aaset_loans_views.xml',
-        'report/loan_report/template.xml',
-        'report/asset_loan_detail_report.xml',
+
         'data/daily_check_expired_loans_cron.xml',
     ],
     # only loaded in demonstration mode

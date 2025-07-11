@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_technical_template">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+             <t t-call="web.external_layout">
+                <div class="page" style="font-family: Arial; margin: 2cm;">
+                    <!-- Encabezado con fecha dinámica -->
+                    <div style="text-align: right; margin-bottom: 2cm;">
+                        Santa Cruz, <span t-field="doc.date_request" t-options='{"widget": "date"}'/>
+                    </div>
+
+                    <!-- Datos del documento -->
+                    <div style="margin-bottom: 1cm;">
+                        <div>UPG-FICCT - OF Nº <span t-field="doc.nro_cite_request"/> </div>
+                        <div style="margin- top: 0.5cm;">Señor:</div>
+                        <div>Lic. Celso Quiroga Ferrufino</div>
+                        <div>JEFE D.S.U.</div>
+                        <div>U.A.G.R.M.</div>
+                        <div style="margin-top: 0.5cm;">Presente.-</div>
+                    </div>
+
+                    <!-- Referencia -->
+                    <div style="font-weight: bold; margin-bottom: 1cm;">
+                        Ref.- SOLICITUD INFORME TÉCNICO DE ACTIVOS
+                    </div>
+
+                    <!-- Cuerpo de la carta -->
+                    <div style="margin-bottom: 1cm;">
+                        <div style="margin-bottom: 0.5cm;">De mi consideración</div>
+
+                        <div style="margin-bottom: 0.5cm; text-align: justify;">
+                            A través del presente me dirijo a usted para solicitarle autorice e instruya a la sección correspondiente el informe técnico sobre los activos fijos, en la Unidad de Postgrado de la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones, que se detallan a continuación:
+                        </div>
+
+                        <!-- Tabla de activos -->
+                        <table style="width: 100%; border-collapse: collapse; margin: 1cm 0;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid black;">
+                                    <th style="width: 10%; text-align: left;">ITEM</th>
+                                    <th style="width: 20%; text-align: left;">CODIGO</th>
+                                    <th style="width: 20%; text-align: left;">NOMBRE</th>
+                                    <th style="width: 20%; text-align: left;">DESCRIPCIÓN</th>
+                                    <th style="width: 30%; text-align: left;">OBSERVACIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="doc.technical_report_request_detail_ids" t-as="asset" style="border-bottom: 1px solid #eee;">
+                                    <td style="padding: 5px 0;"><span t-esc="asset_index + 1"/></td>
+                                    <td style="padding: 5px 0;"><span t-field="asset.asset_id"/></td>
+                                    <td style="padding: 5px 0;"><span t-field="asset.asset_id.name"/></td>
+                                    <td style="padding: 5px 0;"><span t-field="asset.asset_id.description"/></td>
+                                    <td style="padding: 5px 0;"><span t-field="asset.comments"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div style="margin-top: 1cm; text-align: justify;">
+                            Informarle que estos activos se encuentran en mal estado y desuso.
+                            Sin otro particular, y agradeciendo su colaboración, reciba mis saludos cordiales.
+                        </div>
+                    </div>
+
+                    <!-- Firma -->
+                    <div style="margin-top: 2cm;">
+                        <div style="text-align: center;">Atentamente,</div>
+                        <div style="margin-top: 1.5cm; text-align: center;">
+                            <div><span t-esc="env['ir.config_parameter'].sudo().get_param('soe_fixed_assets.nombre_director')"/></div>
+                            <div>Director Unidad de Postgrado</div>
+                            <div>F.I.C.C.T. - UAGRM</div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+</odoo>
+

@@ -29,12 +29,12 @@ class TechnicalReportRequestDetail(models.Model):
 
     pdf_file = fields.Binary(
         string='Archivo PDF',
-        required=True,
+        # required=True,
         attachment=True
     )
     pdf_name = fields.Char(
         string="Respuesta del informe técnico ",
-        required=True,
+        # required=True,
         help="Cargue el informe tecnico recibido del activo fijo"
     )
 
