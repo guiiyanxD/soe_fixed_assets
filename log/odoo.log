@@ -18691,3 +18691,690 @@ View error context:
 2025-07-10 06:17:18,775 1 INFO ? odoo.service.server: Initiating shutdown 
 2025-07-10 06:17:18,777 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2025-07-10 06:17:19,498 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 5 connections  
+2025-07-11 03:15:33,444 1 INFO ? odoo: Odoo version 18.0-20250618 
+2025-07-11 03:15:33,445 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-07-11 03:15:33,445 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-07-11 03:15:33,445 1 INFO ? odoo: database: odoo@db:5432 
+2025-07-11 03:15:33,702 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-07-11 03:15:33,746 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-07-11 03:15:34,011 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 4dee11627e80:8069 
+2025-07-11 03:15:50,321 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:15:50] "GET / HTTP/1.1" 303 - 1 0.018 0.025
+2025-07-11 03:15:50,344 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:15:50] "GET /odoo HTTP/1.1" 303 - 2 0.003 0.016
+2025-07-11 03:15:50,879 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-07-11 03:15:51,445 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:15:51] "GET /web/database/selector HTTP/1.1" 200 - 10 0.095 1.002
+2025-07-11 03:15:52,252 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:15:52] "GET /odoo?db=teste10-07 HTTP/1.1" 302 - 1 0.002 0.011
+2025-07-11 03:15:52,278 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-07-11 03:15:52,279 1 INFO ? odoo.modules.loading: Loading module base (1/1) 
+2025-07-11 03:15:52,301 1 INFO ? odoo.modules.registry: module base: creating or updating database tables 
+2025-07-11 03:15:52,920 1 INFO ? odoo.modules.loading: loading base/data/res_bank.xml 
+2025-07-11 03:15:52,929 1 INFO ? odoo.modules.loading: loading base/data/res.lang.csv 
+2025-07-11 03:15:53,434 1 INFO ? odoo.modules.loading: loading base/data/res_lang_data.xml 
+2025-07-11 03:15:53,457 1 INFO ? odoo.modules.loading: loading base/data/res_partner_data.xml 
+2025-07-11 03:15:53,529 1 INFO ? odoo.modules.loading: loading base/data/res_currency_data.xml 
+2025-07-11 03:15:53,997 1 INFO ? odoo.modules.loading: loading base/data/res_company_data.xml 
+2025-07-11 03:15:54,006 1 INFO ? odoo.modules.loading: loading base/data/res_users_data.xml 
+2025-07-11 03:15:54,834 1 INFO ? odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2025-07-11 03:15:54,839 1 INFO ? odoo.modules.loading: loading base/data/res_country_data.xml 
+2025-07-11 03:15:55,088 1 INFO ? odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2025-07-11 03:15:55,107 1 INFO ? odoo.modules.loading: loading base/security/base_groups.xml 
+2025-07-11 03:15:55,231 1 INFO ? odoo.modules.loading: loading base/security/base_security.xml 
+2025-07-11 03:15:55,347 1 INFO ? odoo.modules.loading: loading base/views/base_menus.xml 
+2025-07-11 03:15:55,401 1 INFO ? odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2025-07-11 03:15:55,417 1 INFO ? odoo.modules.loading: loading base/views/res_config_views.xml 
+2025-07-11 03:15:55,423 1 INFO ? odoo.modules.loading: loading base/data/res.country.state.csv 
+2025-07-11 03:15:56,042 1 INFO ? odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2025-07-11 03:15:56,158 1 INFO ? odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2025-07-11 03:15:56,176 1 INFO ? odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2025-07-11 03:15:56,191 1 INFO ? odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2025-07-11 03:15:56,217 1 INFO ? odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2025-07-11 03:15:56,232 1 INFO ? odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2025-07-11 03:15:56,248 1 INFO ? odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2025-07-11 03:15:56,265 1 INFO ? odoo.modules.loading: loading base/views/ir_model_views.xml 
+2025-07-11 03:15:56,385 1 INFO ? odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2025-07-11 03:15:56,403 1 INFO ? odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2025-07-11 03:15:56,422 1 INFO ? odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2025-07-11 03:15:56,440 1 INFO ? odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2025-07-11 03:15:56,457 1 INFO ? odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2025-07-11 03:15:56,495 1 INFO ? odoo.modules.loading: loading base/views/ir_default_views.xml 
+2025-07-11 03:15:56,512 1 INFO ? odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2025-07-11 03:15:56,515 1 INFO ? odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2025-07-11 03:15:56,524 1 INFO ? odoo.modules.loading: loading base/report/ir_model_report.xml 
+2025-07-11 03:15:56,527 1 INFO ? odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2025-07-11 03:15:56,534 1 INFO ? odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2025-07-11 03:15:56,549 1 INFO ? odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2025-07-11 03:15:56,560 1 INFO ? odoo.modules.loading: loading base/views/ir_module_views.xml 
+2025-07-11 03:15:56,604 1 INFO ? odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2025-07-11 03:15:56,759 1 INFO ? odoo.modules.loading: loading base/data/ir_module_module.xml 
+2025-07-11 03:15:56,786 1 INFO ? odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2025-07-11 03:15:56,789 1 INFO ? odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2025-07-11 03:15:56,794 1 INFO ? odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2025-07-11 03:15:56,806 1 INFO ? odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2025-07-11 03:15:56,816 1 INFO ? odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2025-07-11 03:15:56,825 1 INFO ? odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2025-07-11 03:15:56,840 1 INFO ? odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2025-07-11 03:15:56,849 1 INFO ? odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2025-07-11 03:15:56,860 1 INFO ? odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2025-07-11 03:15:56,871 1 INFO ? odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2025-07-11 03:15:56,883 1 INFO ? odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2025-07-11 03:15:56,902 1 INFO ? odoo.modules.loading: loading base/views/res_company_views.xml 
+2025-07-11 03:15:56,920 1 INFO ? odoo.modules.loading: loading base/views/res_lang_views.xml 
+2025-07-11 03:15:56,940 1 INFO ? odoo.modules.loading: loading base/views/res_partner_views.xml 
+2025-07-11 03:15:57,020 1 INFO ? odoo.modules.loading: loading base/views/res_bank_views.xml 
+2025-07-11 03:15:57,047 1 INFO ? odoo.modules.loading: loading base/views/res_country_views.xml 
+2025-07-11 03:15:57,083 1 INFO ? odoo.modules.loading: loading base/views/res_currency_views.xml 
+2025-07-11 03:15:57,115 1 INFO ? odoo.modules.loading: loading base/views/res_users_views.xml 
+2025-07-11 03:15:57,224 1 INFO ? odoo.modules.loading: loading base/views/res_device_views.xml 
+2025-07-11 03:15:57,240 1 INFO ? odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2025-07-11 03:15:57,247 1 INFO ? odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2025-07-11 03:15:57,253 1 INFO ? odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2025-07-11 03:15:57,272 1 INFO ? odoo.modules.loading: loading base/security/ir.model.access.csv 
+2025-07-11 03:15:57,436 1 INFO ? odoo.modules.loading: Module base: loading demo 
+2025-07-11 03:15:57,436 1 INFO ? odoo.modules.loading: loading base/data/res_users_demo.xml 
+2025-07-11 03:15:58,481 1 INFO ? odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2025-07-11 03:15:58,483 1 INFO ? odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2025-07-11 03:15:58,487 1 INFO ? odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2025-07-11 03:15:58,604 1 INFO ? odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2025-07-11 03:15:58,607 1 INFO ? odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2025-07-11 03:15:58,814 1 INFO ? odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2025-07-11 03:15:58,891 1 INFO ? odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_ES 
+2025-07-11 03:15:58,892 1 INFO ? odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_ES 
+2025-07-11 03:15:59,840 1 INFO ? odoo.modules.loading: Module base loaded in 7.56s, 8258 queries (+8258 other) 
+2025-07-11 03:15:59,840 1 INFO ? odoo.modules.loading: 1 modules loaded in 7.56s, 8258 queries (+8258 extra) 
+2025-07-11 03:15:59,842 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-07-11 03:16:00,163 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/api.py:482: DeprecationWarning: The model odoo.addons.soe_fixed_assets.models.asset_loans_detail is not overriding the create method in batch
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3/dist-packages/odoo/service/server.py", line 128, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2524, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2028, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1638, in _open_registry
+    registry = Registry(self.db)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 129, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 480, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 186, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/soe_fixed_assets/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/soe_fixed_assets/models/__init__.py", line 14, in <module>
+    from . import asset_loans_detail
+  File "/mnt/extra-addons/soe_fixed_assets/models/asset_loans_detail.py", line 6, in <module>
+    class AssetsLoanDetail(models.Model):
+  File "/mnt/extra-addons/soe_fixed_assets/models/asset_loans_detail.py", line 81, in AssetsLoanDetail
+    @api.model
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 429, in model
+    return model_create_single(method)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 482, in model_create_single
+    warnings.warn(
+ 
+2025-07-11 03:16:00,609 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.77s, 0 queries (+0 extra) 
+2025-07-11 03:16:00,634 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:00,634 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition_detail.asset_id: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:00,635 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:00,635 1 WARNING ? odoo.fields: Field soe_fixed_assets.asset_loans.asset_loans_detail_ids: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:00,703 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-07-11 03:16:00,706 1 INFO ? odoo.modules.registry: Caches invalidated, signaling through the database: ['default', 'groups', 'templates'] 
+2025-07-11 03:16:00,707 1 INFO ? odoo.modules.registry: Registry loaded in 8.450s 
+2025-07-11 03:16:00,708 1 INFO teste10-07 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-11 03:16:00,721 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:00] "GET /odoo?db=teste10-07 HTTP/1.1" 303 - 8407 2.588 5.877
+2025-07-11 03:16:00,783 1 WARNING teste10-07 odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-07-11 03:16:00,843 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:00] "GET /web/login?redirect=/odoo?db%3Dteste10-07 HTTP/1.1" 200 - 56 0.016 0.100
+2025-07-11 03:16:00,874 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:00] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.003
+2025-07-11 03:16:01,465 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:01] "GET /web/webclient/translations/1752203761755 HTTP/1.1" 200 - 2 0.001 0.542
+2025-07-11 03:16:02,894 1 INFO teste10-07 odoo.addons.base.models.res_users: Login failed for db:teste10-07 login:williamswaz18@gmail.com from 172.18.0.1 
+2025-07-11 03:16:03,091 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:03] "POST /web/login HTTP/1.1" 200 - 7 0.006 0.214
+2025-07-11 03:16:03,111 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:03] "GET /web/binary/company_logo?dbname=teste10-07 HTTP/1.1" 200 - 2 0.001 0.003
+2025-07-11 03:16:03,147 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:03] "GET /web/webclient/translations/1752203763917 HTTP/1.1" 200 - 2 0.001 0.016
+2025-07-11 03:16:06,011 1 INFO teste10-07 odoo.addons.base.models.res_users: Login failed for db:teste10-07 login:williamswaz18@gmail.com from 172.18.0.1 
+2025-07-11 03:16:06,013 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:06] "POST /web/login HTTP/1.1" 200 - 5 0.003 0.014
+2025-07-11 03:16:06,030 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:06] "GET /web/binary/company_logo?dbname=teste10-07 HTTP/1.1" 304 - 2 0.001 0.003
+2025-07-11 03:16:06,066 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:06] "GET /web/webclient/translations/1752203766761 HTTP/1.1" 200 - 2 0.001 0.018
+2025-07-11 03:16:11,098 1 INFO teste10-07 odoo.addons.base.models.res_users: Login failed for db:teste10-07 login:jpeinado@soe.com from 172.18.0.1 
+2025-07-11 03:16:11,101 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:11] "POST /web/login HTTP/1.1" 200 - 5 0.003 0.014
+2025-07-11 03:16:11,116 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:11] "GET /web/binary/company_logo?dbname=teste10-07 HTTP/1.1" 304 - 2 0.001 0.002
+2025-07-11 03:16:11,154 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:11] "GET /web/webclient/translations/1752203771459 HTTP/1.1" 200 - 2 0.001 0.017
+2025-07-11 03:16:31,691 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-07-11 03:16:31,712 1 INFO teste10-07 odoo.addons.base.models.ir_attachment: filestore gc 57 checked, 0 removed 
+2025-07-11 03:16:31,749 1 INFO teste10-07 odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-07-11 03:16:31,756 1 INFO teste10-07 odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-07-11 03:16:31,762 1 INFO teste10-07 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:16:31,763 1 INFO teste10-07 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:16:31,780 1 INFO teste10-07 odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-07-11 03:16:31,794 1 INFO teste10-07 odoo.models.unlink: User #1 deleted bus.presence records with IDs: [1] 
+2025-07-11 03:16:31,809 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.117s 
+2025-07-11 03:16:31,812 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-07-11 03:16:31,815 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-07-11 03:16:41,166 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:41] "GET /web/database/selector HTTP/1.1" 200 - 10 0.005 0.409
+2025-07-11 03:16:42,569 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:42] "GET /odoo?db=test2 HTTP/1.1" 302 - 1 0.000 0.003
+2025-07-11 03:16:42,593 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-07-11 03:16:42,599 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:16:42,605 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-07-11 03:16:42,613 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:16:42,647 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:42,648 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition_detail.asset_id: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:42,648 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:42,649 1 WARNING ? odoo.fields: Field soe_fixed_assets.asset_loans.asset_loans_detail_ids: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:42,655 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-07-11 03:16:42,662 1 INFO ? odoo.modules.registry: Registry loaded in 0.089s 
+2025-07-11 03:16:42,664 1 INFO test2 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-11 03:16:42,685 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:42] "GET /odoo?db=test2 HTTP/1.1" 303 - 18 0.051 0.061
+2025-07-11 03:16:42,824 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:42] "GET /web/login?redirect=/odoo?db%3Dtest2 HTTP/1.1" 200 - 56 0.048 0.086
+2025-07-11 03:16:42,852 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:42] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.007 0.003
+2025-07-11 03:16:42,891 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:42] "GET /web/webclient/translations/1752203803062 HTTP/1.1" 200 - 2 0.001 0.017
+2025-07-11 03:16:45,535 1 INFO test2 odoo.addons.base.models.res_users: Login failed for db:test2 login:williamswaz18@gmail.com from 172.18.0.1 
+2025-07-11 03:16:45,538 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:45] "POST /web/login HTTP/1.1" 200 - 7 0.008 0.021
+2025-07-11 03:16:45,558 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:45] "GET /web/binary/company_logo?dbname=test2 HTTP/1.1" 304 - 2 0.001 0.003
+2025-07-11 03:16:45,597 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:45] "GET /web/webclient/translations/1752203805559 HTTP/1.1" 200 - 2 0.001 0.018
+2025-07-11 03:16:47,538 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:47] "GET /web/database/selector HTTP/1.1" 200 - 10 0.004 0.376
+2025-07-11 03:16:48,549 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:48] "GET /odoo?db=test HTTP/1.1" 302 - 1 0.001 0.003
+2025-07-11 03:16:48,570 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-07-11 03:16:48,576 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:16:48,583 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-07-11 03:16:48,591 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:16:48,627 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:48,628 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition_detail.asset_id: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:48,628 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:48,629 1 WARNING ? odoo.fields: Field soe_fixed_assets.asset_loans.asset_loans_detail_ids: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:16:48,634 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-07-11 03:16:48,640 1 INFO ? odoo.modules.registry: Registry loaded in 0.088s 
+2025-07-11 03:16:48,642 1 INFO test odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-11 03:16:48,660 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:48] "GET /odoo?db=test HTTP/1.1" 303 - 18 0.047 0.061
+2025-07-11 03:16:48,795 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:48] "GET /web/login?redirect=/odoo?db%3Dtest HTTP/1.1" 200 - 56 0.046 0.084
+2025-07-11 03:16:48,823 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:48] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.005 0.003
+2025-07-11 03:16:48,858 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:48] "GET /web/webclient/translations/1752203808689 HTTP/1.1" 200 - 2 0.001 0.015
+2025-07-11 03:16:50,811 1 INFO test odoo.addons.base.models.res_users: Login failed for db:test login:williamswaz18@gmail.com from 172.18.0.1 
+2025-07-11 03:16:50,814 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:50] "POST /web/login HTTP/1.1" 200 - 7 0.008 0.021
+2025-07-11 03:16:50,834 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:50] "GET /web/binary/company_logo?dbname=test HTTP/1.1" 304 - 2 0.001 0.003
+2025-07-11 03:16:50,871 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:50] "GET /web/webclient/translations/1752203812108 HTTP/1.1" 200 - 2 0.001 0.016
+2025-07-11 03:16:54,760 1 INFO test odoo.addons.base.models.res_users: Login failed for db:test login:jpeinado@soe.com from 172.18.0.1 
+2025-07-11 03:16:54,763 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:54] "POST /web/login HTTP/1.1" 200 - 5 0.003 0.013
+2025-07-11 03:16:54,776 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:54] "GET /web/binary/company_logo?dbname=test HTTP/1.1" 304 - 2 0.001 0.002
+2025-07-11 03:16:54,819 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:54] "GET /web/webclient/translations/1752203816018 HTTP/1.1" 200 - 2 0.001 0.019
+2025-07-11 03:16:56,410 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:56] "GET /web/database/selector HTTP/1.1" 200 - 10 0.005 0.392
+2025-07-11 03:16:57,572 1 INFO test werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:57] "GET /odoo?db=test2 HTTP/1.1" 302 - 1 0.000 0.003
+2025-07-11 03:16:57,578 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:57] "GET /odoo?db=test2 HTTP/1.1" 303 - 1 0.000 0.002
+2025-07-11 03:16:57,595 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:57] "GET /web/login?redirect=/odoo?db%3Dtest2 HTTP/1.1" 200 - 4 0.002 0.011
+2025-07-11 03:16:57,616 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:57] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.003
+2025-07-11 03:16:57,655 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:16:57] "GET /web/webclient/translations/1752203818745 HTTP/1.1" 200 - 2 0.001 0.016
+2025-07-11 03:17:00,294 1 INFO test2 odoo.addons.base.models.res_users: Login failed for db:test2 login:jpeinado@soe.com from 172.18.0.1 
+2025-07-11 03:17:00,297 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:00] "POST /web/login HTTP/1.1" 200 - 5 0.003 0.014
+2025-07-11 03:17:00,315 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:00] "GET /web/binary/company_logo?dbname=test2 HTTP/1.1" 304 - 2 0.001 0.002
+2025-07-11 03:17:00,361 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:00] "GET /web/webclient/translations/1752203821336 HTTP/1.1" 200 - 2 0.001 0.017
+2025-07-11 03:17:01,755 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:01] "GET /web/database/selector HTTP/1.1" 200 - 10 0.004 0.389
+2025-07-11 03:17:02,815 1 INFO test2 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:02] "GET /odoo?db=test3 HTTP/1.1" 302 - 1 0.001 0.003
+2025-07-11 03:17:02,838 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-07-11 03:17:02,844 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:17:02,849 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-07-11 03:17:02,856 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:17:02,889 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:17:02,890 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition_detail.asset_id: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:17:02,890 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:17:02,890 1 WARNING ? odoo.fields: Field soe_fixed_assets.asset_loans.asset_loans_detail_ids: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:17:02,896 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-07-11 03:17:02,902 1 INFO ? odoo.modules.registry: Registry loaded in 0.083s 
+2025-07-11 03:17:02,904 1 INFO test3 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-11 03:17:02,922 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:02] "GET /odoo?db=test3 HTTP/1.1" 303 - 18 0.047 0.057
+2025-07-11 03:17:03,054 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:03] "GET /web/login?redirect=/odoo?db%3Dtest3 HTTP/1.1" 200 - 56 0.046 0.082
+2025-07-11 03:17:03,080 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:03] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.006 0.003
+2025-07-11 03:17:03,113 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:03] "GET /web/webclient/translations/1752203823973 HTTP/1.1" 200 - 2 0.001 0.016
+2025-07-11 03:17:05,615 1 INFO test3 odoo.addons.base.models.res_users: Login failed for db:test3 login:jpeinado@soe.com from 172.18.0.1 
+2025-07-11 03:17:05,618 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:05] "POST /web/login HTTP/1.1" 200 - 7 0.007 0.019
+2025-07-11 03:17:05,637 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:05] "GET /web/binary/company_logo?dbname=test3 HTTP/1.1" 200 - 2 0.001 0.002
+2025-07-11 03:17:05,678 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:05] "GET /web/webclient/translations/1752203826422 HTTP/1.1" 200 - 2 0.001 0.016
+2025-07-11 03:17:29,425 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-07-11 03:17:29,440 1 INFO teste10-07 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-07-11 03:17:29,471 1 INFO teste10-07 odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-07-11 03:17:29,476 1 INFO teste10-07 odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-07-11 03:17:29,479 1 INFO teste10-07 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:17:29,480 1 INFO teste10-07 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:17:29,493 1 INFO teste10-07 odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-07-11 03:17:29,501 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.076s 
+2025-07-11 03:17:29,505 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-07-11 03:17:29,508 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-07-11 03:17:58,607 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:17:58] "GET /web/database/manager HTTP/1.1" 200 - 10 0.005 0.398
+2025-07-11 03:20:21,299 1 WARNING ? odoo.service.server: Thread <Thread(odoo.service.http.request.139685070362304, started 139685070362304)> virtual real time limit (143/120s) reached. 
+2025-07-11 03:20:21,301 1 INFO ? odoo.service.server: Dumping stacktrace of limit exceeding threads before reloading 
+2025-07-11 03:20:21,309 1 INFO ? odoo.tools.misc: 
+# Thread: <Thread(odoo.service.http.request.139685070362304, started 139685070362304)> (db:n/a) (uid:n/a) (url:n/a) (qc:n/a qt:n/a pt:n/a)
+File: "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+  self._bootstrap_inner()
+File: "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+  self.run()
+File: "/usr/lib/python3.12/threading.py", line 1010, in run
+  self._target(*self._args, **self._kwargs)
+File: "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+  self.finish_request(request, client_address)
+File: "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+  self.RequestHandlerClass(request, client_address, self)
+File: "/usr/lib/python3/dist-packages/odoo/service/server.py", line 128, in __init__
+  super().__init__(*args, **kwargs)
+File: "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+  self.handle()
+File: "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+  super().handle()
+File: "/usr/lib/python3.12/http/server.py", line 436, in handle
+  self.handle_one_request()
+File: "/usr/lib/python3.12/http/server.py", line 404, in handle_one_request
+  self.raw_requestline = self.rfile.readline(65537)
+File: "/usr/lib/python3.12/socket.py", line 707, in readinto
+  return self._sock.recv_into(b) 
+2025-07-11 03:20:21,309 1 INFO ? odoo.service.server: Initiating server reload 
+2025-07-11 03:20:21,336 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 11 connections  
+2025-07-11 03:20:22,267 1 INFO ? odoo: Odoo version 18.0-20250618 
+2025-07-11 03:20:22,268 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-07-11 03:20:22,269 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-07-11 03:20:22,269 1 INFO ? odoo: database: odoo@db:5432 
+2025-07-11 03:20:22,541 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-07-11 03:20:22,581 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-07-11 03:20:22,830 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 4dee11627e80:8069 
+2025-07-11 03:33:35,294 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-07-11 03:33:35,300 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:33:35,316 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-07-11 03:33:35,319 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-07-11 03:33:35,473 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/api.py:482: DeprecationWarning: The model odoo.addons.soe_fixed_assets.models.asset_loans_detail is not overriding the create method in batch
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3/dist-packages/odoo/service/server.py", line 128, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2524, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2028, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1638, in _open_registry
+    registry = Registry(self.db)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 129, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 480, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 186, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/soe_fixed_assets/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/soe_fixed_assets/models/__init__.py", line 14, in <module>
+    from . import asset_loans_detail
+  File "/mnt/extra-addons/soe_fixed_assets/models/asset_loans_detail.py", line 6, in <module>
+    class AssetsLoanDetail(models.Model):
+  File "/mnt/extra-addons/soe_fixed_assets/models/asset_loans_detail.py", line 81, in AssetsLoanDetail
+    @api.model
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 429, in model
+    return model_create_single(method)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 482, in model_create_single
+    warnings.warn(
+ 
+2025-07-11 03:33:35,840 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.52s, 0 queries (+0 extra) 
+2025-07-11 03:33:35,866 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,867 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition_detail.asset_id: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,867 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,868 1 WARNING ? odoo.fields: Field soe_fixed_assets.asset_loans.asset_loans_detail_ids: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,873 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-07-11 03:33:35,876 1 INFO ? odoo.modules.registry: Registry loaded in 0.594s 
+2025-07-11 03:33:35,877 1 INFO test3 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-11 03:33:35,894 1 INFO test3 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:35] "GET /odoo?db=teste10-07 HTTP/1.1" 302 - 18 0.010 0.604
+2025-07-11 03:33:35,911 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-07-11 03:33:35,917 1 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:33:35,920 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-07-11 03:33:35,927 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-07-11 03:33:35,949 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,949 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition_detail.asset_id: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,950 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,950 1 WARNING ? odoo.fields: Field soe_fixed_assets.asset_loans.asset_loans_detail_ids: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 03:33:35,956 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-07-11 03:33:35,958 1 INFO ? odoo.modules.registry: Registry loaded in 0.059s 
+2025-07-11 03:33:35,959 1 INFO teste10-07 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-11 03:33:35,973 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:35] "GET /odoo?db=teste10-07 HTTP/1.1" 303 - 18 0.010 0.065
+2025-07-11 03:33:36,037 1 WARNING teste10-07 odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-07-11 03:33:36,157 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:36] "GET /web/login?redirect=/odoo?db%3Dteste10-07 HTTP/1.1" 200 - 56 0.020 0.159
+2025-07-11 03:33:36,718 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:36] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.539
+2025-07-11 03:33:37,312 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:37] "GET /web/webclient/translations/1752204817410 HTTP/1.1" 200 - 2 0.001 0.564
+2025-07-11 03:33:46,287 1 INFO teste10-07 odoo.addons.base.models.res_users: Login successful for db:teste10-07 login:hacosta@soe.com from 172.18.0.1 
+2025-07-11 03:33:46,295 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "POST /web/login HTTP/1.1" 303 - 32 0.021 0.390
+2025-07-11 03:33:46,305 1 INFO teste10-07 odoo.addons.base.models.res_device: User 19 inserts device log (CL34rHrQzFaMwvO1T71mCzkkOeBLvZjDuPpEQZfBTP) 
+2025-07-11 03:33:46,495 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /odoo?db=teste10-07 HTTP/1.1" 200 - 67 0.027 0.169
+2025-07-11 03:33:46,530 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /web/webclient/load_menus/abb8a4ac4bbdb4bbe5f4b3f5da7fdf4392ed78c7260c20be456100177aadd5d3 HTTP/1.1" 200 - 12 0.004 0.007
+2025-07-11 03:33:46,605 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.004
+2025-07-11 03:33:46,606 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.003 0.007
+2025-07-11 03:33:46,643 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /odoo/offline HTTP/1.1" 200 - 6 0.005 0.021
+2025-07-11 03:33:46,655 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.000 0.024
+2025-07-11 03:33:46,660 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "POST /web/action/load HTTP/1.1" 200 - 9 0.012 0.026
+2025-07-11 03:33:46,664 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /web/image/res.partner/20/avatar_128?unique=1752180381000 HTTP/1.1" 200 - 8 0.011 0.027
+2025-07-11 03:33:46,666 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:46] "GET /web/image?model=res.users&field=avatar_128&id=19 HTTP/1.1" 200 - 9 0.012 0.030
+2025-07-11 03:33:46,708 1 INFO teste10-07 odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 19, model: ir.module.module 
+2025-07-11 03:33:47,107 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:47] "POST /web/dataset/call_kw/soe_fixed_assets.category/get_views HTTP/1.1" 200 - 28 0.316 0.088
+2025-07-11 03:33:47,108 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-07-11 03:33:47,109 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:47] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.004 0.401
+2025-07-11 03:33:47,129 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:47] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.006
+2025-07-11 03:33:47,130 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:47] "POST /web/dataset/call_kw/soe_fixed_assets.category/web_search_read HTTP/1.1" 200 - 3 0.003 0.006
+2025-07-11 03:33:49,885 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:49] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.005
+2025-07-11 03:33:49,914 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:49] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/get_views HTTP/1.1" 200 - 21 0.006 0.011
+2025-07-11 03:33:49,930 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:49] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_search_read HTTP/1.1" 200 - 5 0.006 0.003
+2025-07-11 03:33:51,960 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:51] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_read HTTP/1.1" 200 - 5 0.002 0.009
+2025-07-11 03:33:51,985 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:51] "GET /web/static/lib/pdfjs/web/viewer.html?file=http://localhost:8069/web/content?model%3Dsoe_fixed_assets.technical_report_request_detail%26field%3Dpdf_file%26id%3D7 HTTP/1.1" 200 - 0 0.000 0.002
+2025-07-11 03:33:52,000 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/viewer.css HTTP/1.1" 200 - 0 0.000 0.002
+2025-07-11 03:33:52,004 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/viewer.js HTTP/1.1" 200 - 0 0.000 0.002
+2025-07-11 03:33:52,004 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/build/pdf.js HTTP/1.1" 200 - 0 0.000 0.004
+2025-07-11 03:33:52,025 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-viewOutline.svg HTTP/1.1" 200 - 0 0.000 0.005
+2025-07-11 03:33:52,025 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-viewThumbnail.svg HTTP/1.1" 200 - 0 0.000 0.007
+2025-07-11 03:33:52,027 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-viewAttachments.svg HTTP/1.1" 200 - 0 0.000 0.007
+2025-07-11 03:33:52,029 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-viewLayers.svg HTTP/1.1" 200 - 0 0.000 0.006
+2025-07-11 03:33:52,032 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-sidebarToggle.svg HTTP/1.1" 200 - 0 0.000 0.008
+2025-07-11 03:33:52,033 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-search.svg HTTP/1.1" 200 - 0 0.000 0.008
+2025-07-11 03:33:52,070 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-pageDown.svg HTTP/1.1" 200 - 0 0.000 0.005
+2025-07-11 03:33:52,070 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-editorFreeText.svg HTTP/1.1" 200 - 0 0.000 0.007
+2025-07-11 03:33:52,073 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-zoomOut.svg HTTP/1.1" 200 - 0 0.000 0.007
+2025-07-11 03:33:52,074 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-secondaryToolbarToggle.svg HTTP/1.1" 200 - 0 0.000 0.007
+2025-07-11 03:33:52,075 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-menuArrow.svg HTTP/1.1" 200 - 0 0.000 0.005
+2025-07-11 03:33:52,079 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-zoomIn.svg HTTP/1.1" 200 - 0 0.000 0.007
+2025-07-11 03:33:52,084 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-pageUp.svg HTTP/1.1" 200 - 0 0.000 0.007
+2025-07-11 03:33:52,088 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/toolbarButton-editorInk.svg HTTP/1.1" 200 - 0 0.000 0.008
+2025-07-11 03:33:52,089 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/locale/locale.json HTTP/1.1" 200 - 0 0.000 0.008
+2025-07-11 03:33:52,090 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/build/pdf.worker.js HTTP/1.1" 200 - 0 0.000 0.006
+2025-07-11 03:33:52,104 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/locale/es-ES/viewer.ftl HTTP/1.1" 200 - 0 0.000 0.003
+2025-07-11 03:33:52,119 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/locale/en-US/viewer.ftl HTTP/1.1" 200 - 0 0.000 0.001
+2025-07-11 03:33:52,142 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/content?model=soe_fixed_assets.technical_report_request_detail&field=pdf_file&id=7 HTTP/1.1" 200 - 5 0.002 0.003
+2025-07-11 03:33:52,169 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/loading.svg HTTP/1.1" 200 - 0 0.000 0.001
+2025-07-11 03:33:52,178 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:52] "GET /web/static/lib/pdfjs/web/images/loading-icon.gif HTTP/1.1" 200 - 0 0.000 0.002
+2025-07-11 03:33:54,015 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:54] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_read HTTP/1.1" 200 - 4 0.001 0.004
+2025-07-11 03:33:54,850 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:54] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_read HTTP/1.1" 200 - 5 0.001 0.007
+2025-07-11 03:33:54,872 1 INFO ? werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:54] "GET /web/static/lib/pdfjs/web/viewer.html?file=http://localhost:8069/web/content?model%3Dsoe_fixed_assets.technical_report_request_detail%26field%3Dpdf_file%26id%3D9 HTTP/1.1" 200 - 0 0.000 0.001
+2025-07-11 03:33:54,941 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:54] "GET /web/content?model=soe_fixed_assets.technical_report_request_detail&field=pdf_file&id=9 HTTP/1.1" 200 - 4 0.002 0.004
+2025-07-11 03:33:55,408 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:55] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_read HTTP/1.1" 200 - 4 0.001 0.003
+2025-07-11 03:33:56,349 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:56] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_read HTTP/1.1" 200 - 5 0.001 0.006
+2025-07-11 03:33:56,425 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:33:56] "GET /web/content?model=soe_fixed_assets.technical_report_request_detail&field=pdf_file&id=9 HTTP/1.1" 304 - 4 0.001 0.003
+2025-07-11 03:47:29,430 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:47:29] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_search_read HTTP/1.1" 200 - 4 0.001 0.004
+2025-07-11 03:47:28,933 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:47:28] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_read HTTP/1.1" 200 - 5 0.002 0.014
+2025-07-11 03:47:29,045 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 03:47:29] "GET /web/content?model=soe_fixed_assets.technical_report_request_detail&field=pdf_file&id=9 HTTP/1.1" 304 - 4 0.001 0.003
+2025-07-11 03:51:27,555 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-07-11 03:51:27,582 1 INFO teste10-07 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-07-11 03:51:27,623 1 INFO teste10-07 odoo.addons.base.models.res_users: GC'd 1 user log entries 
+2025-07-11 03:51:27,629 1 INFO teste10-07 odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-07-11 03:51:27,633 1 INFO teste10-07 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:51:27,634 1 INFO teste10-07 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:51:27,648 1 INFO teste10-07 odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-07-11 03:51:27,658 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.102s 
+2025-07-11 03:51:27,661 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-07-11 03:51:27,664 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-07-11 03:51:27,670 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-07-11 03:51:27,674 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.003s 
+2025-07-11 03:51:27,676 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-07-11 03:51:27,678 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-07-11 03:51:27,716 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2025-07-11 03:51:27,748 1 INFO test3 odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-07-11 03:51:27,788 1 INFO test3 odoo.addons.base.models.res_users: GC'd 1 user log entries 
+2025-07-11 03:51:27,799 1 INFO test3 odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2025-07-11 03:51:27,806 1 INFO test3 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:51:27,808 1 INFO test3 odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2025-07-11 03:51:27,827 1 INFO test3 odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2025-07-11 03:51:27,839 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) done in 0.122s 
+2025-07-11 03:51:27,842 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) processed 0 records, 0 records remaining 
+2025-07-11 03:51:27,847 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) completed 
+2025-07-11 03:51:27,854 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) starting 
+2025-07-11 03:51:27,858 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) done in 0.004s 
+2025-07-11 03:51:27,861 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) processed 0 records, 0 records remaining 
+2025-07-11 03:51:27,863 1 INFO test3 odoo.addons.base.models.ir_cron: Job 'Base: Portal Users Deletion' (2) completed 
+2025-07-11 04:30:36,859 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Verificar préstamos vencidos' (4) starting 
+2025-07-11 04:30:36,865 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Verificar préstamos vencidos' (4) done in 0.006s 
+2025-07-11 04:30:36,868 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Verificar préstamos vencidos' (4) processed 0 records, 0 records remaining 
+2025-07-11 04:30:36,870 1 INFO teste10-07 odoo.addons.base.models.ir_cron: Job 'Verificar préstamos vencidos' (4) completed 
+2025-07-11 04:53:38,207 1 INFO teste10-07 odoo.addons.base.models.res_device: User 19 inserts device log (CL34rHrQzFaMwvO1T71mCzkkOeBLvZjDuPpEQZfBTP) 
+2025-07-11 04:53:38,218 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 04:53:38] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 2 0.001 0.013
+2025-07-11 05:22:38,908 1 INFO ? odoo.service.server: Initiating shutdown 
+2025-07-11 05:22:38,909 1 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-07-11 05:22:39,175 1 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 5 connections  
+2025-07-11 05:22:42,399 1 INFO ? odoo: Odoo version 18.0-20250618 
+2025-07-11 05:22:42,400 1 INFO ? odoo: Using configuration file at /etc/odoo/odoo.conf 
+2025-07-11 05:22:42,401 1 INFO ? odoo: addons paths: ['/usr/lib/python3/dist-packages/odoo/addons', '/var/lib/odoo/.local/share/Odoo/addons/18.0', '/mnt/extra-addons'] 
+2025-07-11 05:22:42,401 1 INFO ? odoo: database: odoo@db:5432 
+2025-07-11 05:22:42,728 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf 
+2025-07-11 05:22:42,774 1 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltoimage binary at /usr/local/bin/wkhtmltoimage 
+2025-07-11 05:22:43,080 1 INFO ? odoo.service.server: HTTP service (werkzeug) running on 4dee11627e80:8069 
+2025-07-11 05:22:44,479 1 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-07-11 05:22:44,480 1 INFO ? odoo.modules.loading: Loading module base (1/1) 
+2025-07-11 05:22:44,502 1 INFO ? odoo.modules.registry: module base: creating or updating database tables 
+2025-07-11 05:22:45,117 1 INFO ? odoo.modules.loading: loading base/data/res_bank.xml 
+2025-07-11 05:22:45,129 1 INFO ? odoo.modules.loading: loading base/data/res.lang.csv 
+2025-07-11 05:22:45,615 1 INFO ? odoo.modules.loading: loading base/data/res_lang_data.xml 
+2025-07-11 05:22:45,644 1 INFO ? odoo.modules.loading: loading base/data/res_partner_data.xml 
+2025-07-11 05:22:45,780 1 INFO ? odoo.modules.loading: loading base/data/res_currency_data.xml 
+2025-07-11 05:22:46,299 1 INFO ? odoo.modules.loading: loading base/data/res_company_data.xml 
+2025-07-11 05:22:46,309 1 INFO ? odoo.modules.loading: loading base/data/res_users_data.xml 
+2025-07-11 05:22:47,175 1 INFO ? odoo.modules.loading: loading base/data/report_paperformat_data.xml 
+2025-07-11 05:22:47,181 1 INFO ? odoo.modules.loading: loading base/data/res_country_data.xml 
+2025-07-11 05:22:47,448 1 INFO ? odoo.modules.loading: loading base/data/ir_demo_data.xml 
+2025-07-11 05:22:47,464 1 INFO ? odoo.modules.loading: loading base/security/base_groups.xml 
+2025-07-11 05:22:47,610 1 INFO ? odoo.modules.loading: loading base/security/base_security.xml 
+2025-07-11 05:22:47,761 1 INFO ? odoo.modules.loading: loading base/views/base_menus.xml 
+2025-07-11 05:22:47,819 1 INFO ? odoo.modules.loading: loading base/views/decimal_precision_views.xml 
+2025-07-11 05:22:47,838 1 INFO ? odoo.modules.loading: loading base/views/res_config_views.xml 
+2025-07-11 05:22:47,846 1 INFO ? odoo.modules.loading: loading base/data/res.country.state.csv 
+2025-07-11 05:22:48,499 1 INFO ? odoo.modules.loading: loading base/views/ir_actions_views.xml 
+2025-07-11 05:22:48,630 1 INFO ? odoo.modules.loading: loading base/views/ir_asset_views.xml 
+2025-07-11 05:22:48,653 1 INFO ? odoo.modules.loading: loading base/views/ir_config_parameter_views.xml 
+2025-07-11 05:22:48,670 1 INFO ? odoo.modules.loading: loading base/views/ir_cron_views.xml 
+2025-07-11 05:22:48,699 1 INFO ? odoo.modules.loading: loading base/views/ir_cron_trigger_views.xml 
+2025-07-11 05:22:48,716 1 INFO ? odoo.modules.loading: loading base/views/ir_filters_views.xml 
+2025-07-11 05:22:48,735 1 INFO ? odoo.modules.loading: loading base/views/ir_mail_server_views.xml 
+2025-07-11 05:22:48,755 1 INFO ? odoo.modules.loading: loading base/views/ir_model_views.xml 
+2025-07-11 05:22:48,892 1 INFO ? odoo.modules.loading: loading base/views/ir_attachment_views.xml 
+2025-07-11 05:22:48,913 1 INFO ? odoo.modules.loading: loading base/views/ir_rule_views.xml 
+2025-07-11 05:22:48,936 1 INFO ? odoo.modules.loading: loading base/views/ir_sequence_views.xml 
+2025-07-11 05:22:48,956 1 INFO ? odoo.modules.loading: loading base/views/ir_ui_menu_views.xml 
+2025-07-11 05:22:48,975 1 INFO ? odoo.modules.loading: loading base/views/ir_ui_view_views.xml 
+2025-07-11 05:22:49,029 1 INFO ? odoo.modules.loading: loading base/views/ir_default_views.xml 
+2025-07-11 05:22:49,052 1 INFO ? odoo.modules.loading: loading base/data/ir_config_parameter_data.xml 
+2025-07-11 05:22:49,056 1 INFO ? odoo.modules.loading: loading base/data/ir_cron_data.xml 
+2025-07-11 05:22:49,068 1 INFO ? odoo.modules.loading: loading base/report/ir_model_report.xml 
+2025-07-11 05:22:49,071 1 INFO ? odoo.modules.loading: loading base/report/ir_model_templates.xml 
+2025-07-11 05:22:49,078 1 INFO ? odoo.modules.loading: loading base/views/ir_logging_views.xml 
+2025-07-11 05:22:49,096 1 INFO ? odoo.modules.loading: loading base/views/ir_qweb_widget_templates.xml 
+2025-07-11 05:22:49,111 1 INFO ? odoo.modules.loading: loading base/views/ir_module_views.xml 
+2025-07-11 05:22:49,161 1 INFO ? odoo.modules.loading: loading base/data/ir_module_category_data.xml 
+2025-07-11 05:22:49,365 1 INFO ? odoo.modules.loading: loading base/data/ir_module_module.xml 
+2025-07-11 05:22:49,397 1 INFO ? odoo.modules.loading: loading base/report/ir_module_reports.xml 
+2025-07-11 05:22:49,403 1 INFO ? odoo.modules.loading: loading base/report/ir_module_report_templates.xml 
+2025-07-11 05:22:49,412 1 INFO ? odoo.modules.loading: loading base/wizard/base_module_update_views.xml 
+2025-07-11 05:22:49,429 1 INFO ? odoo.modules.loading: loading base/wizard/base_language_install_views.xml 
+2025-07-11 05:22:49,441 1 INFO ? odoo.modules.loading: loading base/wizard/base_import_language_views.xml 
+2025-07-11 05:22:49,453 1 INFO ? odoo.modules.loading: loading base/wizard/base_module_upgrade_views.xml 
+2025-07-11 05:22:49,472 1 INFO ? odoo.modules.loading: loading base/wizard/base_module_uninstall_views.xml 
+2025-07-11 05:22:49,483 1 INFO ? odoo.modules.loading: loading base/wizard/base_export_language_views.xml 
+2025-07-11 05:22:49,497 1 INFO ? odoo.modules.loading: loading base/wizard/base_partner_merge_views.xml 
+2025-07-11 05:22:49,512 1 INFO ? odoo.modules.loading: loading base/data/ir_demo_failure_data.xml 
+2025-07-11 05:22:49,530 1 INFO ? odoo.modules.loading: loading base/views/ir_profile_views.xml 
+2025-07-11 05:22:49,557 1 INFO ? odoo.modules.loading: loading base/views/res_company_views.xml 
+2025-07-11 05:22:49,580 1 INFO ? odoo.modules.loading: loading base/views/res_lang_views.xml 
+2025-07-11 05:22:49,604 1 INFO ? odoo.modules.loading: loading base/views/res_partner_views.xml 
+2025-07-11 05:22:49,699 1 INFO ? odoo.modules.loading: loading base/views/res_bank_views.xml 
+2025-07-11 05:22:49,731 1 INFO ? odoo.modules.loading: loading base/views/res_country_views.xml 
+2025-07-11 05:22:49,774 1 INFO ? odoo.modules.loading: loading base/views/res_currency_views.xml 
+2025-07-11 05:22:49,812 1 INFO ? odoo.modules.loading: loading base/views/res_users_views.xml 
+2025-07-11 05:22:49,934 1 INFO ? odoo.modules.loading: loading base/views/res_device_views.xml 
+2025-07-11 05:22:49,953 1 INFO ? odoo.modules.loading: loading base/views/res_users_identitycheck_views.xml 
+2025-07-11 05:22:49,961 1 INFO ? odoo.modules.loading: loading base/views/res_config_settings_views.xml 
+2025-07-11 05:22:49,969 1 INFO ? odoo.modules.loading: loading base/views/report_paperformat_views.xml 
+2025-07-11 05:22:49,991 1 INFO ? odoo.modules.loading: loading base/security/ir.model.access.csv 
+2025-07-11 05:22:50,174 1 INFO ? odoo.modules.loading: Module base: loading demo 
+2025-07-11 05:22:50,174 1 INFO ? odoo.modules.loading: loading base/data/res_users_demo.xml 
+2025-07-11 05:22:51,340 1 INFO ? odoo.modules.loading: loading base/data/res_partner_bank_demo.xml 
+2025-07-11 05:22:51,342 1 INFO ? odoo.modules.loading: loading base/data/res_currency_demo.xml 
+2025-07-11 05:22:51,347 1 INFO ? odoo.modules.loading: loading base/data/res_currency_rate_demo.xml 
+2025-07-11 05:22:51,478 1 INFO ? odoo.modules.loading: loading base/data/res_bank_demo.xml 
+2025-07-11 05:22:51,481 1 INFO ? odoo.modules.loading: loading base/data/res_partner_demo.xml 
+2025-07-11 05:22:51,717 1 INFO ? odoo.modules.loading: loading base/data/res_partner_image_demo.xml 
+2025-07-11 05:22:51,822 1 INFO ? odoo.addons.base.models.ir_module: module base: loading translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_ES 
+2025-07-11 05:22:51,823 1 INFO ? odoo.tools.translate: loading base translation file /usr/lib/python3/dist-packages/odoo/addons/base/i18n/es.po for language es_ES 
+2025-07-11 05:22:52,868 1 INFO ? odoo.modules.loading: Module base loaded in 8.39s, 8258 queries (+8258 other) 
+2025-07-11 05:22:52,869 1 INFO ? odoo.modules.loading: 1 modules loaded in 8.39s, 8258 queries (+8258 extra) 
+2025-07-11 05:22:52,878 1 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-07-11 05:22:52,891 1 INFO ? odoo.modules.loading: loading 13 modules... 
+2025-07-11 05:22:53,053 1 WARNING ? py.warnings: /usr/lib/python3/dist-packages/odoo/api.py:482: DeprecationWarning: The model odoo.addons.soe_fixed_assets.models.asset_loans_detail is not overriding the create method in batch
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.12/socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3/dist-packages/odoo/service/server.py", line 128, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/lib/python3.12/socketserver.py", line 761, in __init__
+    self.handle()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 390, in handle
+    super().handle()
+  File "/usr/lib/python3.12/http/server.py", line 436, in handle
+    self.handle_one_request()
+  File "/usr/lib/python3.12/http/server.py", line 424, in handle_one_request
+    method()
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "/usr/lib/python3/dist-packages/werkzeug/serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2524, in __call__
+    response = request._serve_db()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 2028, in _serve_db
+    self.registry, cr_readwrite = self._open_registry()
+  File "/usr/lib/python3/dist-packages/odoo/http.py", line 1638, in _open_registry
+    registry = Registry(self.db)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "/usr/lib/python3/dist-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/lib/python3/dist-packages/odoo/tools/func.py", line 97, in locked
+    return func(inst, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/odoo/modules/registry.py", line 129, in new
+    odoo.modules.load_modules(registry, force_demo, status, update_module)
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 480, in load_modules
+    processed_modules += load_marked_modules(env, graph,
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 365, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/usr/lib/python3/dist-packages/odoo/modules/loading.py", line 186, in load_module_graph
+    load_openerp_module(package.name)
+  File "/usr/lib/python3/dist-packages/odoo/modules/module.py", line 384, in load_openerp_module
+    __import__(qualname)
+  File "/mnt/extra-addons/soe_fixed_assets/__init__.py", line 4, in <module>
+    from . import models
+  File "/mnt/extra-addons/soe_fixed_assets/models/__init__.py", line 14, in <module>
+    from . import asset_loans_detail
+  File "/mnt/extra-addons/soe_fixed_assets/models/asset_loans_detail.py", line 6, in <module>
+    class AssetsLoanDetail(models.Model):
+  File "/mnt/extra-addons/soe_fixed_assets/models/asset_loans_detail.py", line 81, in AssetsLoanDetail
+    @api.model
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 429, in model
+    return model_create_single(method)
+  File "/usr/lib/python3/dist-packages/odoo/api.py", line 482, in model_create_single
+    warnings.warn(
+ 
+2025-07-11 05:22:53,485 1 INFO ? odoo.modules.loading: 13 modules loaded in 0.59s, 0 queries (+0 extra) 
+2025-07-11 05:22:53,513 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition.nro_cite: unknown parameter 'regex', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 05:22:53,513 1 WARNING ? odoo.fields: Field soe_fixed_assets.acquisition_detail.asset_id: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 05:22:53,514 1 WARNING ? odoo.fields: Field soe_fixed_assets.category.coefficient: unknown parameter 'decimal', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 05:22:53,514 1 WARNING ? odoo.fields: Field soe_fixed_assets.asset_loans.asset_loans_detail_ids: unknown parameter 'ondelete', if this is an actual parameter you may want to override the method _valid_field_parameter on the relevant model in order to allow it 
+2025-07-11 05:22:53,584 1 INFO ? odoo.modules.loading: Modules loaded. 
+2025-07-11 05:22:53,587 1 INFO ? odoo.modules.registry: Caches invalidated, signaling through the database: ['default', 'groups', 'templates'] 
+2025-07-11 05:22:53,589 1 INFO ? odoo.modules.registry: Registry loaded in 9.133s 
+2025-07-11 05:22:53,590 1 INFO teste10-07 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-07-11 05:22:53,671 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:22:53] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 8409 2.851 6.365
+2025-07-11 05:22:54,011 1 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-07-11 05:22:58,866 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:22:58] "POST /web/dataset/call_kw/soe_fixed_assets.category/web_search_read HTTP/1.1" 200 - 4 0.002 0.635
+2025-07-11 05:22:59,284 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:22:59] "GET /web/session/logout HTTP/1.1" 303 - 1 0.001 0.005
+2025-07-11 05:22:59,292 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:22:59] "GET /odoo HTTP/1.1" 303 - 1 0.001 0.002
+2025-07-11 05:22:59,352 1 WARNING teste10-07 odoo.modules.module: Missing `license` key in manifest for 'soe_fixed_assets', defaulting to LGPL-3 
+2025-07-11 05:22:59,494 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:22:59] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 50 0.018 0.177
+2025-07-11 05:22:59,523 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:22:59] "GET /web/binary/company_logo HTTP/1.1" 200 - 2 0.001 0.003
+2025-07-11 05:23:00,146 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:00] "GET /web/webclient/translations/1752211380879 HTTP/1.1" 200 - 2 0.001 0.580
+2025-07-11 05:23:04,211 1 INFO teste10-07 odoo.addons.base.models.res_users: Login failed for db:teste10-07 login:jpeinado@soe.com from 172.18.0.1 
+2025-07-11 05:23:04,425 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:04] "POST /web/login HTTP/1.1" 200 - 7 0.006 0.234
+2025-07-11 05:23:04,443 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:04] "GET /web/binary/company_logo?dbname=teste10-07 HTTP/1.1" 200 - 2 0.001 0.003
+2025-07-11 05:23:04,485 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:04] "GET /web/webclient/translations/1752211385462 HTTP/1.1" 200 - 2 0.001 0.019
+2025-07-11 05:23:05,523 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:05] "GET /web/service-worker.js HTTP/1.1" 200 - 2 0.001 0.003
+2025-07-11 05:23:21,105 1 INFO teste10-07 odoo.addons.base.models.res_users: Login failed for db:teste10-07 login:jpeinado@soe.com from 172.18.0.1 
+2025-07-11 05:23:21,108 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:21] "POST /web/login HTTP/1.1" 200 - 5 0.004 0.015
+2025-07-11 05:23:21,126 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:21] "GET /web/binary/company_logo?dbname=teste10-07 HTTP/1.1" 304 - 2 0.001 0.003
+2025-07-11 05:23:21,167 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:21] "GET /web/webclient/translations/1752211400677 HTTP/1.1" 200 - 2 0.001 0.017
+2025-07-11 05:23:27,334 1 INFO teste10-07 odoo.addons.base.models.res_users: Login successful for db:teste10-07 login:hacosta@soe.com from 172.18.0.1 
+2025-07-11 05:23:27,341 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "POST /web/login HTTP/1.1" 303 - 28 0.019 0.390
+2025-07-11 05:23:27,350 1 INFO teste10-07 odoo.addons.base.models.res_device: User 19 inserts device log (XxAnzP4D-mvFxnu0zRcZq8bN0bzfL35V_r_XbIL1xk) 
+2025-07-11 05:23:27,563 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "GET /odoo HTTP/1.1" 200 - 67 0.022 0.195
+2025-07-11 05:23:27,603 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "GET /web/webclient/load_menus/abb8a4ac4bbdb4bbe5f4b3f5da7fdf4392ed78c7260c20be456100177aadd5d3 HTTP/1.1" 200 - 12 0.006 0.010
+2025-07-11 05:23:27,670 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "GET /bus/websocket_worker_bundle?v=18.0-5 HTTP/1.1" 304 - 4 0.003 0.006
+2025-07-11 05:23:27,735 1 INFO teste10-07 odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 19, model: ir.module.module 
+2025-07-11 05:23:27,735 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "POST /web/action/load HTTP/1.1" 200 - 9 0.015 0.031
+2025-07-11 05:23:27,736 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "GET /websocket?version=18.0-5 HTTP/1.1" 101 - 1 0.001 0.037
+2025-07-11 05:23:27,742 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "GET /web/image/res.partner/20/avatar_128?unique=1752180381000 HTTP/1.1" 200 - 8 0.013 0.037
+2025-07-11 05:23:27,743 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 5 0.011 0.037
+2025-07-11 05:23:27,746 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "GET /web/image?model=res.users&field=avatar_128&id=19 HTTP/1.1" 200 - 9 0.016 0.040
+2025-07-11 05:23:27,785 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "POST /web/dataset/call_kw/soe_fixed_assets.category/get_views HTTP/1.1" 200 - 27 0.010 0.014
+2025-07-11 05:23:27,801 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.001 0.004
+2025-07-11 05:23:27,802 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:27] "POST /web/dataset/call_kw/soe_fixed_assets.category/web_search_read HTTP/1.1" 200 - 2 0.002 0.005
+2025-07-11 05:23:29,509 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:29] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2025-07-11 05:23:30,812 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:30] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2025-07-11 05:23:30,841 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:30] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/get_views HTTP/1.1" 200 - 21 0.006 0.011
+2025-07-11 05:23:30,854 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:30] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_search_read HTTP/1.1" 200 - 5 0.003 0.004
+2025-07-11 05:23:31,468 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:31] "POST /web/dataset/call_kw/soe_fixed_assets.technical_report_request_detail/web_read HTTP/1.1" 200 - 4 0.001 0.004
+2025-07-11 05:23:49,285 1 INFO teste10-07 werkzeug: 172.18.0.1 - - [11/Jul/2025 05:23:49] "POST /web/dataset/call_kw/soe_fixed_assets.category/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
