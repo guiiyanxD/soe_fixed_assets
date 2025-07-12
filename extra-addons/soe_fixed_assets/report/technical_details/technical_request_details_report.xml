@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Definición del reporte de detalles de solicitudes de informe técnico -->
+    <record id="action_report_technical_request_details" model="ir.actions.report">
+        <field name="name">Reporte de Detalles de Solicitud de Informe Técnico</field>
+        <field name="model">soe_fixed_assets.technical_report_request_detail</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">soe_fixed_assets.report_technical_details_template</field>
+        <field name="report_file">soe_fixed_assets.report_technical_details_template</field>
+        <field name="binding_model_id" ref="model_soe_fixed_assets_technical_report_request_detail"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

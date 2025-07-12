@@ -27,8 +27,8 @@ class AcquisitionDetail(models.Model):
     )
 
     _sql_constraints = [
-        ('unique_asset_per_acquisition', 'unique(acquisition_id, code)',
-         'Este activo ya está listado en este Acta de Recepción.'),
+        ('unique_asset_per_acq', 'unique(acquisition_id, id)',
+         'Este detalle ya está listado en este Acta de Recepción.'),
     ]
 
 

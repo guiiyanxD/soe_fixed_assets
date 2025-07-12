@@ -102,7 +102,6 @@ class Asset(models.Model):
     _sql_constraints = [
         ('unique_code', 'unique(code)', 'El Código del Activo Fijo debe ser único.'),
         ('unique_acquisition_detail', 'unique(acquisition_detail_id)', 'Este detalle ya está asignado a otro activo.'),
-        ('unique_loan_detail', 'unique(loan_detail_id)', 'Este detalle de prestamo ya esta asignado a otro activo')
     ]
 
     def action_return_asset_from_loan(self):

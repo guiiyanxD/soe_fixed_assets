@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_loans_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page" style="font-family: Arial; margin: 2cm;">
+                        <!-- Encabezado con fecha dinámica -->
+                        <div style="text-align: right; margin-bottom: 2cm;">
+                            Santa Cruz, <span t-field="doc.loan_date" t-options='{"widget": "date"}'/>
+                        </div>
+
+                        <!-- Datos del documento -->
+                        <div style="margin-bottom: 1cm;">
+                            <div>UPG-FICCT - ACTA DE PRÉSTAMO Nº <span t-field="doc.nro_cite"/> </div>
+                            <div style="margin-top: 0.5cm;">Solicitante:</div>
+                            <div><span t-field="doc.manager"/></div>
+                            <div>Destino: <span t-field="doc.destiny"/></div>
+                            <div style="margin-top: 0.5cm;">Presente.-</div>
+                        </div>
+
+                        <!-- Referencia -->
+                        <div style="font-weight: bold; margin-bottom: 1cm;">
+                            Ref.- ACTA DE PRÉSTAMO DE ACTIVOS FIJOS
+                        </div>
+
+                        <!-- Cuerpo del documento -->
+                        <div style="margin-bottom: 1.5cm;">
+                            <div style="margin-bottom: 1cm; line-height: 1.6;">
+                                <strong>De mi consideración:</strong>
+                            </div>
+
+                            <div style="margin-bottom: 1.5cm; text-align: justify; line-height: 1.6;">
+                                Por medio del presente documento se hace entrega en calidad de préstamo los siguientes activos fijos de la Unidad de Postgrado de la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones:
+                            </div>
+
+                            <!-- Tabla de activos prestados -->
+                            <table style="width: 100%; border-collapse: collapse; margin: 1.5cm 0; border: 2px solid #000;">
+                                <thead>
+                                    <tr style="background-color: #f5f5f5; border-bottom: 2px solid #000;">
+                                        <th style="width: 8%; text-align: center; padding: 10px; border-right: 1px solid #000; font-weight: bold;">ITEM</th>
+                                        <th style="width: 15%; text-align: center; padding: 10px; border-right: 1px solid #000; font-weight: bold;">CÓDIGO</th>
+                                        <th style="width: 25%; text-align: center; padding: 10px; border-right: 1px solid #000; font-weight: bold;">NOMBRE</th>
+                                        <th style="width: 15%; text-align: center; padding: 10px; border-right: 1px solid #000; font-weight: bold;">MARCA</th>
+                                        <th style="width: 20%; text-align: center; padding: 10px; border-right: 1px solid #000; font-weight: bold;">DESCRIPCIÓN</th>
+                                        <th style="width: 12%; text-align: center; padding: 10px; border-right: 1px solid #000; font-weight: bold;">ESTADO</th>
+                                        <th style="width: 5%; text-align: center; padding: 10px; font-weight: bold;">CANT.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="doc.asset_loans_detail_ids" t-as="detail" style="border-bottom: 1px solid #ccc;">
+                                        <td style="padding: 10px; text-align: center; border-right: 1px solid #ccc;"><span t-esc="detail_index + 1"/></td>
+                                        <td style="padding: 10px; text-align: center; border-right: 1px solid #ccc;"><span t-field="detail.asset_code"/></td>
+                                        <td style="padding: 10px; border-right: 1px solid #ccc;"><span t-field="detail.asset_name"/></td>
+                                        <td style="padding: 10px; text-align: center; border-right: 1px solid #ccc;"><span t-field="detail.asset_brand"/></td>
+                                        <td style="padding: 10px; border-right: 1px solid #ccc;"><span t-field="detail.asset_description"/></td>
+                                        <td style="padding: 10px; text-align: center; border-right: 1px solid #ccc;"><span t-field="detail.asset_physical_status"/></td>
+                                        <td style="padding: 10px; text-align: center;">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Información del préstamo -->
+                            <div style="margin-top: 1.5cm; margin-bottom: 1.5cm;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <tr>
+                                        <td style="width: 50%; padding: 5px 10px; border-bottom: 1px solid #ddd;">
+                                            <strong>Fecha de Préstamo:</strong>
+                                        </td>
+                                        <td style="width: 50%; padding: 5px 10px; border-bottom: 1px solid #ddd;">
+                                            <span t-field="doc.loan_date" t-options='{"widget": "date"}'/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px 10px; border-bottom: 1px solid #ddd;">
+                                            <strong>Fecha de Devolución Programada:</strong>
+                                        </td>
+                                        <td style="padding: 5px 10px; border-bottom: 1px solid #ddd;">
+                                            <span t-field="doc.return_date" t-options='{"widget": "date"}'/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px 10px; border-bottom: 1px solid #ddd;">
+                                            <strong>Destino del Préstamo:</strong>
+                                        </td>
+                                        <td style="padding: 5px 10px; border-bottom: 1px solid #ddd;">
+                                            <span t-field="doc.destiny"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 5px 10px;">
+                                            <strong>Persona Responsable:</strong>
+                                        </td>
+                                        <td style="padding: 5px 10px;">
+                                            <span t-field="doc.manager"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <!-- Condiciones del préstamo -->
+                            <div style="margin-top: 1.5cm; margin-bottom: 1.5cm;">
+                                <div style="font-weight: bold; margin-bottom: 1cm; font-size: 14px; text-decoration: underline;">
+                                    CONDICIONES DEL PRÉSTAMO:
+                                </div>
+                                <div style="margin-bottom: 0.5cm; text-align: justify; line-height: 1.5;">
+                                    <strong>1.</strong> Los activos deben ser devueltos en las mismas condiciones en que fueron entregados.
+                                </div>
+                                <div style="margin-bottom: 0.5cm; text-align: justify; line-height: 1.5;">
+                                    <strong>2.</strong> El solicitante se hace responsable por cualquier daño o pérdida de los equipos.
+                                </div>
+                                <div style="margin-bottom: 0.5cm; text-align: justify; line-height: 1.5;">
+                                    <strong>3.</strong> La devolución debe realizarse en la fecha establecida.
+                                </div>
+                                <div style="margin-bottom: 0.5cm; text-align: justify; line-height: 1.5;">
+                                    <strong>4.</strong> En caso de daño, el solicitante deberá cubrir los costos de reparación o reposición.
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 1.5cm; text-align: justify; line-height: 1.6;">
+                                Sin otro particular, y agradeciendo su colaboración en el cuidado de los bienes institucionales, me despido de usted con las consideraciones de mi mayor estima.
+                            </div>
+                        </div>
+
+                        <!-- Firmas -->
+                        <div style="margin-top: 4cm;">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td style="width: 50%; text-align: center; vertical-align: top; padding-right: 2cm;">
+                                        <div style="margin-bottom: 3cm;"></div>
+                                        <div style="border-top: 2px solid black; width: 250px; margin: 0 auto; padding-top: 10px;">
+                                            <div style="font-weight: bold; margin-bottom: 5px;">
+                                                <span t-esc="env['ir.config_parameter'].sudo().get_param('soe_fixed_assets.nombre_director')"/>
+                                            </div>
+                                            <div style="font-weight: bold; margin-bottom: 3px;">Director Unidad de Postgrado</div>
+                                            <div style="margin-bottom: 3px;">F.I.C.C.T. - UAGRM</div>
+                                            <div style="font-size: 11px; margin-top: 8px; font-style: italic;">(ENTREGA)</div>
+                                        </div>
+                                    </td>
+                                    <td style="width: 50%; text-align: center; vertical-align: top; padding-left: 2cm;">
+                                        <div style="margin-bottom: 3cm;"></div>
+                                        <div style="border-top: 2px solid black; width: 250px; margin: 0 auto; padding-top: 10px;">
+                                            <div style="font-weight: bold; margin-bottom: 5px;">
+                                                <span t-field="doc.manager"/>
+                                            </div>
+                                            <div style="margin-bottom: 3px;">Solicitante</div>
+                                            <div style="font-size: 11px; margin-top: 8px; font-style: italic;">(RECIBE)</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
