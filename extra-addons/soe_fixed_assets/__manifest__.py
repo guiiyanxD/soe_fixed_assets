@@ -29,7 +29,10 @@ Long description of module's purpose
         'security/rules.xml',
         'report/tech_report_requests/technical_report_request_report.xml',
         'report/tech_report_requests/technical_report_request_template.xml',
-        'security/rules.xml',
+        'report/loans/asset_loans_report.xml',
+        'report/loans/asset_loans_template.xml',
+        'report/technical_details/technical_request_details_report.xml',
+        'report/technical_details/technical_request_details_template.xml',
         'views/views.xml',
         'views/templates.xml',
         'views/asset_views.xml',
@@ -44,8 +47,6 @@ Long description of module's purpose
         'views/technical_report_request_views.xml',
         'views/technical_report_request_detail_views.xml',
         'views/technical_report_request_detail_status_views.xml',
-        'views/aaset_loans_views.xml',
-
         'data/daily_check_expired_loans_cron.xml',
     ],
     # only loaded in demonstration mode

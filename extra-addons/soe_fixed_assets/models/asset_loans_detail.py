@@ -62,7 +62,7 @@ class AssetsLoanDetail(models.Model):
     )
 
     _sql_constraints = [
-        ('asset_unique_per_loan', 'UNIQUE(asset_id, id, asset_loan_id)', '¡Este activo fijo ya existe en este préstamo!'),
+        ('asset_unique_per_loan', 'UNIQUE(asset_id, asset_loans_id)', '¡Este activo fijo ya existe en este préstamo!'),
     ]
 
     @api.onchange('asset_id')
@@ -78,12 +78,13 @@ class AssetsLoanDetail(models.Model):
         else:
             raise ValidationError("El activo fijo no esta prestado")
 
-    @api.model
-    def create(self, vals):
-        record = super(AssetsLoanDetail, self).create(vals)
-        if record.asset_id:
-            record.asset_id.write({'availability': 'loaned'})
-        return record
+    @api.model_create_multi
+    def create(self, vals_list):
+        records = super(AssetsLoanDetail, self).create(vals_list)
+        for record in records:
+            if record.asset_id:
+                record.asset_id.write({'availability': 'loaned'})
+        return records
 
     def unlink(self):
         for rec in self:
