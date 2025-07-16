@@ -72,13 +72,22 @@
                         <group>
                             <field name="conclusion"
                                    widget="radio"
+                                   options="{'horizontal': true}"
                             />
+
                              <button name="action_generate_specific_report"
                                      type="object"
                                      string="Generar Reporte de Conclusión"
                                      class="oe_highlight"
                                      confirm="Una vez generado el reporte, no se podría editar, esta seguro?"
+                                     invisible="conclusion == 'pending'"
                              />
+                            <button
+                                name="generate_report"
+                                string="Generar Reporte"
+                                type="object"
+                                class="btn-primary"
+                            />
                         </group>
                     </div>
                 </sheet>

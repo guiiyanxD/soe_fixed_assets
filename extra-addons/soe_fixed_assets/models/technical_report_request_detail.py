@@ -1,5 +1,6 @@
 from odoo import models, fields, api
-from odoo.exceptions import ValidationError
+from odoo.exceptions import ValidationError, UserError
+
 
 class TechnicalReportRequestDetail(models.Model):
     _name = 'soe_fixed_assets.technical_report_request_detail'
@@ -118,6 +119,19 @@ class TechnicalReportRequestDetail(models.Model):
 
     def action_generate_specific_report(self):
         return True
+
+    def generate_report(self):
+        """Genera el reporte según la selección del usuario."""
+        if self.conclusion == 'pending':
+            raise UserError("Debes seleccionar una conclusion antes de generarlo.")
+
+        report_action = False
+        if self.conclusion == 'to maintenance':
+            report_action = self.env.ref('soe_fixed_assets.action_maintenance_report').report_action(self)
+        elif self.conclusion == 'to unavailable':
+            report_action = self.env.ref('soe_fixed_assets.action_maintenance_report').report_action(self)
+
+        return report_action
 
     def action_to_unavailable(self):
         self.ensure_one()
