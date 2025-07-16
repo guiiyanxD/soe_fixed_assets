@@ -60,7 +60,6 @@ class Acquisition(models.Model):
                     vals['pdf_name'] = f"{nro_cite}.pdf"
         return super().create(vals_list)
 
-    @api.model
     def write(self, vals):
         if 'pdf_file' in vals and self.nro_cite and 'pdf_name' not in vals:
             file_content = vals.get('pdf_file')

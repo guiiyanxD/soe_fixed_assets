@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_technical_details_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page" style="font-family: Arial; margin: 2cm;">
+                        <!-- Encabezado con fecha dinámica -->
+                        <div style="text-align: right; margin-bottom: 2cm;">
+                            Santa Cruz, <span t-field="doc.technical_report_request_id.date_request" t-options='{"widget": "date"}'/>
+                        </div>
+
+                        <!-- Datos del documento -->
+                        <div style="margin-bottom: 1cm;">
+                            <div>UPG-FICCT - DETALLE TÉCNICO Nº <span t-field="doc.technical_report_request_id.nro_cite_request"/> </div>
+                            <div style="margin-top: 0.5cm;">Activo:</div>
+                            <div><strong><span t-field="doc.asset_id.name"/></strong></div>
+                            <div>Código: <span t-field="doc.asset_id.code"/></div>
+                            <div>Área: <span t-field="doc.asset_id.area_id.name"/></div>
+                            <div style="margin-top: 0.5cm;">Presente.-</div>
+                        </div>
+
+                        <!-- Referencia -->
+                        <div style="font-weight: bold; margin-bottom: 1cm;">
+                            Ref.- DETALLE TÉCNICO DE ACTIVO FIJO
+                        </div>
+
+                        <!-- Información del activo -->
+                        <div style="margin-bottom: 1.5cm;">
+                            <div style="margin-bottom: 1cm; font-weight: bold; font-size: 14px; text-decoration: underline;">
+                                INFORMACIÓN DEL ACTIVO:
+                            </div>
+
+                            <table style="width: 100%; border-collapse: collapse; margin: 1.5cm 0; border: 2px solid #000;">
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Código:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.code"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Nombre:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.name"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Descripción:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.description"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Marca:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.brand"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Área:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.area_id.name"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Grupo:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.group_id.name"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Estado Físico:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.physical_status_id.name"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Disponibilidad:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;">
+                                        <span t-if="doc.asset_id.availability == 'available'" style="color: green; font-weight: bold;">Disponible</span>
+                                        <span t-if="doc.asset_id.availability == 'loaned'" style="color: orange; font-weight: bold;">Prestado</span>
+                                        <span t-if="doc.asset_id.availability == 'maintenance'" style="color: blue; font-weight: bold;">En Mantenimiento</span>
+                                        <span t-if="doc.asset_id.availability == 'unavailable'" style="color: red; font-weight: bold;">No Disponible</span>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Encargado:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.asset_id.manager_id.name"/></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Costo:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;">Bs. <span t-field="doc.asset_id.cost" t-options='{"widget": "float", "precision": 2}'/></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!-- Estado del informe técnico -->
+                        <div style="margin-bottom: 1.5cm;">
+                            <div style="margin-bottom: 1cm; font-weight: bold; font-size: 14px; text-decoration: underline;">
+                                ESTADO DEL INFORME TÉCNICO:
+                            </div>
+
+                            <table style="width: 100%; border-collapse: collapse; margin: 1.5cm 0; border: 2px solid #000;">
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Estado:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;">
+                                        <span t-if="doc.technical_report_status == 'requested'" style="color: orange; font-weight: bold;">Solicitado</span>
+                                        <span t-if="doc.technical_report_status == 'received'" style="color: green; font-weight: bold;">Recibido</span>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Conclusión:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;">
+                                        <span t-if="doc.conclusion == 'pending'" style="color: orange; font-weight: bold;">Pendiente</span>
+                                        <span t-if="doc.conclusion == 'to maintenance'" style="color: blue; font-weight: bold;">Requiere Mantenimiento</span>
+                                        <span t-if="doc.conclusion == 'to unavailable'" style="color: red; font-weight: bold;">Requiere Dar de Baja</span>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #ccc;">
+                                    <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; border-right: 1px solid #000;">Fecha de Solicitud:</td>
+                                    <td style="padding: 12px; border-right: 1px solid #ccc;"><span t-field="doc.technical_report_request_id.date_request" t-options='{"widget": "date"}'/></td>
+                                </tr>
+                                <t t-if="doc.comments">
+                                    <tr style="border-bottom: 1px solid #ccc;">
+                                        <td style="width: 25%; padding: 12px; font-weight: bold; background-color: #f5f5f5; vertical-align: top; border-right: 1px solid #000;">Comentarios:</td>
+                                        <td style="padding: 12px; text-align: justify; border-right: 1px solid #ccc;"><span t-field="doc.comments"/></td>
+                                    </tr>
+                                </t>
+                            </table>
+                        </div>
+
+                        <!-- Información adicional -->
+                        <div style="margin-top: 1.5cm; margin-bottom: 1.5cm;">
+                            <div style="margin-bottom: 1cm; font-weight: bold; font-size: 14px; text-decoration: underline;">
+                                OBSERVACIONES TÉCNICAS:
+                            </div>
+                            <div style="margin-bottom: 0.8cm; text-align: justify; line-height: 1.6;">
+                                Este activo fijo ha sido incluido en la solicitud de informe técnico para evaluación de su estado actual y determinación de las acciones correspondientes según las normativas institucionales.
+                            </div>
+                            <div style="margin-bottom: 0.8cm; text-align: justify; line-height: 1.6;">
+                                La evaluación técnica permitirá determinar si el activo requiere mantenimiento, reparación o si debe ser dado de baja del inventario institucional.
+                            </div>
+                        </div>
+
+                        <!-- Firma -->
+                        <div style="margin-top: 4cm;">
+                            <div style="text-align: center; margin-bottom: 1cm; font-style: italic;">Atentamente,</div>
+                            <div style="text-align: center;">
+                                <div style="margin-bottom: 3cm;"></div>
+                                <div style="border-top: 2px solid black; width: 250px; margin: 0 auto; padding-top: 10px;">
+                                    <div style="font-weight: bold; margin-bottom: 5px;">
+                                        <span t-esc="env['ir.config_parameter'].sudo().get_param('soe_fixed_assets.nombre_director')"/>
+                                    </div>
+                                    <div style="font-weight: bold; margin-bottom: 3px;">Director Unidad de Postgrado</div>
+                                    <div style="margin-bottom: 3px;">F.I.C.C.T. - UAGRM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

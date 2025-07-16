@@ -6,12 +6,11 @@
         <field name="sequence">20</field>
     </record>
 
-    <!-- Administrador Total -->
-    <record id="group_admin_activos" model="res.groups">
-        <field name="name">Director</field>
+    <!-- Usuario Operativo -->
+    <record id="group_operator" model="res.groups">
+        <field name="name">Operativo</field>
         <field name="category_id" ref="module_category_soe_fixed_assets"/>
-        <field name="comment">Rol con la totalidad de permisos en el modulo</field>
-        <field name="implied_ids" eval="[(4, ref('group_manager_area'))]"/>
+        <field name="comment">Rol que solo permite ver los activos asignados al usuario en cuestion</field>
     </record>
 
     <!-- Jefe de Área -->
@@ -22,10 +21,11 @@
         <field name="implied_ids" eval="[(4, ref('group_operator'))]"/>
     </record>
 
-    <!-- Usuario Operativo -->
-    <record id="group_operator" model="res.groups">
-        <field name="name">Operativo</field>
+    <!-- Administrador Total -->
+    <record id="group_admin_activos" model="res.groups">
+        <field name="name">Director</field>
         <field name="category_id" ref="module_category_soe_fixed_assets"/>
-        <field name="comment">Rol que solo permite ver los activos asignados al usuario en cuestion</field>
+        <field name="comment">Rol con la totalidad de permisos en el modulo</field>
+        <field name="implied_ids" eval="[(4, ref('group_manager_area'))]"/>
     </record>
 </odoo>
