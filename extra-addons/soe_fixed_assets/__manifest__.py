@@ -33,6 +33,8 @@ Long description of module's purpose
         'report/loans/asset_loans_template.xml',
         'report/technical_details/technical_request_details_report.xml',
         'report/technical_details/technical_request_details_template.xml',
+        'report/tech_report_to_unavailable/tech_report_to_unavailable_report.xml',
+        'report/tech_report_to_unavailable/tech_report_to_unavailable_template.xml',
         'report/tech_report_to_maintenance/tech_report_to_maintenance_report.xml',
         'report/tech_report_to_maintenance/tech_report_to_maintenance_template.xml',
         'views/views.xml',

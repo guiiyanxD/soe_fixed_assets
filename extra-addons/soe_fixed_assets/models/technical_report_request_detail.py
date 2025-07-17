@@ -9,7 +9,8 @@ class TechnicalReportRequestDetail(models.Model):
     asset_id = fields.Many2one(
         "soe_fixed_assets.asset",
         string="Activo fijo",
-        required=True
+        required=True,
+        domain="[('availability', '=', 'available')]",
     )
 
     technical_report_request_id = fields.Many2one(
@@ -88,37 +89,6 @@ class TechnicalReportRequestDetail(models.Model):
             'target': 'current',  # La vista se abre en la misma ventana
         }
 
-    def action_to_maintenance(self):
-        self.ensure_one()
-        for record in self:
-            if (record.technical_report_status == 'requested' and record.conclusion == 'pending'):
-                if (record.asset_id.availability == 'available'):
-                    record.write({
-                        'conclusion': 'to maintenance',
-                        'technical_report_status': 'received',
-                    })
-
-                    if record.asset_id:
-                        record.asset_id.write({
-                            'availability': 'maintenance',
-                        })
-                    else:
-                        raise ValidationError("El activo fijo no se encuentra Disponible.")
-                return {
-                    'type': 'ir.actions.client',
-                    'tag': 'display_notification',
-                    'params': {
-                        'message': 'El activo ha sido enviado a mantenimiento correctamente.',
-                        'type': 'success',
-                        'sticky': False,
-                    }
-                }
-            else:
-                raise ValidationError("Solo puedes enviar a mantenimiento activos que tienen pendiente una respuesta tecnica.")
-        return True
-
-    def action_generate_specific_report(self):
-        return True
 
     def generate_report(self):
         """Genera el reporte según la selección del usuario."""
@@ -127,39 +97,59 @@ class TechnicalReportRequestDetail(models.Model):
 
         report_action = False
         if self.conclusion == 'to maintenance':
-            report_action = self.env.ref('soe_fixed_assets.action_maintenance_report').report_action(self)
+            report_action = self.action_to_maintenance()
         elif self.conclusion == 'to unavailable':
-            report_action = self.env.ref('soe_fixed_assets.action_maintenance_report').report_action(self)
+            report_action = self.action_to_unavailable()
 
         return report_action
 
     def action_to_unavailable(self):
         self.ensure_one()
         for record in self:
-            #Que el detalle aun este solicitado, que la conclusion ste pendiente y que el activo se encuentre available
-            if (record.technical_report_status == 'requested' and record.conclusion == 'pending'):
-                if (record.asset_id.availability == 'available'):
-                    record.write({
-                        'conclusion': 'to unavailable',
-                        'technical_report_status': 'received',
-                    })
-
-                    if record.asset_id:
-                        record.asset_id.write({
-                            'availability': 'unavailable',
-                        })
-                else:
-                    raise ValidationError("El activo fijo no se encuentra Disponible.")
-
-                return {
-                    'type': 'ir.actions.client',
-                    'tag': 'display_notification',
-                    'params': {
-                        'message': 'El activo ha sido dado de baja correctamente.',
-                        'type': 'success',
-                        'sticky': True,
-                    }
-                }
-            else:
+            if record.technical_report_status == 'requested' and record.conclusion == 'pending':
                 raise ValidationError("Solo puedes dar de baja activos que tienen pendiente una respuesta tecnica.")
-        return True
+
+            if not record.asset_id:
+                raise ValidationError("No hay un activo asociado a la solicitud")
+
+            if record.asset_id.availability == 'available':
+                raise ValidationError("El activo no se encuentra disponible en la unidad")
+
+            record.write({
+                'conclusion': 'to unavailable',
+                'technical_report_status': 'received',
+            })
+
+            record.asset_id.write({
+                'availability': 'unavailable',
+            })
+
+            report_action = (self.env
+                             .ref('soe_fixed_assets.action_unavailable_report')
+                             .report_action(self))
+
+            return report_action
+
+    def action_to_maintenance(self):
+        self.ensure_one()
+        for record in self:
+            if record.technical_report_status == 'requested' and record.conclusion == 'pending':
+                raise ValidationError("Solo puedes dar de baja activos que tienen pendiente una respuesta tecnica.")
+
+            if record.asset_id.availability == 'available':
+                raise ValidationError("El activo no se encuentra disponible en la unidad")
+
+            if not record.asset_id:
+                raise ValidationError("No hay un activo asociado a la solicitud")
+
+            record.write({
+                'conclusion': 'to maintenance',
+                'technical_report_status': 'received',
+            })
+            record.asset_id.write({
+                'availability': 'maintenance',
+            })
+            report_action = (self.env
+                             .ref('soe_fixed_assets.action_maintenance_report')
+                             .report_action(self))
+            return report_action

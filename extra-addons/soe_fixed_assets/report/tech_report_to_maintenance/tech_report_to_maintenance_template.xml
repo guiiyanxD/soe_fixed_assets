@@ -5,26 +5,50 @@
         <t t-foreach="docs" t-as="doc">
              <t t-call="web.external_layout">
                 <div class="page" style="font-family: Arial; margin: 2cm;">
-                    <!-- Encabezado con fecha dinámica -->
-                    <div style="text-align: right; margin-bottom: 2cm;">
-                        Santa Cruz
-                    </div>
-
                     <!-- Datos del documento -->
                     <div style="margin-bottom: 1cm;">
-                        <div>UPG-FICCT - OF Nº</div>
-                        <div style="margin- top: 0.5cm;">Señor:</div>
-                        <div>Lic. Celso Quiroga Ferrufino</div>
-                        <div>JEFE D.S.U.</div>
-                        <div>U.A.G.R.M.</div>
-                        <div style="margin-top: 0.5cm;">Presente.-</div>
+                        <div style="text-align: right;">
+                            <strong>N° Solicitud:</strong>
+                        </div>
+                        <div style="margin-top: 0.5cm;">
+                            <strong>Santa Cruz, <span t-esc="datetime.datetime.now().strftime('%d/%m/%Y')"/></strong>
+                        </div>
                     </div>
 
-                    <!-- Referencia -->
-                    <div style="font-weight: bold; margin-bottom: 1cm;">
-                        Ref.- SOLICITUD INFORME TÉCNICO DE ACTIVOS
+                    <!-- Destinatario -->
+                    <div style="margin-bottom: 1cm;">
+                        <div>Señor(a):</div>
+                        <div>Jefe del Departamento de Mantenimiento</div>
+                        <div>Presente.-</div>
                     </div>
 
+                    <!-- Cuerpo de la solicitud -->
+                    <div style="margin-bottom: 1.5cm;">
+                        <p>Por medio del presente documento, solicito a su despacho el mantenimiento del siguiente activo fijo:</p>
+
+                        <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+                            <tr style="border-bottom: 1px solid black;">
+                                <td style="width: 30%; padding: 8px 0;"><strong>Código del Activo</strong></td>
+                                <td style="padding: 8px 0;"><span t-field="doc.asset_id.code"/></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid black;">
+                                <td style="padding: 8px 0;"><strong>Descripción</strong></td>
+                                <td style="padding: 8px 0;"><span t-field="doc.asset_id.name"/></td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid black;">
+                                <td style="padding: 8px 0;"><strong>Area</strong></td>
+                                <td style="padding: 8px 0;"><span t-field="doc.asset_id.area_id.name"/></td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px 0;"><strong>Problema Reportado</strong></td>
+                                <td style="padding: 8px 0;"><span t-field="doc.comments"/></td>
+                            </tr>
+                        </table>
+                    </div>
+                     <!-- Texto final -->
+                    <div style="margin-bottom: 1cm;">
+                        <p>Agradeciendo de antemano su atención y colaboración, saludo a Ud. con las consideraciones más distinguidas.</p>
+                    </div>
 
                     <!-- Firma -->
                     <div style="margin-top: 4cm;">
@@ -32,13 +56,16 @@
                         <div style="text-align: center;">
                             <div style="margin-bottom: 3cm;"></div>
                             <div style="border-top: 2px solid black; width: 250px; margin: 0 auto; padding-top: 10px;">
-                                <div style="font-weight: bold; margin-bottom: 5px;">
-                                    <span t-esc="env['ir.config_parameter'].sudo().get_param('soe_fixed_assets.nombre_director')"/>
-                                </div>
+
                                 <div style="font-weight: bold; margin-bottom: 3px;">Director Unidad de Postgrado</div>
                                 <div style="margin-bottom: 3px;">F.I.C.C.T. - UAGRM</div>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- Copia a -->
+                    <div style="margin-top: 1cm;">
+                        <div>c.c. Archivo</div>
                     </div>
                 </div>
             </t>
@@ -46,4 +73,3 @@
     </t>
 </template>
 </odoo>
-

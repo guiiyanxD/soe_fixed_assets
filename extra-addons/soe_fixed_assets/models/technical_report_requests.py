@@ -24,7 +24,7 @@ class TechnicalReportRequests(models.Model):
         "technical_report_request_id",
         string="Detalles de la solicitud de informe técnico",
         copy=True,
-        required=True
+        required=True,
     )
 
 

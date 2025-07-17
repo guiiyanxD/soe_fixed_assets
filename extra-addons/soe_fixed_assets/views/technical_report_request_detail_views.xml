@@ -58,7 +58,13 @@
                     </h1>
                   </header>
               </div>
-                <sheet>
+                <sheet><div>
+                    <group>
+                        <div class="inline">
+                            <h3>Activo fijo: <field name="asset_id" no_label="1" readonly="1"/></h3>
+                        </div>
+                    </group>
+                </div>
                     <div>
                         <group>
                             <div style="width:50%">
@@ -74,19 +80,13 @@
                                    widget="radio"
                                    options="{'horizontal': true}"
                             />
-
-                             <button name="action_generate_specific_report"
-                                     type="object"
-                                     string="Generar Reporte de Conclusión"
-                                     class="oe_highlight"
-                                     confirm="Una vez generado el reporte, no se podría editar, esta seguro?"
-                                     invisible="conclusion == 'pending'"
-                             />
                             <button
                                 name="generate_report"
                                 string="Generar Reporte"
                                 type="object"
-                                class="btn-primary"
+                                class="oe_highlight"
+                                confirm="Una vez generado el reporte, no se podría editar, esta seguro?"
+                                invisible="conclusion == 'pending'"
                             />
                         </group>
                     </div>

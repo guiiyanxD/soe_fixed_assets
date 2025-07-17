@@ -51,6 +51,11 @@
                     <field name="asset_id"/>
 
                     <field name="comments"/>
+                    <field name="conclusion" widget="badge"
+                     decoration-info="conclusion == 'pending'"
+                     decoration-warning="conclusion == 'to maintenance'"
+                     decoration-danger="conclusion == 'to unavailable'"
+                    />
                   </list>
                   <form>
                     <group>

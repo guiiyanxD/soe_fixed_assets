@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_to_unavailable_template">
+    <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+             <t t-call="web.external_layout">
+                <div class="page" style="font-family: Arial; margin: 2cm;">
+                    <!-- Fecha y lugar -->
+                    <div style="text-align: right; margin-bottom: 2cm;">
+                        Santa Cruz,  <span t-esc="datetime.datetime.now().strftime('%d/%m/%Y')"/>
+                    </div>
+
+
+                    <div style="margin-bottom: 1cm;">
+                        <div>UPG-FICCT - OF Nº </div>
+                        <div style="margin-top: 0.5cm;">Señor:</div>
+                        <div>Lic. Alfredo Zeballos Arnez</div>
+                        <div>Jefe Dpto. Activo Fijo - U.A.G.R.M.</div>
+                        <div style="margin-top: 0.5cm;">Presente.-</div>
+                    </div>
+
+
+                    <div style="font-weight: bold; margin-bottom: 1cm;">
+                        Ref.- SOLICITUD DE BAJA DE EQUIPOS
+                    </div>
+
+
+                    <div style="margin-bottom: 1cm;">
+                        <p>De mi mayor consideración:</p>
+                        <p>Solicito a través de su departamento el retiro y baja de un equipo que se encuentran en la Unidad de Postgrado de la Facultad de Ingeniería en Ciencias de la Computación y Telecomunicaciones. A continuación, detallo el equipo y el número de informe técnico respectivo.</p>
+                    </div>
+
+                    <!-- Tabla de activos -->
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 1cm;">
+                        <thead>
+                            <tr style="border-bottom: 1px solid black;">
+                                <th style="text-align: left; width: 20%;">CODIGO</th>
+                                <th style="text-align: left; width: 30%;">ACTIVO</th>
+                                <th style="text-align: left; width: 30%;">NRO SOLICITUD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="border-bottom: 1px solid #ddd;">
+                                <td style="padding: 5px 0;"><span t-esc="doc.asset_id.code"/></td>
+                                <td style="padding: 5px 0;"><span t-esc="doc.asset_id.name"/></td>
+                                <td style="padding: 5px 0;"><span t-esc="doc.technical_report_request_id.nro_cite_request"/></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div style="margin-bottom: 1cm;">
+                        <div style="margin-bottom: 1cm;">
+                            <p>Adjunto informe técnico recibido autorizando la baja definitiva del activo fijo.</p>
+                            <div t-if="doc.pdf_file">
+
+                            </div>
+                            <div t-else="">
+                                <p style="color: red;">No se ha adjuntado el informe técnico.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Texto final -->
+                    <div style="margin-bottom: 1cm;">
+                        <p>Agradeciendo de antemano su atención y colaboración, saludo a Ud. con las consideraciones más distinguidas.</p>
+                    </div>
+
+                    <!-- Firma -->
+                    <div style="margin-top: 4cm;">
+                        <div style="text-align: center; margin-bottom: 1cm; font-style: italic;">Atentamente,</div>
+                        <div style="text-align: center;">
+                            <div style="margin-bottom: 3cm;"></div>
+                            <div style="border-top: 2px solid black; width: 250px; margin: 0 auto; padding-top: 10px;">
+
+                                <div style="font-weight: bold; margin-bottom: 3px;">Director Unidad de Postgrado</div>
+                                <div style="margin-bottom: 3px;">F.I.C.C.T. - UAGRM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Copia a -->
+                    <div style="margin-top: 1cm;">
+                        <div>c.c. Archivo</div>
+                    </div>
+                </div>
+            </t>
+        </t>
+    </t>
+</template>
+</odoo>
