@@ -3,13 +3,13 @@
 {
     'name': "soe_fixed_assets",
 
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
+    'summary': "Software de Gestion de Actios Fijos para la FICCT",
 
     'description': """
 Long description of module's purpose
     """,
 
-    'author': "My Company",
+    'author': "Grupo12Sc",
     'website': "https://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
@@ -57,6 +57,7 @@ Long description of module's purpose
     'demo': [
         'demo/demo.xml',
     ],
+    'icon': 'static/description/icon.png',
     'assets':{
         'web.assets_backend':[
             # 'soe_fixed_assets/static/src/js/fecha_validacion.js',
